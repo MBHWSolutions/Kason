@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="513px" height="336px" viewBox="0 0 513 336" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>no</title>
+    <desc>Created with Sketch.</desc>
+    <g id="menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="no">
+            <path d="M13,0 L500,0 C507.179702,-1.31888981e-15 513,5.82029825 513,13 L513,323 C513,330.179702 507.179702,336 500,336 L13,336 C5.82029825,336 8.79259876e-16,330.179702 0,323 L0,13 C-8.79259876e-16,5.82029825 5.82029825,1.31888981e-15 13,0 Z" id="Path" fill="#ED2939"></path>
+            <polygon id="Path" fill="#F5F5F5" points="144.28125 0 240.46875 0 240.46875 336 144.28125 336"></polygon>
+            <polygon id="Path" fill="#F5F5F5" points="0 126 513 126 513 210 0 210"></polygon>
+            <polygon id="Path" fill="#002664" points="168.328125 0 216.421875 0 216.421875 336 168.328125 336"></polygon>
+            <polygon id="Path" fill="#002664" points="0 147 513 147 513 189 0 189"></polygon>
+        </g>
+    </g>
+</svg>

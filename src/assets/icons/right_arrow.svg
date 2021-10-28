@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Arrowbutton/right/40px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.9">
+        <g id="Arrowbutton/right/40px">
+            <g id="Arrowbutton/left/36px">
+                <g transform="translate(20.000000, 20.000000) rotate(-180.000000) translate(-20.000000, -20.000000) ">
+                    <path d="M20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 C31.045695,0 40,8.954305 40,20 C39.9900302,31.0415627 31.0415627,39.9900302 20,40 Z" id="Shape" fill-opacity="0.8" fill="#FFFFFF"></path>
+                    <path d="M14.0185079,30 C13.7479355,30.0011528 13.4882595,29.9030265 13.2981284,29.7277728 C12.9006239,29.3654551 12.9006239,28.7784998 13.2981284,28.4161821 L22.5407331,20.0022035 L13.2981284,11.588225 C12.9006239,11.2259073 12.9006239,10.638952 13.2981284,10.2766342 C13.4874493,10.0997578 13.7472273,10 14.0185079,10 C14.2897885,10 14.5495665,10.0997578 14.7388874,10.2766342 L24.7018716,19.3464081 C25.0993761,19.7087259 25.0993761,20.2956812 24.7018716,20.6579989 L14.7388874,29.7277728 C14.5487563,29.9030265 14.2890803,30.0011528 14.0185079,30 L14.0185079,30 Z" id="Shape" fill="#000000" fill-rule="nonzero" transform="translate(19.000000, 20.000000) scale(-1, 1) translate(-19.000000, -20.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,147 @@
+@import "_theme.scss";
+
+.sticky-price {
+  // height: 80px;
+  box-shadow: 0 -2px 16px var(--color-line);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  padding: 7.5px 0;
+
+  .loading-dots {
+    height: 15px;
+    margin: auto;
+  }
+
+  .price-display {
+    margin-bottom: 5px;
+  }
+
+  .price-details-link {
+    margin-bottom: 5px;
+    color: var(--color-highlight);
+    cursor: pointer;
+  }
+
+  .product-sticky-price {
+    padding: 0 60px;
+
+    @media (max-width: $md) {
+      padding: 0 20px;
+    }
+
+    .text-hidden {
+      visibility: hidden;
+    }
+
+    .total-price {
+      display: flex;
+      flex-wrap: wrap;
+      width: 600px;
+      align-items: center;
+
+      .loading-dots {
+        position: absolute;
+        align-self: flex-start;
+        margin-top: 17px;
+      }
+
+      @media (min-width: $xs) and (max-width: $md) {
+        .price {
+          font-size: var(--text-size-h4);
+
+          .price-currency {
+            font-size: var(--text-size-label);
+          }
+        }
+      }
+
+      @media (max-width: $lg) {
+        width: 100%;
+      }
+
+      &.long-price,
+      &.button-only {
+        .sticky-add-to-cart-button {
+          flex-basis: 100%;
+        }
+
+        .price-display {
+          padding-bottom: 10px;
+        }
+
+        // .price-details-link {
+        //   // padding-bottom: 18px;
+        // }
+      }
+
+      .add-to-cart-icon-wrapper {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--button-primary-background-color);
+        .icon {
+          margin-left: 7px;
+          margin-top: -4px;
+        }
+      }
+
+      &.button-only {
+        .add-to-cart-icon-wrapper {
+          display: none;
+        }
+
+        .sticky-add-to-cart-button {
+          @media (max-width: $sm) {
+            display: flex;
+          }
+        }
+      }
+
+      .price-details-link {
+        flex-grow: 0;
+        margin-right: 15px;
+        align-self: center;
+        vertical-align: text-bottom;
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+      .filler {
+        flex-grow: 1;
+      }
+
+      .sticky-add-to-cart-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 38px;
+        min-width: 200px;
+        padding: 5px 25px;
+        margin: 12.5px 0;
+
+        .loading-dots {
+          margin-top: -3px;
+        }
+        .loading-dot {
+          background-color: white;
+        }
+
+        @media (min-width: $md) and (max-width: $lg) {
+          min-width: 110px;
+        }
+
+        @media (max-width: $sm) {
+          display: none;
+        }
+      }
+
+      .sticky-add-to-cart-icon,
+      .add-to-cart-icon-wrapper {
+        margin: auto 0 auto auto;
+
+        @media (min-width: $sm) {
+          display: none;
+        }
+      }
+    }
+  }
+}

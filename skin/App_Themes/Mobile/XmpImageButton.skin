@@ -1,0 +1,305 @@
+<uStoreControls:XmpImageButton SkinId="Login_Login" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="AccountSettings_Update" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+
+<uStoreControls:XmpImageButton SkinId="Checkout_Reorder" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="Checkout_ContinueShopping" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="Checkout_Checkout" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="CheckoutComplete_Print" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="CheckoutComplete_Continue" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="CheckoutFinal_Next" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="CheckoutFinal_Back" runat="server"
+CssClass="XmpieBackLink" LiteHtml="true" /> 
+
+<uStoreControls:XmpImageButton SkinId="CheckoutFinal_Checkout" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="SplitAddresses_AddNewAddress" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="SplitAddresses_CancelSplit" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="AddressBox_Split" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="SplitItems_AssignItem" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="SplitItems_AssignAll" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="MerchantAddress_Submit" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="MerchantAddress_Cancel" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="CustomerAddress_Submit" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="CustomerAddress_Cancel" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="Generic_OK" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="Generic_Cancel" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="Generic_Back" runat="server"
+CssClass="XmpieBackLink" LiteHtml="true" /> 
+
+<uStoreControls:XmpImageButton SkinId="ImageSelector_Submit" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="ImageSelector_Cancel" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="Customization_UpdateThumbnails" runat="server" 
+CssClass="XmpieClearButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="Customization_UpdateThumbnails2" runat="server" 
+CssClass="XmpieHiddenButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="OrderDetails_Back" runat="server" 
+CssClass="XmpieBackLink HideDisabled" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="OrderList_Back" runat="server" 
+CssClass="XmpieBackLink HideDisabled" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="Addresses_Back" runat="server" 
+CssClass="XmpieBackLink HideDisabled" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="RecipientManager_Back" runat="server" 
+CssClass="XmpieBackLink HideDisabled" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="PasswordReminder_Back" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="PasswordReminder_Continue" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="PasswordReset_Continue" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="ShoppingCardGrid_ContinueShopping" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="ProductDetails_Back" runat="server" 
+CssClass="XmpieBackLink" LiteHtml="true" /> 
+
+<uStoreControls:XmpImageButton SkinId="ProductDetails_Continue" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="PriceReview_Recalculate" runat="server" 
+CssClass="XmpieClearButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="WizardStepsNextPrev_Prev" runat="server" 
+CssClass="XmpieBackLink HideDisabled" LiteHtml="true" /> 
+
+<uStoreControls:XmpImageButton SkinId="WizardStepsNextPrev_Next" runat="server" 
+CssClass="XmpieThemeColorButton HideDisabled" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="WizardStepsNextPrev_SaveForLater" runat="server" 
+CssClass="XmpieThemeColorButton HideDisabled" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="WizardStepsNextPrev_Finish" runat="server" 
+CssClass="XmpieThemeColorButton HideDisabled" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="WizardStepsNextPrev_Cancel" runat="server" 
+CssClass="XmpieThemeColorButton HideDisabled" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="WizardStepsNextPrev_SaveDraft" runat="server" Visible="False"
+CssClass="XmpieHiddenButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="SaveDraft_Ok" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="SaveDraft_Cancel" runat="server" 
+CssClass="XmpieThemeColorButton HideDisabled" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="EmailTest_EmailTest" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="RecipientListInsert_Save" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="ProductUnavailable_ContinueShopping" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="UserRegistration_Save" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="UserRegistration_Cancel" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="CheckoutFinal_CouponRecalculate" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="UserCouponSelect_Close" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="CheckoutFinal_UserSelectCoupon" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="UserCouponSelect_UseIt" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="ImageExButton" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="ImageExButton_Cancel" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="OrderList_ClearSearch" runat="server" 
+CssClass="Link" LiteHtml="true" /> 
+
+<uStoreControls:XmpImageButton SkinId="OrderList_AdvSearch" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="OrderDetails_Approve" runat="server" 
+CssClass="XmpieApproveButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="OrderDetails_Rejection" runat="server" 
+CssClass="XmpieRejectButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="OrderDetails_Reject" runat="server" 
+CssClass="XmpieRejectButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="OrderDetails_Modify" runat="server" 
+CssClass="XmpieModifyButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="OrderDetails_ModifySubmit" runat="server" 
+CssClass="XmpieModifyButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="OrderDetails_Resubmission" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="OrderDetails_ResubmitEditItems" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="OrderDetails_Resubmit" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="OrderDetails_ChangingApprover" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="OrderDetails_ChangeApproverSave" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="Activation_BackToLogin" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="RegisterPending_Continue" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="RegisterPending_BackToLogin" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="AccountNotActivated_Resend" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="AccountNotActivated_RegisterAgain" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="ProductList_BuyIt" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_RLEditor_OK" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_RLEditor_Cancel" runat="server" 
+CssClass="XmpieCancelButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_RLEditor_AddNewRecord" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_PrintProperties_OK" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_PrintProperties_Cancel" runat="server" 
+CssClass="XmpieCancelButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_FileInformation_Cancel" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_RemoveFile_OK" runat="server"
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_RemoveFile_Cancel" runat="server"
+CssClass="XmpieCancelButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_ApproveFile_Next" runat="server"
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_ApproveFile_Cancel" runat="server"
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_btnSlidesSelect" runat="server"
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_CompositeTemplateGallery_OK" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_PaperSizeNotice_Convert" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_PaperSizeNotice_Remove" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="FileSubmission_CompositeTemplateGallery_Cancel" runat="server" 
+CssClass="XmpieCancelButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="RecipientsListEditor_Add" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="RecipientsListEditor_Delete" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+<uStoreControls:XmpImageButton SkinId="uEditCustomization_MissingFonts_OK" runat="server"
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="RecipientsListEdit_Add" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="RecipientsListEdit_Save" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="RecipientsListEdit_Close" runat="server" 
+CssClass="XmpieCancelButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="MyRecipientLists_Update" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="MyRecipientLists_Cancel" runat="server" 
+CssClass="XmpieCancelButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="AccountSettings_Cancel" runat="server" 
+CssClass="XmpieCancelButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="DiagramView_Close" runat="server" 
+CssClass="XmpieCancelButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="TouchPointCircleReport_Refresh" runat="server" 
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="CookieRibbon" runat="server"
+CssClass="XmpieThemeColorButton" LiteHtml="true" />
+
+<uStoreControls:XmpImageButton SkinId="EmailTouchPointPreview_Test" runat="server"
+CssClass="XmpieThemeColorButton" LiteHtml="true" />

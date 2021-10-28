@@ -1,0 +1,28 @@
+@import "_theme.scss";
+
+.layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &.connect {
+    .main-content {
+      @media (min-width: $lg) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .main-content {
+    flex: 1 auto;
+
+    @media (min-width: $lg) {
+      padding-top: var(--header-height-desktop);
+    }
+
+    // @media (min-width: $md) and (max-width: $lg) {
+    //   padding-top: calc(var(--header-height-mobile) + var(--search-height));
+    // }
+  }
+}

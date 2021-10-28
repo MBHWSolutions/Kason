@@ -1,0 +1,1123 @@
+/* Resets */	
+div, header, nav, ul, li, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {	
+color: var(--text-color-dark);
+	font-family: var(--font-family);
+	font-size: var(--text-size-regular);
+	font-weight:var(--default-font-weight);
+}
+
+html 
+{
+	background-color: #ffffff !important;
+	background-image: none !important;
+	font-size: var(--font-size);
+}
+
+ul {
+	list-style-type: none;
+}
+
+.popupContentInner
+{
+	padding: 10px;
+}
+
+.popupFooter  
+{
+	border-top: 1px var(--color-line) solid;
+	padding: 5px;
+	background: var(--color-fill);
+}
+.ui-dialog-titlebar-close.ui-corner-all:before{
+	content: "\2715";
+	color:#ffffff;
+}
+.ui-dialog .ui-dialog-titlebar-close span
+{
+	display:none!important;
+}
+/* for new elements in old browsers */
+article, aside, figure, footer, header, hgroup, nav, section { 
+	display: block; 
+}
+
+HR
+{
+	color: #a0a0a0;
+	height: 1px;
+}
+
+TD.LeftMargin
+{
+    background-image: url(popup_bg_topcorner.gif);
+	background-repeat: no-repeat;  
+	width:22px;
+}
+
+TD.HeadingBg
+{
+	font-size: var(--text-size-label);
+	font-weight: var(--default-font-weight);
+color: #ffffff;
+	background-image: url(popup_bg_title.gif);
+	background-repeat: repeat-x;
+	height: 33px;
+	padding-left: 5px;
+}
+
+TD.SubHeadingBg
+{
+	font-size: var(--text-size-regular);
+	font-weight: var(--default-font-weight);
+color: var(--text-color-ultra-dark);
+	background-image: url(popup_bg_subtitle.gif);
+	background-repeat: repeat-x;
+	height: 29px;
+	padding-left: 5px;
+}
+
+TD.ContentArea
+{
+	padding: 15px;
+}
+
+/*  Images  */
+.SelectedAsset
+{
+	background: #0068A3;
+	border:none;
+	border-color: #00ffff;
+}
+
+.UnselectedAsset
+{
+	background: #FFFFFF;
+	border:none;
+	border-color: #00ffff;
+	cursor:hand;
+}
+/*
+.SmallItalic
+{
+	font-size: var(--text-size-fineprint);
+	FONT-WEIGHT: normal;
+	FONT-STYLE: italic;
+}
+*/
+a, .link
+{
+color: var(--color-highlight);
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+.FieldOptionItem .optionTitle,
+.FieldOptionItem.FOGrid.selected .optionTitle ,
+.bold
+{
+	font-weight: var(--default-font-weight);
+}
+.FieldOptionItem.FOGrid .optionIcon {
+	border:solid 1px var(--color-line);
+	
+}
+
+.BigLabel
+{
+	font-size: var(--text-size-regular);
+	color: #525252;
+}
+
+.SmallLabel
+{
+	font-size: var(--text-size-fineprint);
+	color: #525252;
+}
+
+A.BigLink
+{
+	font-size: var(--text-size-label);
+	font-weight: var(--default-font-weight);
+	text-decoration: none;
+}
+
+A.BigLink:hover
+{
+	font-size: var(--text-size-label);
+	font-weight: var(--default-font-weight);
+	text-decoration: underline;
+}
+
+A.SmallLink
+{
+	font-size: var(--text-size-fineprint);
+	font-weight: normal;
+	text-decoration: none;
+}
+
+A.SmallLink:hover
+{
+	text-decoration: underline;
+}
+
+/*  PublicPCWarning */
+.OptionsList
+{
+	text-indent: -3px;
+}
+
+.OptionsList INPUT,LABEL
+{
+	vertical-align:middle;
+}
+.OptionsList INPUT
+{
+	margin-top: 0;
+}
+.OptionsList LABEL
+{
+	margin-right:10px;
+}
+.FormLabel
+{
+	font-size: var(--text-size-label);
+	font-weight: var(--default-font-weight);
+}
+.FormField
+{
+	font-size: var(--text-size-fineprint);
+	font-weight: normal;
+}
+
+.productunits {
+color: var(--text-color-dark);
+	font-size: var(--text-size-fineprint);
+	font-variant: normal;
+	font-weight: normal;
+}
+/* Product Preview Styles START */
+.TopPanelLink
+{
+	cursor:pointer; 
+}
+
+.Dots
+{
+	vertical-align:text-bottom !important;
+}
+.PagerNumber
+{
+	padding:2px;
+	text-decoration:none;
+	vertical-align:super;
+}
+.PagerMarkedNumber
+{
+	font-weight:var(--default-font-weight);
+	color: #044165;
+}
+.AlignLeft
+{
+	text-align:left;
+}
+.AlignRight
+{
+	text-align:right;
+}
+.Padded 
+{
+	 padding:15px;
+}
+#divImageName
+{
+	max-width: 20%;
+}
+#divProofSize
+{
+	padding-left: 10px;
+	width: 30%;
+}
+#divPager
+{
+	padding-right: 10px;
+	width:50%;
+}
+.TopPanel
+{
+	width:100%; 
+	background-image:none;
+	background-color: var(--color-fill);
+	margin-bottom:10px;
+	height:50px;
+	font-size: var(--text-size-regular);
+	color:var(--text-color-ultra-dark);
+}
+/* Product Preview Styles END */
+
+.RequiredFieldMarker
+{
+	color: var(--color-error);
+	font-weight:var(--default-font-weight);
+	vertical-align: middle;
+}
+
+.roundedCorners
+{
+	padding: 0;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	border: solid 1px #000000;
+}
+
+.divOptionRepeater.selected .imgIconWrapper
+{
+	border: solid 3px #87A01F;
+}
+
+#divClearFloat
+{
+	clear:left;
+}
+
+.TallButton
+{
+	height: 32px;
+	line-height: 32px;
+}
+
+.WizardButtonsContainer > div
+{
+	margin-right: 12px;
+}
+
+/*input, select, textarea */
+
+input, select, textarea
+{
+	border: 1px solid var(--color-line);
+	color: var(--text-color-dark);
+	padding-left: 8px;
+    line-height: calc( var(--text-size-regular) * 2);
+    font-family: inherit;
+}
+
+input[type="checkbox"], input[type="radio"]
+{
+	border: 0 none;
+}
+
+/* end input, select, textarea */
+
+/* wizard and buttons */
+
+.backLinkContainer
+{
+	float:left;
+    background: none;
+	order:1;
+}
+
+/* end wizard and buttons */
+
+/* GalleryGridView/GalleryListView (aka IconTitleGallery/IconDescriptionList) DUC styles per skin (other styles are in default) */
+.FieldOptionItem.selected.FOGrid .optionIcon
+{
+    border: 1px solid var(--color-highlight);
+}
+
+.FieldOptionItem:hover
+{
+    color: var(--button-primary-background-color);
+}
+
+.FieldOptionItem.FOGrid.selected .optionTitle
+{
+    color : var(--button-primary-background-color);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////// working XmpieButton styles begin ////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.XmpImageButton
+{
+	height: 21px;
+	border-radius: 5px;
+	margin-right: 5px;
+	padding: 0 10px;
+	font-size: var(--text-size-fineprint);
+	line-height: 21px;
+	text-decoration: none;
+	display: inline-block;
+	font-weight:normal;
+}
+
+.XmpImageButton.TallButton
+{
+	height: 32px;
+}
+
+.XmpieTransparentButton
+{
+	background-color: transparent;
+}
+
+.XmpieThemeColorButton,
+.XmpieDisabledButton,
+.XmpieCancelButton,
+.XmpieRejectButton,
+.XmpieAcceptButton,
+.XmpieApproveButton
+{
+	color: #ffffff !important;
+	text-decoration: none!important;
+}
+
+.XmpieThemeColorButton
+{
+	background-color: var(--button-primary-background-color);
+}
+
+.XmpieThemeColorButton:hover, 
+.XmpieThemeColorButton.Hover /*    file submission upload fakeBtn    */
+{
+	background-color: var(--button-primary-background-color);
+}
+
+.XmpieThemeColorButton:active
+{    
+	background-color: var(--button-primary-background-color);
+}
+
+.XmpieThemeColorButton[disabled],
+.XmpieRejectButton[disabled],
+.XmpieApproveButton[disabled],
+.XmpieModifyButton[disabled],
+.XmpieBackLink[disabled]
+{
+	background-color: #afafaf !important;
+}
+
+.XmpImageButton.HideDisabled[disabled],
+.XmpieHiddenButton
+{
+	display: none;
+}
+
+.XmpieClearButton
+{    
+	background-color: transparent;
+	height: 40px;
+	text-decoration: underline !important;
+	padding: 0px!important;
+	font-size: var(--text-size-regular);
+	line-height: 21px;
+	font-weight: var(--default-font-weight);
+color: var(--text-color-dark);
+}
+
+.XmpieBackLink
+{    
+	background-color: transparent;
+	text-decoration: none!important;
+	margin-left: 25px;
+	font-size: var(--text-size-fineprint);
+	font-weight: 500;
+color: var(--text-color-medium);
+}
+
+.XmpImageButton_ApproveButton
+{
+	
+	background-color: #76a43b;
+	background-image: url(XmpImageButton-StrongGreen.svg);
+	background-image: -webkit-linear-gradient(top, #76a43b 50%, #598839 50%); 
+	background-image:    -moz-linear-gradient(top, #76a43b 50%, #598839 50%); 
+	background-image:     -ms-linear-gradient(top, #76a43b 50%, #598839 50%); 
+	background-image:      -o-linear-gradient(top, #76a43b 50%, #598839 50%); 
+	background-image:         linear-gradient(top, #76a43b 50%, #598839 50%);
+}
+
+.XmpImageButton_ApproveButton:hover
+{
+background-color: var(--color-success);
+	background-image: url(XmpImageButton-StrongGreenHover.svg);
+	background-image: -webkit-linear-gradient(top, rgba(84,128,54,.7) 50%, rgba(64,98,40,.7) 50%); /* #548036 to #406228 with 0.7 opacity */
+	background-image:    -moz-linear-gradient(top, rgba(84,128,54,.7) 50%, rgba(64,98,40,.7) 50%); /* #548036 to #406228 with 0.7 opacity */
+	background-image:     -ms-linear-gradient(top, rgba(84,128,54,.7) 50%, rgba(64,98,40,.7) 50%); /* #548036 to #406228 with 0.7 opacity */
+	background-image:      -o-linear-gradient(top, rgba(84,128,54,.7) 50%, rgba(64,98,40,.7) 50%); /* #548036 to #406228 with 0.7 opacity */
+	background-image:         linear-gradient(top, rgba(84,128,54,.7) 50%, rgba(64,98,40,.7) 50%); /* #548036 to #406228 with 0.7 opacity */
+}
+
+.XmpImageButton_ApproveButton:active
+{
+background-color: var(--color-success);
+	background-image: url(XmpImageButton-StrongGreenClick.svg);
+	background-image: -webkit-linear-gradient(top, #548036 50%, #406228 50%); 
+	background-image:    -moz-linear-gradient(top, #548036 50%, #406228 50%);
+	background-image:     -ms-linear-gradient(top, #548036 50%, #406228 50%);
+	background-image:      -o-linear-gradient(top, #548036 50%, #406228 50%);
+	background-image:         linear-gradient(top, #548036 50%, #406228 50%);
+}
+
+.XmpieRejectButton
+{    
+	background-color: #f00000;
+	background-image: url(XmpImageButton-Red.svg);
+	background-image: -webkit-linear-gradient(top, #f00000 50%, #cc0000 50%); 
+	background-image:    -moz-linear-gradient(top, #f00000 50%, #cc0000 50%); 
+	background-image:     -ms-linear-gradient(top, #f00000 50%, #cc0000 50%); 
+	background-image:      -o-linear-gradient(top, #f00000 50%, #cc0000 50%); 
+	background-image:         linear-gradient(top, #f00000 50%, #cc0000 50%);
+}
+
+.XmpieRejectButton:hover
+{    
+	background-color: #a30000;
+	background-image: url(XmpImageButton-RedHover.svg);
+	background-image: -webkit-linear-gradient(top, rgba(163,0,0,.7) 50%, rgba(128,0,0,.7) 50%); /* #a30000 to #800000 with 0.7 opacity */
+	background-image:    -moz-linear-gradient(top, rgba(163,0,0,.7) 50%, rgba(128,0,0,.7) 50%); /* #a30000 to #800000 with 0.7 opacity */
+	background-image:     -ms-linear-gradient(top, rgba(163,0,0,.7) 50%, rgba(128,0,0,.7) 50%); /* #a30000 to #800000 with 0.7 opacity */
+	background-image:      -o-linear-gradient(top, rgba(163,0,0,.7) 50%, rgba(128,0,0,.7) 50%); /* #a30000 to #800000 with 0.7 opacity */
+	background-image:         linear-gradient(top, rgba(163,0,0,.7) 50%, rgba(128,0,0,.7) 50%); /* #a30000 to #800000 with 0.7 opacity */
+}
+
+.XmpieRejectButton:active
+{
+	background-color: #a30000;
+	background-image: url(XmpImageButton-RedClick.svg);
+	background-image: -webkit-linear-gradient(top, #a30000 50%, #800000 50%); 
+	background-image:    -moz-linear-gradient(top, #a30000 50%, #800000 50%); 
+	background-image:     -ms-linear-gradient(top, #a30000 50%, #800000 50%); 
+	background-image:      -o-linear-gradient(top, #a30000 50%, #800000 50%); 
+	background-image:         linear-gradient(top, #a30000 50%, #800000 50%); 
+}
+
+.XmpieClearButton_LinkStyle, .options
+{
+	text-decoration: underline !important;
+	padding: 0px!important;
+	font-size: var(--text-size-regular);
+	line-height: 21px;
+	font-weight: var(--default-font-weight);
+color: var(--text-color-dark);
+}
+
+.XmpieDisabledButton, .XmpieCancelButton
+{
+	background-color: #afafaf;
+	background-image: url(XmpImageButton-Default.svg);
+	background-image: -webkit-linear-gradient(top, #afafaf 50%, #999999 50%); 
+	background-image:    -moz-linear-gradient(top, #afafaf 50%, #999999 50%); 
+	background-image:     -ms-linear-gradient(top, #afafaf 50%, #999999 50%); 
+	background-image:      -o-linear-gradient(top, #afafaf 50%, #999999 50%); 
+	background-image:         linear-gradient(top, #afafaf 50%, #999999 50%);
+}
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////// working XmpieButton styles end //////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.TaxDetailsMainContent
+{
+	padding:30px;
+}
+
+td.TextAlignedRight
+{
+	text-align:right;
+}
+
+.LoadDiv {
+	z-index: 9998;
+	visibility: hidden;
+	background-color: black;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	vertical-align: middle;
+	filter: alpha(opacity=20);
+	-moz-opacity: .20;
+	opacity: .20;
+}
+
+.LoadDivImg {
+	z-index: 9999;
+	visibility: hidden;
+	position: absolute;
+	top: 48%;
+	left: 48%;
+}
+#tblAddressEdit select {
+	width: 260px;
+}
+.VerticalMenuDiv ul li:hover, .VerticalMenuDiv_ul_li_active {
+	background:var(--color-fill);
+	color:var(--color-highlight);
+}
+.XmpImageButton,.btn {
+	min-width:60px;
+	height:initial;
+	max-height:38px;
+	background-color:var(--button-primary-background-color);
+     display: inline-block;
+    padding: 0.5rem 0.875rem!important;
+    margin-bottom: 0;
+	font-size: var(--text-size-label);
+    font-weight: normal;
+    line-height: calc(var(--text-size-label) * 1.25);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: var(--button-border-radius);
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	color:var(--button-primary-text-color);
+  }
+
+	.btn:hover, .btn:focus,
+	.XmpImageButton:hover,.XmpImageButton:focus
+ {
+    text-decoration: none;
+	box-shadow: 0 5px 11px 0 rgba(0,0,0,0.3);
+}
+
+.backLinkContainer .btn,
+.backLinkContainer .btn:focus,
+.backLinkContainer .btn:active,
+.footerButtons a[id$="_btnCancel*"],
+.footerButtons a[id$="_btnCancel*"]:focus,
+.footerButtons a[id$="_btnCancel*"]:active,
+#selectGlobalAddressWrapper a[id$="_btnSearch"],
+#selectGlobalAddressWrapper a[id$="_btnSearch"]:focus,
+#selectGlobalAddressWrapper a[id$="_btnSearch"]:active,
+button#btnColorPickerCancel,
+button#btnColorPickerCancel:focus,
+button#btnColorPickerCancel:active,
+a#btnRefresh,
+a#btnRefresh:focus,
+a#btnRefresh:active,
+.XmpieThemeColorButton:not(:nth-last-child(1)),
+.XmpieThemeColorButton:not(:nth-last-child(1)):focus,
+.XmpieThemeColorButton:not(:nth-last-child(1)):active,
+.XmpieBackLink:not(:nth-last-child(1)),
+.XmpieBackLink:not(:nth-last-child(1)):focus,
+.XmpieBackLink:not(:nth-last-child(1)):active,
+.footerButtons a.btn:not(:nth-of-type(1)),
+.footerButtons a.btn:not(:nth-of-type(1)):focus,
+.footerButtons a.btn:not(:nth-of-type(1)):active,
+
+ #btnAddNewRecord,
+ #btnAddNewRecord:focus,
+ #btnAddNewRecord:active,
+ .footerButtons #btnCancel,
+ .footerButtons #btnCancel:focus,
+ .footerButtons #btnCancel:active,
+form[action^="./RecipientListEdit.aspx"] #btnClose,
+form[action^="./SaveDraft.aspx"] .popupFooter>.footerButtons>a.btn[id$="_btnCancel"],
+form[action^="./UserCouponSelect.aspx"] a.btn[id$="_btnUseIt"]
+{
+	 border: 1px solid var(--button-secondary-border-color);
+	background-color:var(--button-secondary-background-color);
+	color:var(--button-secondary-text-color)!important;
+ }
+ 
+ #btnMissingFontsOK,
+#btnMissingFontsOK:focus,
+#btnMissingFontsOK:active,
+a#btnSubmit,
+a#btnSubmit:focus,
+a#btnSubmit:active,
+.footerButtons a.btn[id$="_btnSubmit"],
+.footerButtons a.btn[id$="_btnSubmit"]:focus,
+.footerButtons a.btn[id$="_btnSubmit"]:active,
+.footerButtons a[id$="_btnOK"],
+ .footerButtons a[id$="_btnOK"]:focus,
+ .footerButtons a[id$="_btnOK"]:active,
+.footerButtons a[id$="_btnSelect"],
+ .footerButtons a[id$="_btnSelect"]:focus,
+ .footerButtons a[id$="_btnSelect"]:active,
+ .footerButtons #btnOk:not(:nth-last-child(1)),
+ .footerButtons #btnOk:not(:nth-last-child(1)):focus,
+ .footerButtons #btnOk:not(:nth-last-child(1)):active,
+ form[action^="./SaveDraft.aspx"] .popupFooter>.footerButtons>a.btn[id$="_btnOk"],
+ form[action="./RecipientListEdit.aspx"] #btnSaveAndAdd.btn,
+ form[action^="./RecipientListEdit.aspx?"] #btnSave.btn,
+ form[action^="./RecipientListEditor.aspx"] .footerButtons a[id$="_btnClose"]
+ {
+	 	border: 1px solid var(--button-primary-border-color)!important;
+		background-color:var(--button-primary-background-color)!important;
+		color:var(--button-primary-text-color)!important;
+ }
+ .footerButtons{
+	 display:flex;
+	 flex-direction:row-reverse;
+ }
+.footerButtons a[id$="_btnSubmit"]{
+	order:-1;
+}
+form[action^="./RecipientListEdit.aspx"] input
+{
+	outline-color:var(--color-line);
+}
+ input,button,select,textarea{
+	 color:var(--text-color-dark);
+	 font-size:var(--text-size-regular);
+	 font-weight:var(--default-font-weight);
+	 border-radius:var(--formfield-border-radius);
+	 outline-color:var(--color-line);
+	 padding:8px 8px;
+ }
+ input:focus,
+select:focus,
+textarea:focus,
+option:focus,
+.form-control:focus {
+	border-color:var(--color-line);
+	outline-color:var(--color-line);
+}
+
+#divPopupContentInner > div{
+	display:list-item;
+	color: var(--text-color-ultra-dark);
+	font-size: var(--text-size-label);
+	list-style: none;
+}
+
+form[action^="./RecipientListEditor.aspx"] #divPopupContentInner > div.uStoreLegacy-padding10_0_30_0{
+	display:flow-root;
+	padding-bottom:10px;
+}
+ #btnAddNewRecord{
+	 margin-left:10px;
+ }
+ 
+form[action^="./RecipientListEdit.aspx"] label{
+	font-weight: normal;
+	font-size: var(--text-size-label);
+}
+#lblGeneratingPreview,
+#lblPreviewReady{
+	font-size: var(--text-size-h2);
+}
+#touchpoint-preview-wrapper .touchpoint-progress-bar.success {
+	background-color:var(--color-success);
+	color:#ffffff;
+}
+#touchpoint-preview-wrapper .touchpoint-progress-bar.loading {
+	background-color:var(--color-fill);
+}
+
+#touchpoint-preview-wrapper .touchpoint-progress-bar.error {
+	background-color:var(--color-error);
+	color:#ffffff;
+}
+#touchpoint-preview-wrapper .touchpoint-progress-bar.hide {
+	background-color: var(--color-fill);
+	height: 0;
+}
+.stacktable td,.stacktable th,.stacktable td,.st-head-row.st-head-row-main {
+	padding-top: 2px;
+    padding-bottom: 2px;
+}
+.stacktable tr:nth-last-child(1)
+{
+	border-bottom: none;
+}
+
+
+.RadGrid_Default .rgHeader, .RadGrid_Default th.rgResizeCol, .RadGrid_Default .rgHeaderWrapper {
+    border: 0;
+    border-bottom: 1px solid var(--color-line)!important;
+    background-color: var(--color-fill)!important;
+	background-image:none!important;
+	color:var(--text-color-dark)!important;
+	font-size:var(--text-size-label);
+}
+.RadGrid_Default .rgHeader a {
+	color:var(--text-color-dark)!important;
+}
+.RadGrid_Default .rgAltRow>td {
+    border-color: var(--color-line)!important;
+}
+.RadGrid_Default {
+    border: 1px solid var(--color-line)!important;
+    background-color: #ffffff;
+    color: var(--text-color-dark);
+	font-size: var(--text-size-regular);
+    line-height: var(--text-size-h4);
+}
+.RadGrid_Default .rgMasterTable, .RadGrid_Default .rgDetailTable, .RadGrid_Default .rgGroupPanel table, .RadGrid_Default .rgCommandRow table, .RadGrid_Default .rgEditForm table, .RadGrid_Default .rgPager table {
+    font-family: var(--font-family)!important;
+    font-size: var(--text-size-regular)!important;
+    line-height: var(--text-size-h4)!important;
+}
+.RadGrid_Default td{
+	font-weight:var(--default-font-weight)!important;
+}
+.diagramImageWrapper>div{
+	display: block!important;
+}
+
+form[action^="./PrintProperties.aspx"] .diagramImageWrapper>div>span[id$="clickCampaignDiagramImageText"]{
+	display: none !important;
+}
+
+.clickCampaignTextWrapper{
+	display: block;
+}
+.clickCampaignTextWrapper{
+    margin-bottom: 10px;
+}
+#wndTouchPointReport{
+	height:520px!important;
+}
+
+#touchpoint-preview-wrapper #sendEmailProofWrapper > div.horizontalRow {
+	border-bottom-color: var(--color-line);
+	
+}
+.LineBelow {
+	background-color: var(--color-fill);
+}
+
+
+/* */
+
+.ErrorText {
+	color: var(--color-error);
+	font-size: var(--text-size-regular);
+	line-height: calc(var(--text-size-regular) * 1.25);
+}
+#tpValidationSummary.ErrorText{
+	color: #ffffff;
+	background: var(--color-error);
+	width:100%;
+	padding:5px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+.Error {
+	color: var(--color-error);
+	font-weight: normal;
+}
+
+.validationSummary {
+	margin-bottom: 10px;
+}
+
+.SelectedAsset {
+	background: var(--color-fill);
+	border-width: 10px;
+	border-color: var(--color-line);
+}
+
+.UnselectedAsset {
+	background: #ffffff;
+	border-width: 10px;
+	border-color: var(--color-line);
+}
+#touchpoint-preview-wrapper .progress-bar-wrapper {
+	font-size: var(--text-size-regular);
+}
+.carousel ul li p{
+	font-weight:var(--default-font-weight)!important;
+	font-size:var(--text-size-regular);
+}
+
+form[action^="./UserCouponSelect.aspx"] div[id$="_grdUserCoupons"] table tr th{
+	background-color:var(--background-light-color) !important;
+	color:var(--text-color-dark) !important;
+}
+
+form[action^="./UserCouponSelect.aspx"] div[id$="_grdUserCoupons"] table tr td{
+	padding-top:25px;
+	padding-bottom:25px;
+}
+
+form[action^="./UserCouponSelect.aspx"] .popupContent{
+	bottom:68px;
+}
+#bottomControlPanel
+{
+	background-color:var(--color-fill);
+	background-image: none;
+	background-repeat: none;
+	border-top: 1px solid var(--color-line);
+}
+
+.close .glyphicon{
+	display:none;
+}
+.modal-header .close:before ,
+.modal-header{
+	color:white;
+}
+.modal-header{
+	background:var(--color-highlight);
+	
+}
+.modal-header .close{
+	opacity:0.9;
+	text-shadow:none;
+	height:25px;
+}
+.modal-header .close:hover{
+	opacity:1;
+	text-shadow:none;
+}
+.modal-header .close:before {
+    content: "\2715";
+}
+.modal-header .close {
+	
+}
+#selectGlobalAddressWrapper .rgMasterTable.table{
+	width:100%!important;
+}
+#selectGlobalAddressWrapper table[id*="_grdGlobalAddresses"] tr td:nth-of-type(1):not([colspan])::before{
+	display: inline-block;
+    content: "\00a0\00a0\00a0\00a0\00a0";
+    background: url(radio_button_desktop.png) no-repeat;
+    top: 4px;
+    position: relative;
+}
+#selectGlobalAddressWrapper table[id*="_grdGlobalAddresses"] tr.rgSelectedRow td:nth-of-type(1):not([colspan])::before{
+	background: url(radio_button_selected_desktop.png) no-repeat;
+}
+#selectGlobalAddressWrapper table[id*="_grdGlobalAddresses"] tr{
+	cursor:pointer;
+}
+#selectGlobalAddressWrapper .RadGrid_Default .rgRow .rgSorted {
+	background-color:inherit;
+	border-bottom:none;
+}
+#selectGlobalAddressWrapper .table_addFieldLegacy td:nth-of-type(2){
+	font-size:var(--text-size-regular);
+	color:var(--text-color-medium);
+}
+#selectGlobalAddressWrapper .table_addFieldLegacy span[id*="MainContent_val"]{
+	color:var(--color-error)!important;
+	font-size: var(--text-size-regular);
+}
+.uedit-application #uEditContainer .btn,
+.uedit-application .modal-body .btn 
+{
+	min-width: 0;
+	height: initial;
+	max-height: initial;
+	background-color: var(--button-primary-background-color);
+	display: inline-block;
+	padding: 0!important;
+	user-select: inital;
+  display: inline-block;
+  *display: inline;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  *margin-left: .3em;
+  font-size: var(--text-size-regular);
+  line-height: 20px;
+  color: var(--text-color-dark);
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color:var(--color-fill);
+  *background-color: #e6e6e6;
+  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+  background-repeat: repeat-x;
+  border: 1px solid var(--color-line);
+  *border: 0;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  border-bottom-color: #b3b3b3;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.ustoreLegacy_ImageEditor{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.RadImageEditor.RadImageEditor_Default{
+	order:2;
+	border-color: #ffffff;
+    background-color:  #ffffff;
+	padding: 0 5px;
+}
+.imageInfoLine.editor{
+	order:1;
+}
+.ustoreLegacy_ImageEditor .rtbWrap{
+	    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    position: relative;
+    margin-bottom: auto;
+}
+.RadImageEditor .rtbItem.rtbBtn, .RadImageEditor .rtbItem.rtbSplBtn{
+    position: relative;
+    width: 40px;
+    margin: 0 5px 0px 0!important;
+    border: solid 1px var(--color-line);
+    background-color: var(--color-fill);
+    display: inline-flex!important;
+}
+.RadImageEditor .rtbItem.rtbSplBtn{
+	width:60px;
+}
+.RadToolBar .rtbOuter {
+    background-image: none!important;
+	padding:2px 0!important;
+}
+.RadImageEditor_Default, .RadImageEditor_Default.rieDialogs .riePrintContent {
+    
+}
+.imageInfoLine {
+    position: relative;
+    background-color: #ffffff!important;
+    -moz-opacity: .8;
+    opacity: .8;
+    padding: 0 0 0 0;
+    color:var(--text-color-ultra-dark)!important;
+    font-weight: normal!important;
+    font-size: var(--text-size-label)!important;
+}
+
+.RadToolBar_Default .rtbOuter {
+	border:none!important;
+}
+
+.rieDropDown ul{
+	left:0;
+}
+.RadImageEditor .RadToolBar a.rtbExpandDown,
+.RadImageEditor .rtbItem.rtbBtn, .RadImageEditor .rtbItem.rtbSplBtn,
+.RadToolBar .rtbChoiceArrow {
+	height: 40px!important;
+}
+.RadToolBar .rtbMid ,
+.RadToolBar .rtbIn{
+	padding:0!important;
+}
+.RadImageEditor .rtbItem.rtbSplBtn .rtbIn span:nth-child(1){
+	padding-right:5px;
+	width:35px;
+}
+.RadImageEditor .rtbItem.rtbSplBtn .rtbIn span:nth-child(2){
+	width:20px;
+	margin-right:20px;
+}
+
+.RadImageEditor .rtbChoiceArrow{
+	margin-left:0!important;
+	margin-right:20px;
+	padding-left:0!important;
+}
+.RadImageEditor .rtbOut:focus,
+.RadImageEditor .rtbItem:focus{
+	outline-color:var(--color-line);
+}
+.RadToolBar_Default .rtbItemFocused .rtbWrap ,
+.RadToolBar_Default .rtbItemFocused .rtbMid,
+.RadToolBar_Default .rtbItemFocused .rtbIn,
+.RadToolBar_Default .rtbItemFocused .rtbOut,
+.RadToolBar_Default .rtbItemClicked .rtbWrap ,
+.RadToolBar_Default .rtbItemClicked .rtbMid,
+.RadToolBar_Default .rtbItemClicked .rtbIn,
+.RadToolBar_Default .rtbItemClicked .rtbOut,
+.RadToolBar_Default .rtbItemHovered .rtbWrap ,
+.RadToolBar_Default .rtbItemHovered .rtbMid,
+.RadToolBar_Default .rtbItemHovered .rtbIn,
+.RadToolBar_Default .rtbItemHovered .rtbOut{
+	background-image:none!important;
+}
+
+.RadImageEditor .rieContentArea.RadTouchExtender{
+	display: block;
+    max-width: calc(100vw - 30px);
+}
+.ustoreLegacy_ImageEditor #divDelete input{
+	background-image: url(/uStore/Images/AquaBlue/ImageGallery/delete_desktop.png);
+    width: 16px;
+    height: 16px;
+}
+.rieStatusBarInfo{
+	font-size:var(--text-size-regular);
+}
+div.RadDock.RadDock_Default.rieDialogs ~ div.popupFooter{
+	background-color:red;
+}
+.expanderEdit {
+	margin-top:0!important;
+	padding-top:0!important;
+}
+
+form[action^="./DocRepository.aspx"] .popupFooter{
+	display:none;
+}
+
+form[action^="./RecipientListEdit.aspx"] .footerButtons{
+	display:block;
+	flex-direction:none;
+}
+
+form[action^="./PrintProperties.aspx?"] .popupFooter{
+	z-index:1000;
+}
+
+form[action^="./ImageEditor.aspx?"] input[type="submit"]{
+	line-height:8px !important;
+}
+
+div.RadGrid[id$="_tblTaxDetails"] > table > thead > tr > th.rgHeader:nth-child(3) {
+	text-align: right;
+}
+
+form[action^="./uEditRTF_IFrame.aspx"] .uedit-application #uEditContainer .btn.color-button{
+	padding:2px !important;
+}
+
+form[action^="./uEditRTF_IFrame.aspx"] .uedit-application #uEditContainer .btn.color-button>div{
+	margin:2px;
+}
+
+form[action*="DocRepository.aspx"] #upButton {
+	max-width: 100%;            
+}

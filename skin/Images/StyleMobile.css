@@ -1,0 +1,3198 @@
+﻿/*#region document level*/
+
+html,body{
+	font-size:var(--font-size);
+	font-family:var(--font-family);
+}
+body
+{
+	padding-top: 20px;
+}
+#divRecipientListButtons a.XmpieThemeColorButton,
+a,a:hover, a:focus{
+	color:var(--color-highlight);
+}
+.mainAreaFooter {
+
+	display:flow-root;
+}
+.mainAreaFooterFullWidth
+{
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 10px;
+	display:flow-root;
+}
+.FieldOptionItem .optionTitle
+{
+	font-weight: var(--default-font-weight);
+	font-size: var(--text-size-regular);
+	color: var(--text-color-dark);
+	padding-top: 7px;
+	overflow:hidden;
+}
+
+.ProductDescMainText{
+	margin-bottom:15px;
+}
+.HybridFormLabel,
+.FormLabel
+{
+	font-size: var(--text-size-label);
+	font-weight: var(--default-font-weight);
+	color: var(--text-color-ultra-dark);
+}
+.FormLabel *{
+	font-weight: var(--default-font-weight)!important;
+}
+.Duc dd {
+    font-size: var(--text-size-regular);
+}
+.Duc.dependentDUC.xmp__dependentDUC__hide {
+	position: fixed !important;
+	top: 0 !important;
+	opacity: 0 !important;
+	z-index: -999 !important;
+}
+.addressBoxWrapper,
+.tblPriceTags .FormLabel,.tblPriceTags .FormField{
+	font-size: var(--text-size-regular);
+}
+.addressBoxWrapper{
+	padding:0;
+	max-width: calc(100vw - 50px);
+}
+.selectAddressWrapper span.uStoreLegacy-width100percent{
+	width:70%!important;
+}
+.selectAddressWrapper .uStoreLegacy-width100percent + span{
+	align-self:flex-end;
+	margin-bottom:5px;
+}
+.FormField{
+	font-weight: var(--default-font-weight)!important;
+	font-size: var(--text-size-regular);
+}
+.breadCrumbs .FormField{
+	font-size: var(--text-size-label);
+	color:var(--text-color-ultra-dark);
+}
+.breadCrumbs
+{
+    padding-bottom: 10px;
+}
+.ItemsAddressContainer  thead,
+.ItemsGridContainer thead,
+.AddressGridContainer thead,
+div[id$="_dgDrafts"]>.rgMasterTable thead {
+	background-color:var(--color-highlight);
+}
+.ItemsAddressContainer th,
+.ItemsGridContainer th,
+.AddressGridContainer thead a,
+div[id$="_dgDrafts"]>.rgMasterTable th {
+	color: var(--text-color-on-highlight-bg);
+}
+.ItemsAddressContainer,
+.ItemsGridContainer div[id$="_ItemsDataGrid"]{
+	width:calc(100vw - 30px)!important;
+	overflow-x:scroll;
+	margin-top:10px;
+}
+.AddressBlock{
+	margin-top:30px;
+}
+.FieldOptionItem.FOList.selected
+	{
+		color: var(--text-color-ultra-dark);
+		background-color: var(--color-fill);
+		border-top: none;
+		border-bottom: none;
+	}
+.TablesTitle
+{
+	font-size: var(--text-size-label);
+	font-weight: var(--default-font-weight);
+}
+.SmallItalic{
+	font-size: var(--text-size-fineprint);
+}
+.RequiredFieldMarker, .Error
+{
+	color: var(--color-error);
+	font-size: var(--text-size-regular);
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active,
+.btn-default.active, .open .dropdown-toggle.btn-default {
+	color: var(--button-primary-text-color);
+}
+
+
+.XmpieClearButton
+{
+	background-color: transparent;
+	border: none;
+	color: #428bca;
+	padding: 0;
+}
+
+	.XmpieClearButton:hover
+	{
+		background-color: transparent;
+		border: none;
+		color: #428bca;
+		padding: 0;
+	}
+a[id$="_btnBack"],
+input.FormButton,
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default ,
+.btn,
+.XmpieThemeColorButton,
+.XmpieDisabledButton,
+.XmpieCancelButton:nth-last-of-type(1),
+.XmpieRejectButton,
+.XmpieAcceptButton,
+.XmpieApproveButton,
+.XmpieModifyButton
+{
+   min-width:60px;
+     display: inline-block;
+    padding: 0.5rem 0.875rem;
+    margin-bottom: 0;
+	font-size: var(--text-size-label);
+    font-weight: normal;
+    line-height: calc(var(--text-size-label) * 1.25);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: var(--button-border-radius);
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	color:var(--button-primary-text-color);
+	text-decoration: none;
+	background-color:var(--button-primary-background-color);
+}
+input.FormButton{
+	color:var(--button-primary-text-color)!important;
+}
+.cartOrderTableWrapper a.btn.btn-default:focus,.cartOrderTableWrapper   a.btn.btn-default:hover,.cartOrderTableWrapper  a.btn.btn-default:active,
+#cartOrderTableWrapper a.btn.btn-default:focus,#cartOrderTableWrapper a.btn.btn-default:hover,#cartOrderTableWrapper a.btn.btn-default:active{
+	border: none;
+    box-shadow: none;
+    font-size: var(--text-size-fineprint);
+    padding:0 10px 0 0px;
+}
+.XmpieThemeColorButton
+{
+    background-color:var(--button-primary-background-color);
+}
+
+
+.XmpieThemeColorButton.Hover /*    file submission upload fakeBtn    */
+{
+    background-color:var(--button-primary-background-color);
+}
+
+.XmpieThemeColorButton:active
+{
+    background-color:var(--button-primary-background-color);
+}
+	input.FormButton:active,
+	input.FormButton:focus,
+	.XmpieThemeColorButton:hover,
+	.XmpieThemeColorButton.Hover,
+	a[id$="_btnCancelSplit"]:focus,
+	a[id$="_btnAddNewShippingAddress"]:focus,
+	a[id$="_btnCancelSplit"]:hover,
+	a[id$="_btnAddNewShippingAddress"]:hover,
+	a[id*="_btnSplit"]:focus,
+	a[id*="_btnSplit"]:hover,
+	.btn:hover, .btn:focus,
+	a[id*="_btnChangeCart"]:hover,
+	.editProduct a:hover.SiteLink,
+	a[id*="_btnChangeCart"]:focus,
+	.editProduct a:focus.SiteLink,
+	#divRecipientListButtons > a:focus,
+#divRecipientListButtons > a:hover
+ {
+    text-decoration: none;
+}
+
+.XmpieThemeColorButton[disabled],
+.XmpieRejectButton[disabled],
+.XmpieApproveButton[disabled],
+.XmpieModifyButton[disabled],
+.XmpieBackLink[disabled]
+{
+    background-color: #afafaf !important;
+    background-image: url(XmpImageButton-Disabled.svg) !important;
+    background-image: -webkit-linear-gradient(top, #afafaf 50%, #999999 50%) !important;
+    background-image:    -moz-linear-gradient(top, #afafaf 50%, #999999 50%) !important;
+    background-image:     -ms-linear-gradient(top, #afafaf 50%, #999999 50%) !important;
+    background-image:      -o-linear-gradient(top, #afafaf 50%, #999999 50%) !important;
+    background-image:         linear-gradient(top, #afafaf 50%, #999999 50%) !important;
+    border-color: #D6d6d6;
+}
+
+
+.Link, .SiteLink
+{
+	color:var(--color-highlight);
+	text-decoration: none;
+	font-size: var(--text-size-regular);
+}
+#divDescription{
+	color:var(--text-color-medium);
+	font-size: var(--text-size-regular);
+}
+img[src="./Images/Add.gif"],
+img[src="./Images/icon-Edit.gif"]{
+	display:none;
+}
+.FieldOptionItem.FOList {
+	border-bottom:none;
+}
+.WizardContent a.btn[id$="_btnAddAddressFromList"],
+.WizardContent a.btn[id$="_btnAddAddressFromList"]:focus,
+.WizardContent a.btn[id$="_btnAddAddressFromList"]:active,
+a[id$="_btnSearch"],
+a[id$="_btnSearch"]:focus,
+a[id$="_btnSearch"]:active,
+.checkoutFinalBack a[id$="_btnBack"],
+.checkoutFinalBack a[id$="_btnBack"]:focus,
+.checkoutFinalBack a[id$="_btnBack"]:active,
+a[id$="_btnBack1"],
+a[id$="_btnBack1"]:focus,
+a[id$="_btnBack1"]:active,
+.CheckoutAddressHeading a.btn:focus,
+.CheckoutAddressHeading a.btn:active,
+.CheckoutAddressHeading a.btn,
+a.btn[id$="_btnCouponRecalculate"],
+a.btn[id$="_btnCouponRecalculate"]:focus,
+a.btn[id$="_btnCouponRecalculate"]:active,
+.footerButtons a.btn[id$="_btnBack"],
+.footerButtons a.btn[id$="_btnBack"]:focus,
+.footerButtons a.btn[id$="_btnBack"]:active,
+.footerButtons a.btn[id$="_btnCancelAdd"],
+.footerButtons a.btn[id$="_btnCancelAdd"]:focus,
+.footerButtons a.btn[id$="_btnCancelAdd"]:active,
+.footerButtons a.btn[id$="_btnCancel"],
+.footerButtons a.btn[id$="_btnCancel"]:focus,
+.footerButtons a.btn[id$="_btnCancel"]:active,
+.footerButtons #btnCancel,
+.footerButtons #btnCancel:focus,
+.footerButtons #btnCancel:active,
+a.XmpieClearButton.btn.btn-default[id$="_btnRecalculate"],
+a.XmpieClearButton.btn.btn-default[id$="_btnRecalculate"]:focus,
+a.XmpieClearButton.btn.btn-default[id$="_btnRecalculate"]:active,
+.XmpieBackLink,
+.XmpieBackLink:focus,
+.XmpieBackLink:active,
+.XmpieThemeColorButton:not(:nth-last-child(1)),
+.XmpieThemeColorButton:not(:nth-last-child(1)):focus,
+.XmpieThemeColorButton:not(:nth-last-child(1)):active,
+.XmpieBackLink:not(:nth-last-child(1)),
+.XmpieBackLink:not(:nth-last-child(1)):focus,
+.XmpieBackLink:not(:nth-last-child(1)):active,
+.proofLink.btn.btn-default,
+.proofLink.btn.btn-default:focus,
+.proofLink.btn.btn-default:active,
+.buttonsContainer .buttonContainer:first-child .btn,
+.productDetailsContentFooter .productDetailsBack .btn,
+.searchButtonsColumn .btn:first-child,
+.WizardButtonsContainer .back .btn,
+#btnApproveFileCancel,
+#RemoveFileDialog a#btnRemoveFileCancel,
+form[action^="./RecipientListEdit.aspx"] #btnClose,
+#preview div[id$="updatePanelDummy"] > a[id$="btnUpdateThumbnails"].btn,
+#trButtons td td:first-child .btn,
+.PersonalInformation #trButtons a[id$="_btnCancel"].btn,
+form[action^="./SaveDraft.aspx"] .popupFooter > .footerButtons > a.btn[id$="_btnCancel"],
+form[action^="./UserCouponSelect.aspx"] a.btn[id$="_btnUseIt"],
+tr[id$="_trApprovalButtons"] .approvalButton > a.btn,
+form[action^="./uEditCustomization.aspx?"] .modal-footer > #btnColorPickerCancel,
+.composable-preview-btn.btn.btn-default,
+.composable-preview-btn.btn.btn-default:focus,
+.uStoreImagesViewer_MobilePdfMessage {
+    border: 1px solid var(--button-secondary-border-color);
+    background-color: var(--button-secondary-background-color);
+    color: var(--button-secondary-text-color);
+}
+ .footerButtons a.btn[id$="_btnOK"],
+ .footerButtons a.btn[id$="_btnOK"]:focus,
+ .footerButtons a.btn[id$="_btnOK"]:active,
+ .footerButtons a.btn[id$="_btnSelect"],
+ .footerButtons a.btn[id$="_btnSelect"]:focus,
+ .footerButtons a.btn[id$="_btnSelect"]:active,
+a#btnSubmit,
+a#btnSubmit:focus,
+a#btnSubmit:active,
+.footerButtons #btnOk:not(:nth-last-child(1)),
+ .footerButtons #btnOk:not(:nth-last-child(1)):focus,
+ .footerButtons #btnOk:not(:nth-last-child(1)):active,
+#RemoveFileDialog a#btnRemoveFileOK,
+a#btnApproveFileNext,
+.PersonalInformation #trButtons a[id$="_btnUpdate"].btn,
+form[action^="./SaveDraft.aspx"] .popupFooter>.footerButtons>a.btn[id$="_btnOk"],
+#MissingFontsDialog>.divDialogButtons>a#btnMissingFontsOK,
+form[action^="./FileSubmission.aspx"]~.BasicDialogContainer.XmpPopupWindow #divSlidesPerPage>div>#btnSlidesSelect.btn,
+ form[action^="./uEditCustomization.aspx?"] .modal-footer>#btnColorPickerOK{
+	 	border: 1px solid var(--button-primary-border-color);
+		background-color:var(--button-primary-background-color);
+		color:var(--button-primary-text-color);
+ }
+  .footerButtons{
+	 display:flex;
+	 flex-direction:row-reverse;
+	 flex-wrap:wrap;
+ }
+ .footerButtons>*{
+	 margin:5px 0;
+ }
+ .footerButtons a:not(:nth-last-of-type(1)){
+	 display:inline-block;
+	 margin-left:5px;
+ }
+ .footerButtons #btnCancel{
+	 margin-right:10px;
+ }
+ #wndAddCompositeTemplateFrame,
+ #wndCustomerAddressFrame,
+ #wndDiagramViewFrame,
+ #wndTaxDetailsFrame,
+ iframe[id$="_wndDiagramViewFrame"],
+ #wndFileInformationFrame,
+ #wndPrintPropertiesFrame{
+	 height:100%!important;
+ }
+#wndTaxDetails,
+#wndCustomerAddress,
+div[id$="_wndDiagramView"],
+iframe[id$="_wndDiagramViewFrame"]{
+	overflow:hidden!important;
+}
+#wndDiagramView{
+	height:360px!important;
+}
+ .buttonsContainer .buttonContainer:first-child  a:link.btn,
+	.buttonsContainer .buttonContainer:first-child  a:visited.btn,
+ .productDetailsContentFooter .productDetailsBack a:link.btn ,
+ .productDetailsContentFooter .productDetailsBack a:visited.btn ,
+  .searchButtonsColumn a:link.btn:first-child,
+  .searchButtonsColumn a:visited.btn:first-child,
+ .WizardButtonsContainer .back a:link.btn,
+ .WizardButtonsContainer .back a:visited.btn,
+ .productDetailsContentFooter > div > div:first-child a:link.btn,
+ .productDetailsContentFooter > div > div:first-child  a:visited.btn,
+ .mainAreaFooterFullWidth > a:link.btn:not(:first-child) + .mainAreaFooterFullWidth > a:link.btn:first-child,
+ .mainAreaFooterFullWidth > a:visited.btn:not(:first-child) + .mainAreaFooterFullWidth > a:visited.btn:first-child,
+#tblOrderFinalStepContent .proofLink>.FormLabel
+ {
+	 color:var(--button-secondary-text-color);
+ }
+
+ .mainAreaFooterFullWidth .btn
+	{
+		margin-bottom: 20px;
+		margin-top:0;
+	}
+
+.btn-primary {
+color: #ffffff;
+  background-color: var(--color-highlight);
+  border-color:  var(--color-highlight); }
+  .btn-primary:hover {
+color: #ffffff;
+    background-color:  var(--color-highlight);
+    border-color:  var(--color-highlight); }
+  .btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(44, 80, 255, 0.5); }
+  .btn-primary.disabled, .btn-primary:disabled {
+color: #ffffff;
+    background-color: var(--color-highlight);
+    border-color: var(--color-highlight); }
+.containerPageSubTitle, .subtitleProductName
+{
+	font-size: var(--text-size-h4);
+	margin-bottom: 10px;
+	color: var(--text-color-ultra-dark);
+}
+.productName{
+	font-size: var(--text-size-label);
+	color: var(--text-color-ultra-dark);
+	overflow-wrap: break-word;
+	display: block;
+	max-width:40vw;
+}
+.buttonContainer:empty{
+	display:none!important;
+}
+
+.title
+{
+	font-size: var(--text-size-h4);
+	font-weight: var(--default-font-weight);
+	color: var(--text-color-heading);
+}
+.subtitleProductName {
+	color: var(--text-color-ultra-dark);
+}
+.subtitle {
+	color: var(--text-color-heading);
+}
+/*#endregion*/
+
+
+/*#region jqueryUI override*/
+
+.ui-dialog-titlebar
+{
+	background: var(--color-highlight);
+}
+
+/*#endregion*/
+
+
+
+/*#region telerik override*/
+.RadGrid_MetroTouch .rgHeader
+{
+color: var(--text-color-on-highlight-bg);
+	background-color: var(--color-highlight);
+}
+
+	.RadGrid_MetroTouch .rgHeader a
+	{
+		color: #428bca;
+		background-color: var(--color-highlight);
+	}
+
+.RadGrid_MetroTouch th.rgSorted, .RadGrid_MetroTouch th.rgSorted a
+{
+	color: #428bca;
+	background-color: var(--color-highlight);
+}
+
+/*#endregion*/
+
+/*#region header*/
+
+#imgLogo
+{
+	max-height: 250px;
+	max-width: 450px;
+	top: 10px;
+	left: 20px;
+	z-index: 2;
+    margin-bottom:10px;
+}
+
+/*#endregion*/
+
+
+/*#region footer buttons*/
+.WizardButtonsContainer .cancel
+{
+	display: none;
+}
+
+.WizardButtonsContainer .back, .WizardButtonsContainer .next
+{
+	display: inline;
+}
+
+.XmpImageButton.HideDisabled[disabled],
+.XmpieHiddenButton
+{
+	display: none;
+}
+
+.WizardButtonsContainer .next, .WizardButtonsContainer .finish
+{
+	float: right;
+	margin-right: 12px;
+}
+
+.WizardButtonsContainer .back
+{
+	float: left;
+}
+/*#endregion*/
+
+/*#region productlist.aspx*/
+.groupBody3
+{
+	background-color: #ffffff;
+}
+
+.groupBody2
+{
+	background-color: #ffffff;
+}
+
+.groupBody1
+{
+	background-color: #ffffff;
+}
+
+.groupBody0
+{
+	background-color: #ffffff;
+}
+.panel-default>.panel-heading {
+    color: var(--text-color-dark);
+    background-color: var(--background-light-color);
+    border-color: var(var(var(--color-line)));
+}
+/*#endregion*/
+/*#region DialCustomization UC*/
+.navCustomization
+{
+	margin-top: 20px;
+}
+
+.productSlideShow
+{
+	width: 300px;
+}
+
+.customizationPreview
+{
+	border: 1px solid var(--color-line);
+	box-shadow: 1px 1px 5px var(--color-line);
+	-moz-box-shadow: 1px 1px 5px var(--color-line);
+	-webkit-box-shadow: 1px 1px 5px var(--color-line);
+}
+
+/*#endregion*/
+
+/*#region shoppingCartGrid.ascx*/
+
+.priceHolder,
+.priceHolder .BoldPriceLabel
+{
+	font-size: var(--text-size-label);
+	font-weight: var(--default-font-weight);
+	color: var(--color-highlight);
+    margin-top: 15px;
+}
+
+.ShoppingCartGrid_Column_Buttons .btn.btn-default,
+.ShoppingCartGrid_Column_Buttons .btn.btn-default:active,
+.ShoppingCartGrid_Column_Buttons .btn.btn-default:focus{
+	color: var(--button-secondary-text-color) !important;
+    background-color: var(--button-secondary-background-color);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: var(--text-size-regular) !important;
+    padding: 0 !important;
+    padding-right: 0px !important;
+	line-height: calc(var(--text-size-fineprint) * 1.25) !important;
+}
+
+.ModifiedFromOrderItem, .ModifiedFromOrderItem p {
+    background-color: #A4CAD2 !important;
+}
+/*#endregion*/
+
+
+/*#region checkout.aspx*/
+
+
+#CurrentCartSummary ul
+{
+	padding: 5px 0px 0px 0px;
+}
+
+
+
+#CurrentCartSummary .totalBackground
+{
+	background-color: #E5EFE1;
+	border-color: var(--color-line);
+	border-width: 1px 0px 1px 0px;
+	border-style: solid;
+}
+
+
+/*#endregion*/
+
+/*#region OrderPriceUI.ascx */
+.OrderPriceContainer
+{
+	float: right;
+	padding: 10px;
+}
+
+
+/*#endregion */
+
+
+
+
+/*#region OrderList.aspx*/
+
+
+
+.SimpleSearchBtn
+{
+	background-image: url(search_glass.png);
+	background-repeat: no-repeat;
+	padding-right: 17px;
+	display: inline;
+	border: 0px;
+	cursor: pointer;
+}
+
+
+
+/*#endregion*/
+
+/*#region checkoutFinal.aspx*/
+.boxHeading
+{
+	display: block;
+	font-family: var(--font-family);
+	font-size:var(--text-size-h4);
+	color:var(--text-color-dark);
+	font-weight: var(--default-font-weight);
+}
+
+.boundedBox
+{
+	/*border: solid 1px #D9D9D9;*/
+	margin:10px 0 0 0;
+}
+
+.boxSubHeading
+{
+	display: block;
+	font-size: var(--text-size-label);
+	color:var(--text-color-dark);
+	font-weight: var(--default-font-weight);
+	padding-bottom: 5px;
+	padding-top: 10px;
+	clear: both;
+}
+
+.CheckoutAddressHeading
+{
+	text-align: left;
+}
+
+.ShippingAddressItems
+{
+	margin-left: 0px;
+	margin-bottom: 10px;
+	width:100%;
+}
+.TablesTitle
+{
+	font-weight: var(--default-font-weight);
+	font-size: var(--text-size-label);
+}
+.Normal,
+.NormalBold
+{
+	font-weight: var(--default-font-weight);
+	font-size: var(--text-size-label);
+	line-height:initial;
+}
+
+.checkoutFinalNext
+{
+	float: right;
+}
+/*#endregion*/
+
+
+
+/*#region DeliveryAddress.aspx and controls*/
+
+.addressItemTable
+{
+	margin: 3px 12px;
+	text-align: left;
+	border: solid 1px var(--color-line);
+}
+
+.addressItemHead
+{
+	height: 25px;
+	font-size: var(--text-size-regular);
+	font-weight: var(--default-font-weight);
+	border-bottom: solid 1px var(--color-line);
+}
+
+
+/*#endregion*/
+
+/*#region orderdetails.aspx*/
+.RejectBack
+{
+	font-size: var(--text-size-fineprint);
+	background-color: #E7F2E2 !important;
+}
+
+
+
+/*#endregion*/
+
+
+/*#region wizard navigation */
+
+.WizardProgressBarContainer
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	font-size: var(--text-size-label);
+	font-weight: var(--default-font-weight);
+	border-spacing: 0px;
+	border-collapse: separate;
+	overflow: hidden;
+}
+
+	.WizardProgressBarContainer TD
+	{
+	}
+
+.WizardProgressStep
+{
+	width: 20%;
+	position: relative;
+	padding: 0;
+}
+
+	.WizardProgressStep table
+	{
+		width: 100%;
+	}
+
+.WizardProgressStepInnerTable
+{
+	width: 100%;
+	border-spacing: 0px;
+}
+
+.WizStepTR, .WizStepTRSel
+{
+	position: relative;
+	width: 100%;
+	height: 37px;
+	line-height: 37px;
+	color: #ffffff;
+	text-align: center;
+	float: left;
+	padding: 0px;
+}
+
+	.WizStepTR[stepStatus='waiting'], .WizStepTRSel[stepStatus='waiting']
+	{
+		background-image: url('WizardNavigation/waiting_background.png');
+color: var(--text-color-dark);
+	}
+
+	.WizStepTR[stepStatus='done'], .WizStepTRSel[stepStatus='done']
+	{
+		background-image: url('WizardNavigation/done_background.png');
+		color: #ffffff;
+	}
+
+	.WizStepTR[stepStatus='active'], .WizStepTRSel[stepStatus='active']
+	{
+		background-image: url('WizardNavigation/active_background.png');
+		COLOR: var(--color-highlight);
+		font-weight: var(--default-font-weight);
+	}
+
+	.WizStepTR[stepStatus='waiting'] .WizStep, .WizStepTRSel[stepStatus='waiting'] .WizStepSel
+	{
+color: var(--text-color-dark);
+	}
+
+	.WizStepTR[stepStatus='done'] .WizStep, .WizStepTRSel[stepStatus='done'] .WizStepSel
+	{
+		color: var(--text-color-dark);
+	}
+
+	.WizStepTR[stepStatus='active'] .WizStep, .WizStepTRSel[stepStatus='active'] .WizStepSel
+	{
+		COLOR:  var(--color-highlight);
+		font-weight: var(--default-font-weight);
+	}
+
+
+	/*left element*/
+	.WizStepTR .leftElement, .WizStepTRSel .leftElement
+	{
+		position: absolute;
+		top: 0;
+		left: 0px;
+		height: 37px;
+		width: 10px;
+	}
+
+	.WizStepTR[stepStatus='waiting'] .leftElement
+	{
+		background-image: url('WizardNavigation/waiting_middle_left.png');
+	}
+
+	.WizStepTR[stepStatus='done'] .leftElement
+	{
+		background-image: url('WizardNavigation/done_middle_left.png');
+	}
+
+	.WizStepTRSel[stepStatus='active'] .leftElement
+	{
+		background-image: url('WizardNavigation/active_middle_left.png');
+	}
+	/*right element*/
+	.WizStepTR .rightElement, .WizStepTRSel .rightElement
+	{
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 37px;
+		width: 10px;
+	}
+
+	.WizStepTR[stepStatus='waiting'] .rightElement
+	{
+		background-image: url('WizardNavigation/waiting_middle_right.png');
+	}
+
+	.WizStepTR[stepStatus='done'] .rightElement
+	{
+		background-image: url('WizardNavigation/done_middle_right.png');
+	}
+
+	.WizStepTRSel[stepStatus='active'] .rightElement
+	{
+		background-image: url('WizardNavigation/active_middle_right.png');
+	}
+
+/*first left element*/
+.WizStepFirstStep[stepStatus='waiting'].leftElement
+{
+	background-image: url('WizardNavigation/waiting_first_left.png');
+}
+
+.WizStepFirstStep[stepStatus='done'] .leftElement
+{
+	background-image: url('WizardNavigation/done_first_left.png');
+}
+
+.WizStepFirstStep[stepStatus='active'] .leftElement
+{
+	background-image: url('WizardNavigation/active_first_left.png');
+}
+/*last right element*/
+.WizStepLastStep[stepStatus='waiting'] .rightElement
+{
+	background-image: url('WizardNavigation/waiting_last_right.png');
+}
+
+.WizStepLastStep[stepStatus='done'] .rightElement
+{
+	background-image: url('WizardNavigation/done_last_right.png');
+}
+
+.WizStepLastStep[stepStatus='active'] .rightElement
+{
+	background-image: url('WizardNavigation/active_last_right.png');
+}
+
+.WizStep
+{
+}
+
+.WizardStepImageURL
+{
+	display: none;
+}
+
+/*#endregion*/
+
+
+
+
+/*#region Product Preview*/
+
+.PagerNumber
+{
+	padding:2px;
+	text-decoration:none;
+	vertical-align:super;
+}
+.PagerMarkedNumber
+{
+	font-weight:bold;
+	color: #044165;
+}
+
+
+.TopPanel
+{
+	width:100%;
+	background-image:none;
+	background:none;
+	margin-bottom:10px;
+	height:37px;
+	font-size: var(--text-size-regular);
+	color:var(--text-color-ultra-dark);
+	padding:0px 10px 20px 10px;
+	border-bottom:solid 1px var(--color-line);
+}
+.st-head-row.st-head-row-main
+	{
+		background-color: var(--color-highlight);
+		color: var(--text-color-on-highlight-bg);
+	}
+.ShoppingCartControl .inventoryStatus {
+	font-size: var(--text-size-fineprint);
+	font-weight: var(--default-font-weight);
+}
+
+/*All elements with color-highlight*/
+
+.ProductDescMainSlide span[id$="_lblPage"]{
+	color:var(--text-color-ultra-dark);
+}
+.FieldOptionItem.FOGrid.selected .optionTitle
+{
+	color:var(--color-highlight);
+	font-weight:var(--default-font-weight);
+}
+.FieldOptionItem.selected.FOGrid .optionIcon
+{
+	border: 1px solid var(--color-highlight);
+}
+.st-key , .st-val{
+	font-size:var(--text-size-regular);
+}
+.st-head-row {
+	font-weight:var(--default-font-weight);
+	background-color:var(--color-fill);
+}
+.form-control,
+input, select, textarea
+{
+	border: 1px solid var(--color-line);
+	border-radius:var(--form-input-border-radius);
+	font-size:var(--text-size-regular);
+}
+input:focus,
+select:focus,
+textarea:focus,
+option:focus,
+.form-control:focus {
+	border-color:var(--color-line);
+	outline-color:var(--color-line);
+}
+
+input[type="radio"],input[type="checkbox"]{
+	margin-right:4px;
+}
+input,input.form-control{
+	color:var(--text-color-dark)!important;
+}
+
+textarea:focus,
+.form-control:focus {
+	border-color:var(--color-line);
+	outline-color:var(--color-line);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(214, 214, 214, 0.6);
+}
+
+.NewItemMenuTitle {
+	background-color:var(--color-fill);
+}
+.NewItemMenu .VerticalMenuDiv ul li {
+    height: initial;
+}
+.panel-body hr:nth-last-of-type(1){
+	display:none;
+}
+.explanation {
+	font-size:var(--text-size-regular);
+}
+.explanation b{
+	font-size:var(--text-size-label);
+	font-weight:var(--default-font-weight);
+}
+.form-group .NormalBold.formLabel{
+	font-weight:var(--default-font-weight);
+}
+.form-group span{
+	font-size:var(--text-size-label);
+	font-weight:var(--default-font-weight);
+}
+#divRecipientListButtons a.XmpieThemeColorButton{
+	background-color: #ffffff;
+    padding: 0 10px 0 0;
+    border: none;
+    box-shadow: none;
+}
+.RadGrid.RadGrid_Default{
+	font-weight:var(--default-font-weight)!important;
+	font-size:var(--text-size-regular)!important;
+	font-family:var(--font-family)!important;
+	color: var(color:var(--text-color-dark););
+}
+.RadGrid.RadGrid_Default th{
+	font-size:var(--text-size-label)!important;
+}
+#cartOrderTableWrapper > div > table > tbody > tr > td{
+	border-top:solid 1px var(--color-line);
+}
+#cartOrderTableWrapper tr.rgRow + tr.rgRow > td,
+#cartOrderTableWrapper tr.rgAltRow + tr.rgAltRow > td
+{
+	border-top:none;
+}
+
+#cartOrderTableWrapper td.ShoppingCartGrid_Column_Units{
+  vertical-align:top;
+}
+
+#cartOrderTableWrapper > div > table > tbody > tr:nth-last-of-type(1) > td{
+	border-bottom:none;
+}
+#cartOrderTableWrapper> div > table > thead{
+	background-color:var(--color-highlight);
+	color: var(--text-color-on-highlight-bg);
+}
+#cartOrderTableWrapper .thumbnailWrapper input[type="image"]{
+	margin-left:0;
+}
+#cartOrderTableWrapper .thumbnailWrapper {
+	margin-top:10px;
+}
+
+#cartOrderTableWrapper .PlacedDirectlyItem{
+    background: #d9d9d9;
+}
+
+#cartOrderTableWrapper input[id$="_cbIsIncluded"],
+#cartOrderTableWrapper input[id$="_cbSelectGroup"],
+input[id$="_cbSelectAll"]{
+    height: 20px;
+    width: 20px;
+}
+
+.shoppingCart_selectAll_wrapper {
+    text-align: left;
+}
+
+label[for$="_cbSelectAll"]{
+    position: relative;
+    bottom: 4px;
+}
+
+#cartOrderTableWrapper .rgGroupHeader{
+    line-height: 20px;
+}
+
+#cartOrderTableWrapper label[for$="_cbSelectGroup"]{
+    position: relative;
+    bottom: 3px;
+}
+
+#cartOrderTableWrapper label[id$="_lblProductName"]{
+    vertical-align: top;
+    position: relative;
+    top: 3px;
+}
+
+#cartOrderTableWrapper .tdUnits{
+    padding-top: 3px;
+}
+
+#cartOrderTableWrapper input[id$="_cbSelectGroup"]{
+    position: relative;
+    top: 2px;
+}
+
+dt{font-weight:var(--default-font-weight)!important;}
+.ShoppingCartGrid_Column_Buttons.nopadding div.btn-group.btn-group-xs.mobile{
+	margin-top:20px;
+}
+.CheckOutPage.cartSummary
+{
+	color: var(--text-color-dark);
+	font-size:var(--text-size-regular);
+	width:100%;
+}
+.panel-title,
+.media-heading a{
+	font-size:var(--text-size-label);
+	font-weight:var(--default-font-weight);
+	color:var(--text-color-ultra-dark);
+}
+.clickCampaignTextWrapper,
+.footnotes,
+.productdesc,
+.gridPricingInfo{
+	font-size:var(--text-size-regular);
+}
+.clickCampaignTextWrapper,
+.panel-title,
+.gridPricingInfo{
+	color:var(--text-color-dark);
+}
+.clickCampaignTextWrapper{
+    margin-bottom: 10px;
+	display: block;
+}
+.thumbnail{
+	background-color:var(--image-box-background-color)!important;
+	border-color:var(--image-box-border-color)!important;
+	border-width:var(--image-box-border-width)!important;
+	padding:20px !important;
+	    border-radius: 0px!important;
+}
+a.AccountLinks{
+	font-size:var(--text-size-label);
+	font-weight:var(--default-font-weight);
+}
+tr[class*="Manage"]{
+	font-size:var(--text-size-regular);
+}
+div.rlEditorContainer table > tbody > tr{
+	font-size:var(--text-size-regular);
+}
+.btn-group>.btn, .btn-group-vertical>.btn {
+    background-color: #ffffff;
+    color: var(--button-secondary-text-color);
+}
+span[id$="_lblOrderDetails"]{
+	font-weight:var(--default-font-weight)!important;
+}
+table[id*="_dgShippingItems"] thead{
+	background-color: var(--color-highlight);
+    color: var(--text-color-on-highlight-bg);
+}
+div.RadGrid.RadGrid_Default{
+	border:solid 1px var(--color-line)!important;
+}
+.ui-dialog{
+	max-width:100vw;
+}
+#OrderFinalStep_PriceReview_TotalPrice *{
+	color: var(--color-highlight);
+	font-size:var(--text-size-label);
+}
+a.FormLabel[id$="_lbtnProof"]{
+	color:var(--button-secondary-text-color);
+}
+td[id$="_tdProof"]{
+	padding:0;
+}
+.ProductDescMainSlide > div{
+	height: fit-content!important;
+    width: 100%!important;
+}
+.ProductDescMainSlide table[id$="_tblNavigationPanel"]{
+	width:100%!important;
+	margin-top:10px;
+}
+#SlideShow{
+	position: relative;
+    width: 100%!important;
+}
+#SlideShow .gallerylayer{
+	width:100%!important;
+}
+#SlideShow .gallerylayer{
+	text-align: center;
+	max-height:400px;
+}
+#SlideShow .gallerylayer img{
+	object-fit: contain;
+    width: 100%!important;
+	max-height:400px;
+}
+
+SELECT, select:hover, select:checked, select:active, select:focus
+{
+background: white !important;
+border: 1px solid var(--color-line) !important;
+color: var(--text-color-dark) !important;
+height: calc(var(--text-size-regular) * 2 + 6px);
+padding: 6px 0;
+}
+
+select > option
+{ color: var(--text-color-dark) !important; }
+
+select:focus > option:checked
+{
+	color: var(--color-highlight) !important;
+	background: white !important;
+	text-shadow: 1px 0px 0px !important;
+	-moz-appearance: none !important;
+}
+#dvmValidationSummary{
+	color:var(--color-error)!important;
+	font-size:var(--text-size-regular);
+
+}
+.alert-danger.alert{
+	background-color: var(--color-error);
+	color: #ffffff!important;
+	border-color:var(--color-line);
+	font-size:var(--text-size-regular);
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 0;
+}
+.ui-dialog-titlebar-close.ui-corner-all:before{
+	content: "\2715";
+	color:#ffffff;
+}
+.ui-dialog .ui-dialog-titlebar-close span
+{
+	display:none!important;
+}
+.OrderPriceTable{
+	font-size:var(--text-size-regular);
+	color:var(--text-color-dark);
+}
+.OrderPriceTable tr:nth-last-of-type(1){
+	font-size:var(--text-size-label);
+	color:var(--color-highlight);
+}
+.OrderPriceTable a {
+	color: var(--color-highlight);
+	text-decoration: underline;
+}
+.popupFooter
+{
+	border-top: 1px var(--color-line) solid;
+	padding: 5px;
+	background: var(--color-fill);
+}
+.OrderPriceTable td{ padding: 2px 0px 2px 2px;}
+.InfoButton{
+	display:none!important;
+}
+#tblRegistration .InfoButton {
+    display: initial !important;
+}
+
+.productDetailsLink{
+	display:none!important;
+}
+.panel-body {
+	padding:0;
+}
+#parentGroupsAccordion .panel.panel-default{
+	display:none;
+}
+.collapse {
+    display: block!important;
+}
+#tblCheckOutComplete,
+.productPriceInGrid{
+	font-size:var(--text-size-label);
+}
+#tblCheckOutComplete{
+	width:100%;
+}
+#tblCheckOutComplete td{
+	line-height:calc(var(--text-size-label) * 2);
+	padding:0;
+}
+.ustore_CheckOutComplete .btn{
+	margin-bottom:20px;
+}
+.productPrice {
+	color:var(--color-highlight);
+}
+.popupContent a:not(.btn),
+.media-body a {
+	 font-variant: normal;
+    font-weight: normal;
+	font-size: var(--text-size-regular);
+	text-decoration:none;
+}
+.media-body a {
+
+	color:var(--text-color-dark);
+
+}
+
+#preview div[id$="updatePanelDummy"]{
+	 text-align:center;
+ }
+
+#preview div[id$="updatePanelDummy"]>a[id$="btnUpdateThumbnails"].btn{
+	margin-top:25px;
+ }
+
+ a[href="#preview"]>span[id$="lblPreviewTab"],
+ a[href="#customization"]>span[id$="lblcustomizationTab"]{
+	 color:var(--text-color-dark);
+ }
+  div[id$="rlmWrapper_6_RLM_6_dgRecipientList"]>table.stacktable>tbody>tr:nth-child(2){
+	border:0;
+  }
+
+ div[id$="rlmWrapper_6_RLM_6_dgRecipientList"]>table.stacktable>tbody>tr:nth-child(2)>th{
+	 color:var(--text-color-dark);
+	 background-color:white;
+	 padding-bottom:10px;
+	 border:0;
+ }
+
+ .RLEditorContainer.table-responsive.uStoreLegacy-overflowXScroll::-webkit-scrollbar-thumb{
+	 background-color:var(--color-line);
+ }
+
+ .rlEditorContainer table.stacktable span[id$="lblRadioButton"]>input.mobileHidden[type="radio"]{
+	 display: inline-block;
+	 visibility:visible;
+ }
+
+ span[id$="Stepsnav1_MyList"] a.btn{
+	border-radius:0;
+	color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+	border-radius: 4px;
+	margin-bottom:5px;
+ }
+
+ span[id$="Stepsnav1_MyList"] a.btn:hover,
+ span[id$="Stepsnav1_MyList"] a.btn:focus{
+	box-shadow:none;
+ }
+
+ span[id$="Stepsnav1_MyList"] a.btn.btnSelected{
+	color: var(--color-highlight);
+ }
+
+/*Popup mobile over ride*/
+.VerticalMenuDiv ul li:hover, .VerticalMenuDiv_ul_li_active {
+	background:var(--color-fill);
+	color:var(--color-highlight);
+}
+
+table#productDetailsContainer > tbody > tr:nth-of-type(3){
+	display: inline-flex;
+    flex-direction: column;
+}
+.diagramImageWrapper .diagramImage{
+	    max-width: calc(100vw - 30px);
+    max-height: calc(70vw - 30px);
+	    margin-right: 0;
+		width:calc(100vw - 50px)!important;
+}
+#tblOrderFinalStepContent{
+	white-space:normal;
+}
+#tblOrderFinalStepContent > tbody > tr:nth-of-type(3){
+	display: flex;
+    flex-direction: column;
+}
+.titleText{
+	color:var(--text-color-ultra-dark);
+}
+/*
+table[id*="_dgSchemaFields"] > tbody > tr{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+table[id*="_dgSchemaFields"] > tbody > tr > td:nth-of-type(1){
+	flex-basis:30px;
+}
+table[id*="_dgSchemaFields"] > tbody > tr > td:nth-of-type(2){
+	flex-basis:100%;
+}
+table[id*="_dgSchemaFields"] > tbody > tr > td:nth-of-type(3){
+	flex-basis:100%;
+}
+table[id*="_dgSchemaFields"] > tbody > tr > td:nth-of-type(4){
+	flex-basis:100%;
+}
+*/
+tr[id*="dgSchemaFields"] > td{
+	vertical-align:top;
+}
+tr[id*="dgSchemaFields"] table tbody{
+	display:grid;
+}
+tr[id*="dgSchemaFields"] table tbody tr{
+	    display: inline-flex;
+    flex-direction: column;
+}
+*[id$="_LblErrorMessage"]{
+	color:var(--color-error);
+	margin-bottom: 20px;
+}
+.productDetailsIndent{
+	display:none;
+}
+.productDetailsIndent ~ td{
+	width:100%;
+}
+div[id$="DGProductPricing"]{
+	width:100%!important;
+}
+.SaveForLater{
+	margin-top:40px;
+}
+a[id$="_btnCancelSplit"],
+a[id$="_btnCancelSplit"]:active,
+a[id$="_btnCancelSplit"]:focus{
+	display:block;
+	width:fit-content;
+}
+.WizardStepHeadingCurrent{
+	color:var(--color-highlight);
+}
+span[id*="_lblWizardStep"]{
+	display:block;
+}
+.WizardSubHeading{
+	color:var(--text-color-dark);
+	font-weight:var(--default-font-weight)!important;
+	font-size:var(--text-size-label);
+}
+#divPropertyDucs .FormLabel{
+		margin-left:22px;
+	}
+#PrintProprtiesDialog .propertyWrapper {
+	background-image: none!important;
+	padding-left: 0;
+}
+
+
+.ui-dialog .divDialogButtons{
+	display:flex;
+	flex-direction:row-reverse;
+	width:100%;
+	background-color:var(--color-fill);
+}
+.ui-dialog .divDialogButtons a{
+	margin-left:5px;
+}
+.ui-dialog .ui-dialog-content {
+	background-color:#ffffff!important;
+}
+.DeliveryPriceRow td{
+	vertical-align:top;
+	white-space:normal;
+}
+#lblGeneratingPreview,
+#lblPreviewReady{
+	font-size: var(--text-size-h4);
+}
+#ApproveConfirm b{
+	font-weight:var(--default-font-weight);
+}
+#touchpoint-preview-wrapper #sendEmailProofContent {
+	display: flex;
+	flex-direction: column;
+}
+#sendEmailProofWrapper .horizontalRow{
+	border: solid 1px var(--color-line);
+    margin-top: 20px;
+}
+#divPreview  #proofContentIFrame{
+	border:none;
+	width:100%;
+}
+#sendEmailProofContent{
+	color:var(--text-color-ultra-dark);
+}
+.touchpoint-progress-bar{
+	position:relative;
+	padding:10px;
+	left:-10px;
+	right:-10px;
+	width:calc(100% + 20px);
+	top:-10px;
+	font-size:var(--text-size-regular);
+}
+#touchpoint-preview-wrapper .touchpoint-progress-bar.success {
+	background-color:var(--color-success);
+	color:#ffffff;
+}
+#touchpoint-preview-wrapper .touchpoint-progress-bar.loading {
+	background-color:var(--color-fill);
+}
+
+#touchpoint-preview-wrapper .touchpoint-progress-bar.error {
+	background-color::var(--color-error);
+}
+#touchpoint-preview-wrapper .touchpoint-progress-bar.hide {
+	background-color: var(--color-fill);
+	height: 0;
+}
+.ClearingConfigCell span[id$="_InfoMessage"]{
+	color:var(--color-error)!important;
+}
+td.ClearingConfigCell,
+tr[id$="_trPaymentMethods"] label{
+	font-size:var(--text-size-label);
+	color:var(--text-color-dark);
+}
+.stacktable td,.stacktable th,.stacktable td,.st-head-row.st-head-row-main {
+	padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.stacktable tr:nth-last-child(1)
+{
+	border-bottom: none;
+}
+.TaxDetailsMainContent > div{
+	width:100%!important;
+}
+.CheckoutCompleteOrderNumber {
+	color:var(--color-highlight);
+}
+td.Normal:empty{
+	padding:0;
+}
+.WizardContent{
+	margin-bottom:0px;
+	white-space:normal;
+}
+.WizardContainer{
+	font-size:var(--text-size-regular);
+}
+.WizardContainer div[id$="_updItemsSelection"] > table > tbody > tr > td,
+.WizardContainer > table > tbody > tr > td{
+	text-align:left;
+}
+.uStoreLegacy-paddingLeft7{
+	padding-left:0;
+}
+.WizardSubLabel{
+	font-size:var(--text-size-h4);
+}
+.ItemsAssignAllDiv{
+	margin:20px 0 20px 0;
+}
+a.btn[id$="_btnAddNewShippingAddress"],
+a.btn[id$="_btnAddAddressFromList"]{
+	margin-bottom:20px;
+}
+a.btn[id$="_btnCancelSplit"]{
+	margin:10px 0 10px 0;
+}
+.AddressGridContainer{
+	width:calc(100vw - 30px);
+	overflow-x:scroll;
+
+
+}
+
+.ShippingAddressHeading{
+	margin:10px 10px 0px 10px;
+}
+.ShippingAddressBox
+{
+	background: var(--color-fill);
+    margin-bottom: 30px;
+	overflow-x: scroll;
+    display: grid;
+    max-width: calc(100vw - 50px);
+    position: relative;
+    left: 0px;
+}
+.ShippingAddressBoxCell > div:nth-last-child(2){
+	margin-bottom: 0px;
+}
+span.boxSubHeading + br{
+	display:none;
+}
+.ShippingAddressGridCell{
+	width:66%;
+}
+.ShippingAddressServicesCell{
+	width:34%;
+}
+.ShippingAddressItems > tbody > tr > td{
+	text-align:left;
+	vertical-align:top;
+	padding-right:10px;
+}
+.ShippingAddressItems > tbody > tr > td:nth-child(1){
+	width:66%;
+}
+.ShippingAddressItems > tbody > tr > td:nth-child(2){
+	width:34%;
+}
+
+.ShippingAddressBoxCell{
+	padding-top: 20px;
+}
+.ShippingAddressGridCell table{
+	background-color:#ffffff;
+}
+.ShippingAddressItemsContainer{
+	min-width:720px;
+}
+.ShippingAddressItemsContainer > tbody > tr > td{
+	padding:0px 10px;
+}
+a.AddressEditButton[id$="_LnkEdit"]{
+	margin-left: 10px;
+}
+.CheckoutAddressHeading table[id$="_tblSplitButtons"] > tbody > tr{
+	display:flex;
+	flex-direction: column;
+
+}
+.RadGrid_Default .rgAltRow {
+  background: var(--color-fill);
+}
+#cartOrderTableWrapper .RadGrid_Default .rgAltRow {
+  background: initial;
+}
+
+.ShippingAddressServicesCell{
+	margin-top:10px;
+}
+a.btn[id$="_btnContinueShopping"],
+.ActivationDiv,
+.RegisterPendingDiv,
+.AccountNotActivatedDiv{
+	margin-top:20px;
+}
+
+.container .RegisterPendingDiv:nth-child(3) .FormLabel{
+	font-size:var(--text-size-h4);
+	color:var(--text-color-ultra-dark);
+}
+.ActivationDiv .FormField,
+.RegisterPendingDiv .FormField{
+	font-size:var(--text-size-label);
+}
+
+tr[id$="MainContent_trShipping"] > td,
+tr[id$="MainContent_trBillingAddress"]  > td{
+	border: solid 1px var(--color-line);
+    padding: 10px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    display: block;
+
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+.table-responsive::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+    background-color: var(--table-scrollbar-color);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+.table-responsive::-webkit-scrollbar-track,
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+a[id*="_btnSplit"]{
+	margin:10px 0 10px 0;
+}
+a[id*="_lnkAddAddress"]{
+	padding-left:20px;
+}
+.addressBoxWrapper .selectAddressWrapper
+{
+	display: flex;
+	align-items: center;
+}
+@media (min-width: 768px){
+.mainAreaFooterFullWidth {
+    width: 750px;
+}
+}
+
+.rlEditorContainer td.st-val>a[id$="_LnkDelete"],
+.rlEditorContainer td.st-val>a[id$="_LnkDownload"] {
+	margin-left:20px;
+}
+
+form[action^="./SaveDraft.aspx"] .popupFooter>.footerButtons>a.btn{
+	margin-right:10px;
+}
+
+form[action^="./Adresses"] .addressItemHead>.buttons.floatClearing>a[id$="_lnkEdit"]{
+	margin-left: 15px;
+    margin-right: -15px;
+}
+.carousel ul li p{
+	font-weight:var(--default-font-weight)!important;
+	font-size:var(--text-size-regular);
+}
+.emailReminder input.FormField[id$="_txtEmailAddress"]{
+	width:100%!important;
+}
+.emailReminder{
+	display:flex;
+	flex-direction:row;
+	flex-flow:wrap;
+}
+.emailReminder td:nth-child(1){
+	flex-basis:150px;
+}
+.emailReminder td:nth-child(2){
+	flex-basis:100%;
+	max-width:400px;
+}
+.uStoreLegacy-fontWeightBold{
+	font-weight:var(--default-font-weight);
+}
+#tblRegistration{
+	font-size:var(--text-size-label);
+}
+.ustore_Login .container > div{
+	text-align:center;
+}
+.ustore_Login .container > div > *{
+	text-align:initial;
+}
+#tblSignIn, #tblSocialSignIn, #tblRegistration, #tblRegistrationForm
+{
+	float:none;
+}
+.ustore_Login .uStoreLegacy-floatRight{
+	width:100%;
+}
+.ustore_Login .btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+#tblSignIn *,#tblRegistration table,#tblRegistration .btn,#tblRegistration input[type="text"]
+{
+	 width: 100%!important;
+}
+#tblRegistration table tr{
+	display:flex;
+	flex-direction:row;
+	flex-flow:wrap;
+}
+#tblRegistration table td{
+	flex-basis: 100%;
+	padding:0;
+}
+#tblRegistration table td:nth-child(1){
+	padding-top:10px;
+}
+.ustore_Login .formbox {
+	border:none;
+}
+.ustore_Login .uStoreLegacy-padding5_37_5_0 {
+    padding: 5px 30px 15px 0;
+}
+.ustore_Login .containerPageSubTitle{
+	display:none;
+}
+
+form[action^="./UnknownOrder.aspx"] span[id$="_lblUnknownOrder"]{
+	color:var(--color-error);
+}
+
+form[action^="./UserCouponSelect.aspx"] div[id$="_grdUserCoupons"] table tr th{
+	background-color:var(--background-light-color);
+}
+
+form[action^="./UserCouponSelect.aspx"] div[id$="_grdUserCoupons"] table tr td{
+	padding-top:25px;
+	padding-bottom:25px;
+}
+
+.uEdit-area #rightControlPanel #ueditFlatDesignEditorToolBox>ul>li>button.btn,
+.uEdit-area #rightControlPanel #pnlToolbox>ul>li>button.btn{
+	background-color: #ffffff;
+    border-color: var(--color-line);
+}
+
+#preview>div[id$="_updatePanelSlideShow"]>div[id$="_pnlProdSlideShow"]>div[id$="_divNavigationPanel"]>table[id$="_tblNavigationPanel"]{
+	width:100%;
+}
+#selectGlobalAddressWrapper table[id*="_grdGlobalAddresses"] tr td:nth-of-type(1):not([colspan])::before{
+	display: inline-block;
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    background: url(radio_button_mobile.png) no-repeat;
+    height: 24px;
+}
+#selectGlobalAddressWrapper table[id*="_grdGlobalAddresses"] tr.rgSelectedRow td:nth-of-type(1):not([colspan])::before{
+	background: url(radio_button_selected_mobile.png) no-repeat;
+}
+#selectGlobalAddressWrapper .table_addFieldLegacy span[id*="MainContent_val"]{
+	color:var(--color-error)!important;
+	font-size: var(--text-size-regular);
+}
+#selectGlobalAddressWrapper table[id*="_grdGlobalAddresses"] tr{
+	cursor:pointer;
+}
+
+#selectGlobalAddressWrapper>table>tbody>tr{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+#selectGlobalAddressWrapper>table>tbody>tr:nth-of-type(4){
+	margin-top:20px;
+}
+#selectGlobalAddressWrapper>table>tbody>tr td{
+	flex-basis:100%;
+	padding-left: 0;
+}
+#selectGlobalAddressWrapper>table>tbody>tr td:nth-of-type(1){
+	font-size:var(--text-size-label);
+	color:var(--text-color-ultra-dark);
+}
+#selectGlobalAddressWrapper>table>tbody>tr td:nth-of-type(2){
+	font-size:var(--text-size-regular);
+	color:var(--text-color-medium);
+}
+
+#selectGlobalAddressWrapper .table_searchgridLegacy>tbody>tr:nth-of-type(2) td:nth-of-type(2){
+	flex-basis: 200px;
+    flex-grow: 1;
+    padding-left: 0;
+}
+#selectGlobalAddressWrapper .table_searchgridLegacy>tbody>tr:nth-of-type(2) td:nth-of-type(3){
+	flex-basis: 40px;
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.ustore_CheckoutFinal .selectAddressWrapper{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	white-space: normal;
+
+}
+.ustore_CheckoutFinal .selectAddressWrapper>span:nth-of-type(1){
+	flex-basis:210px;
+	flex-shrink:2;
+	flex-grow:1;
+}
+.ustore_CheckoutFinal .selectAddressWrapper>span:nth-of-type(2){
+	flex-basis:40px;
+	flex-shrink:1;
+	flex-grow:1;
+	display:contents;
+}
+.ustore_CheckoutFinal .selectAddressWrapper>span:nth-of-type(3){
+	flex-basis:100%;
+	display:block;
+	margin-top:10px;
+}
+.ustore_CheckoutFinal .selectAddressWrapper .uStoreLegacy-width100percent{
+	width:initial!important;
+}
+.popupContent .rgMasterTable.table thead{
+	background:var(--color-fill);
+	color:var(--text-color-ultra-dark);
+}
+.popupContent .rgMasterTable.table thead a{
+
+	color:var(--text-color-ultra-dark);
+}
+.backLinkContainer
+{
+	float:left;
+    background: none;
+	order:20;
+	margin-right:5px;
+
+}
+.CouponBar table tr{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+
+}
+.CouponBar table td{
+	flex-basis:100%;
+	flex-grow:1;
+	margin-bottom:10px;
+}
+.CouponBar table td:nth-of-type(2){
+	flex-basis: 70%;
+    margin-right: 20px;
+}
+.CouponBar table td:nth-of-type(4){
+	flex-basis: 20%;
+}
+.CouponBar table td:nth-of-type(5){
+
+}
+.CouponBar table td:nth-of-type(3){
+	display:none;
+}
+.CouponBar table td input{
+	width:100%!important;
+}
+#imgStart,#imgEnd{
+	display:none;
+}
+#divProofSize{
+	display:flex;
+	flex-direction:column;
+	width:120px;
+}
+#divProofSize select{
+	display:inline-block;
+	margin-top:10px;
+	padding:8px;
+}
+
+#tdDialCustomization iframe[id$="_uEditRTF_IFrame"]{
+	height: 370px;
+    width: calc(100% + 20px)!important;
+    min-height: 90px;
+    max-height: 50vh;
+    margin-left: -10px;
+}
+
+.uEdit-area #ueditFlatDesignEditorToolBox button.btn{
+	min-width:0;
+}
+
+#ueditFlatDesignEditorToolBox.palette {
+	min-width:0;
+}
+
+.ustoreLegacy_ImageEditor{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ustoreLegacy_ImageEditor .rtbWrap{
+	    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    position: relative;
+    margin-bottom: auto;
+}
+.RadToolBar .rtbOuter {
+    background-image: none!important;
+	padding:2px 0!important;
+}
+
+.imageInfoLine {
+    position: relative;
+    background-color: rgb(153,153,153)!important;
+    -moz-opacity: .8;
+    opacity: .8;
+    padding: 0 0 0 0;
+    color:var(--text-color-ultra-dark)!important;
+    font-weight: normal!important;
+    font-size: var(--text-size-label)!important;
+}
+
+.imageInfoLine.editor {
+    order: 1;
+    background-color: unset !important;
+    padding-left: 10px !important;
+    padding-top: 10px;
+}
+
+.ustoreLegacy_ImageEditor .imageInfoLine #divInfo {
+    padding-top: 4px;
+    width: calc(100% - 40px);
+}
+
+.spnImageName {
+	font-size: var(--text-size-fineprint)!important;
+}
+
+.RadToolBar_Default .rtbOuter {
+	border:none!important;
+}
+.rieContentArea{
+	margin-top:10px;
+}
+.rieDropDown ul{
+	left:0;
+}
+.RadToolBar_Default .rtbItemFocused .rtbWrap ,
+.RadToolBar_Default .rtbItemFocused .rtbMid,
+.RadToolBar_Default .rtbItemFocused .rtbIn,
+.RadToolBar_Default .rtbItemFocused .rtbOut,
+.RadToolBar_Default .rtbItemClicked .rtbWrap ,
+.RadToolBar_Default .rtbItemClicked .rtbMid,
+.RadToolBar_Default .rtbItemClicked .rtbIn,
+.RadToolBar_Default .rtbItemClicked .rtbOut,
+.RadToolBar_Default .rtbItemHovered .rtbWrap ,
+.RadToolBar_Default .rtbItemHovered .rtbMid,
+.RadToolBar_Default .rtbItemHovered .rtbIn,
+.RadToolBar_Default .rtbItemHovered .rtbOut{
+	background-image:none!important;
+}
+
+.ustoreLegacy_ImageEditor #divDelete input{
+	background-image: url(/uStore/Images/AquaBlue/ImageGallery/delete_mobile.png);
+    width: 24px;
+    height: 24px;
+	margin-top:4px;
+}
+.ustore_Login .container .loginLogoContainer {
+	text-align: center;
+}
+.ustore_Login .container .flagList{
+	width:100%;
+	margin-bottom:10px;
+}
+
+.RadImageEditor .rtbItem.rtbBtn, .RadImageEditor .rtbItem.rtbSplBtn {
+    position: relative;
+    width: 33px !important;
+    margin: 1px 2px !important;
+    border: solid 1px var(--color-line);
+    background-color: var(--color-fill);
+    display: inline-flex !important;
+}
+
+
+.RadImageEditor .rtbOut:focus,
+.RadImageEditor .rtbItem:focus {
+    outline-color: var(--color-line);
+}
+
+
+.rieStatusBarInfo{
+	font-size:var(--text-size-regular);
+}
+div.RadDock.RadDock_Default.rieDialogs ~ div.popupFooter{
+	background-color:red;
+}
+.expanderEdit .spnedit {
+	font-size:var(--text-size-fineprint)!important;
+}
+.addressItemBody
+{
+		font-size:var(--text-size-regular);
+}
+.ustore_MyAccount td{
+	font-size:var(--text-size-regular);
+}
+#tblNumCopies{
+	font-size:var(--text-size-fineprint);
+}
+
+form[action^="./FileSubmission.aspx"]~.BasicDialogContainer.XmpPopupWindow .VerticalMenuDiv>ul#UploadItemUL>li>span{
+	padding-top:7px;
+	padding-bottom:7px;
+}
+
+.OrderApprovalListFooter>table>tbody>tr{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+table.orderApprovalListTable{
+	margin-top:10px;
+}
+
+table.orderApprovalListTable>tbody>tr:nth-child(2),
+table.orderApprovalListTable>tbody>tr:nth-child(4){
+	display:none;
+}
+
+table.orderApprovalListTable .OrderApprovalListFooter>table>tbody>tr>td:nth-child(1){
+	flex-basis:100%;
+	margin-top:20px;
+}
+
+table.orderApprovalListTable .OrderApprovalListFooter>table>tbody>tr>td:nth-child(2),
+table.orderApprovalListTable .OrderApprovalListFooter>table>tbody>tr>td:nth-child(3),
+table.orderApprovalListTable .OrderApprovalListFooter>table>tbody>tr>td:nth-child(4){
+	margin-top:20px;
+	flex-basis:33%;
+}
+
+table.orderApprovalListTable .orderApprovalListBackButtonWrapper{
+	margin-top:20px;
+}
+
+table.orderApprovalListTable div[id$="_dgOrderApproval"]{
+	margin-top:20px;
+}
+
+div[id$="_dgDrafts"] .btn-group>a.btn:active,
+div[id$="_dgDrafts"] .btn-group>a.btn:hover,
+div[id$="_dgDrafts"] .btn-group>a.btn:focus{
+	border:0;
+	border-radius:0;
+	background-color:#ffffff;
+	padding: 1px 5px;
+	font-size:var(--text-size-fineprint);
+	box-shadow:none;
+}
+
+html body #detailsTable #tblAdvSearch #trDateRange .datePickerContainer .riSingle .riTextBox[type="text"][id$="_dateInput"]{
+	padding: 6px 12px;
+	height:34px;
+}
+
+#detailsTable #tblAdvSearch tr#trSearchFilter select[id$="_DdlSearchFilter"]{
+	width:100%;
+}
+
+#detailsTable #divAdvSearch a[id$="_btnChangeToSmpSrch"],
+#detailsTable a#btnChangeToAdvSrch
+{
+	position:absolute;
+	right:15px;
+}
+
+#detailsTable .ChangeToAdvSrchContainer{
+	position:relative;
+	height:calc(var(--text-size-regular) / 1.4);
+}
+
+#tableRejectionNotesContainer.approvalContainer~span[id$="_lblTitlePurchase"],
+#tableRejectionNotesContainer.approvalContainer~span[id$="_lblTitleDelivery"]{
+	color:var(--color-highlight);
+}
+.riSingle .riTextBox{
+	height:calc(var(--text-size-regular) * 2 + 6px)!important;
+}
+
+form[action^="./RecipientListEdit.aspx"] .footerButtons{
+	display:block;
+	flex-direction:none;
+}
+
+div[id$="_trApproval"]~#orderTableContainer,
+div[id$="_trApproval"]~#tableShipmentsContainer{
+	width: calc(100vw - 30px)
+}
+
+.RLEditorContainer{
+	width:calc(100vw - 30px);
+}
+
+.CustomizationProperties div[id$="_pnlProdSlideShow"].productSlideShow{
+	width:100%;
+}
+
+.CustomizationProperties div[id^="divImageGalleryBody_"].imageGalleryBody{
+	width:100%;
+}
+
+form[action^="./ImagePreview.aspx?"] .ImgPreview img[id$="_imgPreview"]{
+	width:100%;
+}
+
+
+/*#endregion*/
+
+/*#region Recipient*/
+
+table[id*="_RecipientListMapper"] img[id*="_imgMatch"]{
+	content: url(checked.png);
+}
+
+/*#endregion*/
+
+form[action^="./login.aspx"] #tblSignIn>tbody>tr:nth-child(2) {
+	display: none;
+}
+
+#tblRegistration label[for$="_chkOptIn"] {
+	display:inline;
+}
+
+#cartOrderTableWrapper .ShoppingCartGrid_Column_Buttons a[id$="_btnDeleteMobile"] {
+	margin-left: 12px;
+}
+
+.WizardButtonsContainer .saveForLater>a[id$="_ButtonSaveForLater"]{
+	margin-left: 15px;
+}
+
+div[id$="_dgDrafts"] a[id$="_btnDeleteMobile"],
+div[id$="_dgDrafts"] a[id$="_btnContinueMobile"],
+div[id$="_dgDrafts"] a[id$="_btnSaveMobile"]{
+	background-color:transparent;
+}
+
+.productdesc a{
+	color:var(--text-color-medium);
+}
+
+div[id$="_RecipientDataGrid"].RadGrid.RadGrid_Default{
+	border:0 !important;
+}
+
+#parentGroupsAccordion div[id^="gbody"]>.panel-body>hr{
+	margin-top:0;
+}
+
+/* #region Cookie Ribbon (for aspx pages, e.g. Login) */
+
+.cookieRibbonWrapper {
+	width: 100%;
+	background: #000;
+	position: fixed;
+	bottom: 0;
+	z-index: 3;
+	padding: 20px;
+	opacity: .7;
+	line-height: 1.5;
+	min-height: 76px;
+}
+
+.cookieRibbonWrapper.show {
+	display: flex !important;
+}
+
+.cookieRibbonWrapper .btn {
+	margin-top: 0;
+	background-color: transparent;
+	background-image: url(icon-close-X.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	border-radius: 0;
+	min-width: 15px;
+	text-indent: -9999px;
+}
+
+.cookieRibbonWrapper .cookieRibbonText {
+	position: fixed;
+	text-align: left;
+	flex-grow: 1;
+	color: #fff;
+	font-size: var(--text-size-fineprint);
+	left: 20px;
+	margin-right: 40px;
+}
+
+/*#endregion*/
+
+/* #region Inventory Level colors */
+
+div.productListTable .OutOfStock {
+	color: var(--color-error);
+}
+
+div.productListTable .OutOfStockChoices {
+	color: var(--color-warning);
+}
+
+div.productListTable .InStock {
+	color: var(--color-success);
+}
+
+div.productListTable .StockLevel {
+	color: var(--color-success);
+}
+
+td.ProductDetailsInventory .OutOfStock {
+	color: var(--color-error);
+}
+
+td.ProductDetailsInventory .OutOfStockChoices {
+	color: var(--color-warning);
+}
+
+td.ProductDetailsInventory .InStock {
+	color: var(--color-success);
+}
+
+td.ProductDetailsInventory .StockLevel {
+	color: var(--color-success);
+}
+
+
+td.OrderFinalStepFinalStepInventory .OutOfStock {
+	color: var(--color-error);
+}
+
+td.OrderFinalStepFinalStepInventory .OutOfStockChoices {
+	color: var(--color-warning);
+}
+
+td.OrderFinalStepFinalStepInventory .InStock {
+	color: var(--color-success);
+}
+
+td.OrderFinalStepFinalStepInventory .StockLevel {
+	color: var(--color-success);
+}
+
+/*#endregion*/
+
+#tblSignIn > tbody > tr > td:nth-child(1) {
+	padding-bottom: 10px;
+}
+
+
+#UploadProgressBarDialog{
+	height:auto !important;
+}
+
+span[id$="lblCircleInstanceIdError"].Error:empty{
+	display:none;
+}
+
+span[id$="_Message"].ErrorText{
+	color:var(--color-error);
+}
+
+.uedit-application .btn{
+	min-width:0;
+	border-radius: 4px;
+	background-color: #e6e6e6;
+	border: 1px solid transparent;
+}
+
+.uedit-application .btn.active,
+.uedit-application .btn:focus{
+	background-color: #e6e6e6 !important;
+}
+
+.uedit-application .btn.active{
+	background-color: #ebebeb;
+	box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+.uedit-application .color-button{
+	width:auto !important;
+	height:auto !important;
+	margin:1px !important;
+}
+
+.proofLink>.glyphicon-ok-sign:before{
+	content: "\2713";
+}
+
+.RadCalendarTimeView a{
+	padding:0 !important;
+}
+
+.RadCalendar .rcMain .rcRow a,
+.RadCalendar .rcMain .rcRow span{
+	padding:0 !important;
+	border:none;
+}
+
+div[id$="_pnlRLMapper"] div[id$="_dgSchemaFields"]{
+	overflow-x:scroll;
+	width:calc(100vw - 30px) !important;
+}
+
+#cartOrderTableWrapper .ShoppingCartGrid_Column_Buttons>div.btn-group>a{
+	color:var(--color-highlight);
+}
+
+@media (max-width: 345px){
+	#customization input[id^="searchtext_"]{
+		width:124px;
+	}
+}
+
+.modifyOrderDialog-content{
+	padding:10px;
+}
+
+.modifyOrderDialog .divDialogButtons a{
+	margin:15px 15px 15px 0;
+}
+
+.modifyOrderDialog .divDialogButtons a[id$="btnCancelOrderModification"]{
+	border: 1px solid var(--button-secondary-border-color);
+	background-color: var(--button-secondary-background-color);
+	color: var(--button-secondary-text-color);
+}
+
+.modifyOrderDialog .divDialogButtons a[id$="btnApproveOrderModification"],
+.modifyOrderDialog .divDialogButtons a[id$="btnCloseOrderEditMsg"]{
+	border: 1px solid var(--button-secondary-border-color);
+	background-color: var(--button-primary-background-color);
+	color: var(--button-primary-text-color);
+}
+
+.composable-preview-panel {
+	background-color: var(--color-fill);
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 0 auto;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+}
+
+.composable-preview-icon {
+	width: 72px;
+	height: 87px;
+	background-image: url(fingerClick.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.composable-preview-btn.btn.btn-default {
+	box-shadow: none;
+}
+
+.CartIncludedProductsLinkContainer {
+	height: 22px;
+	width: 100%;
+}
+
+.IncludedProductsLink {
+	position: absolute;
+}
+
+.IncludedProductsLink:focus,
+.IncludedProductsLink:hover {
+	text-decoration: none !important;
+}
+
+/*uStoreImagesViewer classes*/
+.uStoreImagesViewer_Container {
+	display: flex;
+	justify-content: space-between;
+	max-height: calc(100% - 50px);
+	min-height: 50px;
+}
+
+.uStoreImagesViewer_PagerPrev {
+	color: var(--text-color-dark);
+	font-size: 40px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 78px;
+}
+
+
+.uStoreImagesViewer_PagerPrev.Disabled {
+	color: gray;
+	cursor: default;
+}
+
+.uStoreImagesViewer_PagerPrevSymbol {
+
+}
+
+.uStoreImagesViewer_PagerNext {
+	color: var(--text-color-dark);
+	font-size: 40px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 78px;
+}
+
+.uStoreImagesViewer_PagerNext.Disabled {
+	color: gray;
+	cursor: default;
+}
+
+.uStoreImagesViewer_PagerNextSymbol {
+}
+
+
+.uStoreImagesViewer_Pager {
+	width: 100%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding-top: 26px;
+}
+
+.uStoreImagesViewer_PagerPoint {
+	width: 7px;
+	height: 7px;
+	margin-right: 5px;
+	margin-left: 5px;
+	border-radius: 50%;
+	background-color: #D6D6D6;
+	cursor: pointer;
+}
+
+.uStoreImagesViewer_PagerPoint.Selected {
+	background-color: var(--color-highlight);
+	cursor: default;
+}
+
+.uStoreImagesViewer_MainImageDivBase {
+	/*padding: var(--image-box-padding);*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+	overflow: hidden;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	width: calc(100% - 156px);
+}
+
+@media (max-width: 575px) {
+	.uStoreImagesViewer_MainImageDivBase {
+		width: calc(100% - 70px);
+	}
+
+	.uStoreImagesViewer_PagerPrev {
+		width: 35px;
+	}
+
+	.uStoreImagesViewer_PagerNext {
+		width: 35px;
+	}
+}
+
+
+.uStoreImagesViewer_Error {
+	background-color: white;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	width: calc(100% - 100px);
+	height: 100%;
+}
+
+.uStoreImagesViewer_ErrorMessage {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: red;
+	font-size: 18px;
+	height: calc(100%);
+}
+
+.uStoreImagesViewer_MainErrorDiv {
+	padding: 0px !important;
+}
+
+.uStoreImagesViewer_MainPdfDiv {
+	padding: 0px !important;
+	display: block !important;
+	overflow: visible !important;
+}
+
+.uStoreImagesViewer_MainImageDivWait {
+	background-size: initial !important;
+	background-image: url('/uStore/Images/imageLoading.gif');
+	min-height: 115px;
+	background-position: top !important;
+}
+
+.uStoreImagesViewer_MainImageDivNoZoom {
+	background-image: none !important;
+	align-items: flex-start !important;
+}
+
+.uStoreImagesViewer_MainImageDivReadyToZoom {
+	background-image: none !important;
+	align-items: flex-start !important;
+}
+
+.uStoreImagesViewer_MainImageReadyToZoom {
+
+}
+
+.uStoreImagesViewer_MainImageNoZoom {
+
+}
+
+.uStoreImagesViewer_MobilePdfLink {
+	align-items: center;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-bottom: 25px;
+}
+
+.uStoreImagesViewer_MobilePdfMessage {
+	border-radius: 25px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 60px;
+	padding-right: 60px;
+	font-size: var(--text-size-label);
+	margin-top: 30px;
+}
+
+#proofMobileMainPdfLink{
+	text-decoration: none;
+}
+
+.uStoreImagesViewer_MobilePdfIcon {
+	background-image: url('/uStore/Images/pdf-file.png');
+	width: 55px;
+	height: 70px;
+}
+/*end uStoreImagesViewer classes*/
+
+/*uStoreProofViewer classes*/
+.uStoreImagesViewer_HideMainContent {
+	display: none !important;
+}
+
+.uStoreProofImagesModal {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: white;
+	margin-top: -20px;
+}
+
+.uStoreProofImagesModalContent {
+	background-color: #BFBFBF;
+}
+
+.uStoreProofHeader {
+	width: 100%;
+	height: 38px;
+	background-color: #139FC8;
+	display: flex;
+	align-items: center;
+}
+
+.uStoreProofHeaderTitle {
+	width: 100%;
+	position: relative;
+	float: left;
+	font-size: var(--text-size-label);
+	padding-left: 16px;
+	color: var(--text-color-on-highlight-bg);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	line-height: 22px;
+}
+
+.uStoreProofHeaderClose {
+	position: relative;
+	float: right;
+	color: #FFFFFF;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.uStoreProofModalClose {
+	padding-right: 18px;
+	padding-left: 8px;
+	color: var(--text-color-on-highlight-bg);
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.uStoreProofProductTitle {
+	height: 50px;
+	font-size: 22px;
+	color: black;
+	text-align: center;
+	padding: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.uStoreProofMainBlock {
+	background-color: white;
+	width: 100%;
+	padding-top: 26px;
+	height: calc(100% - 215px);
+}
+
+.uStoreProofListBlock {
+	background-color: var(--color-fill);
+	width: 100%;
+	height: 177px;
+	overflow: hidden;
+}
+
+.uStoreProofListTitle {
+	color: var(--text-color-medium);
+	height: 43px;
+	font-size: var(--text-size-label);
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+
+.uStoreProofListItemsContent {
+	overflow-y: -webkit-paged-x;
+	overflow-x: scroll;
+	height: 195px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-right: 10px;
+	align-items: flex-start;
+}
+
+.uStoreProofListItem {
+	border: solid 1px var(--color-line);
+	color: var(--text-color-medium);
+	font-size: var(--text-size-regular);
+	cursor: pointer;
+	background-color: white;
+	height: 135px;
+	width: 125px;
+	min-width: 125px;
+	text-align: center;
+	align-items: center;
+	margin: 7px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 21px;
+}
+
+.uStoreProofListItem.Selected {
+	border: solid 1px var(--color-highlight);
+	color: var(--text-color-ultra-dark);
+	font-size: var(--text-size-regular);
+}
+
+.uStoreProofListItem.Selected .uStoreProofListItemImage {
+	color: black;
+}
+
+.uStoreProofListItemImage {
+	width: 100%;
+	height: 85px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.uStoreProofListItemImage img {
+	max-height: 80px;
+	max-width: 105px;
+	text-align: center;
+	padding: 10px;
+}
+
+.uStoreProofListItemName {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px;
+	height: 42px;
+	text-align: center;
+	padding-right: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.proofMainMobileImagePreview {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.uStoreProofImageMobileModalContent {
+	height: 100%;
+	background-color: white;
+}
+
+.uStoreProofMainMobileImagePreview {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: calc(100% - 50px);
+}
+
+.uStoreProofMainMobileBlockContent {
+	width: calc(100% + 11px);
+	height: calc(100% + 11px);
+	overflow: scroll;
+}
+
+.uStoreProofMainMobileBlock {
+	position: relative;
+	float: left;
+	background-color: white;
+	width: 100%;
+	height: calc(100% - 46px);
+	overflow: hidden;
+}
+
+.proofMainMobileImage {
+}
+/*end uStoreProofViewer classes*/
+
+/* Kit products */
+.kitProductsModalBody {
+	padding: 0px 10px 11px 10px;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+.kitImageDivider {
+	height: 1px;
+	width: 100%;
+	opacity: 0.5;
+	background-color: var(--color-line);
+}
+
+.kitItemsTitle {
+	font-size: var(--text-size-h4);
+	color: var(--text-color-dark);
+	margin-top: 11px;
+	margin-bottom: 11px;
+	font-weight: 400;
+	padding-left: 21px;
+}
+
+.kitItemContainer {
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+
+.kitItemContainer .kitImage {
+	max-width: 60px;
+	max-height: 60px;
+	padding-left: 15px;
+}
+
+.kitItemContainer .kitImageContainer {
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.kitItemContainer .kitNameContainer {
+	font-size: var(--text-size-regular);
+	color: var(--text-color-dark);
+	width: 100%;
+	display: flex;
+	max-height: 55px;
+	align-items: center;
+	white-space: normal;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.kitItemContainer .kitQuantityContainer {
+	padding-left: 15px;
+	width: 100%;
+}
+
+.kitItemContainer .kitQuantityInfoContainer {
+	font-size: var(--text-size-regular);
+	color: var(--text-color-dark);
+	width: 100%;
+}
+
+.kitItemContainer .kitItemDownloadImage {
+    background-image: url(/uStore/images/download.svg);
+    width: 21px;
+    height: 19px;
+}
+
+.kitItemContainer .kitPackInfoContainer {
+	font-size: var(--text-size-fineprint);
+	color: var(--text-color-medium);
+}
+
+.OrderFinalKitDetails {
+	border: 1px solid var(--color-line);
+	border-radius: var(--form-input-border-radius);
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: -30px;
+}
+
+.kitIncludedProducts .Link {
+	cursor: pointer;
+}
+
+.kitIncludedProducts {
+}
+
+.kitIncludedProductsLine {
+	border-left: 1px solid var(--color-line);
+	display: inline;
+	margin-left: 10px;
+	padding-left: 5px;
+}
+
+.kitProductsModalContent {
+	width: calc(100%);
+	background-color: white;
+}
+
+.kitProductsModal {
+	margin-top: -20px;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.kitProductsHeader {
+	width: 100%;
+	height: 45px;
+	position: relative;
+	background-color: white;
+	padding: 10px 10px 10px 10px;
+}
+
+.kitProductsModalClose {
+	margin-right: 10px;
+	color: var(--text-color-medium);
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.kitProductsModalClose:hover,
+.kitProductsModalClose:focus {
+	color: var(--text-color-medium);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.kitProductsHeaderTitle {
+	width: 90%;
+	position: relative;
+	float: left;
+	font-size: var(--text-size-h4);
+	padding-top: 7px;
+	padding-left: 12px;
+	color: var(--text-color-dark);
+}
+
+.kitProductsHeaderClose {
+	position: relative;
+	float: right;
+}
+
+.kitProductsModalBodyWait {
+	background-image: url(/uStore/Images/imageLoading.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+}
+
+.kitProductsSeparator {
+	border: 1px solid var(--color-line);
+	width: calc(95%);
+	height: 1px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+form[action^="./ProductProperties.aspx"] #dvmValidationSummary > ul > li {
+	font-size: var(--text-size-regular);
+	color: var(--color-error);
+}
+
+.productdesc {
+	font-size: var(--text-size-regular);
+	color: var(--text-color-medium);
+}
+
+/* End Kit products */
+
+#tblOrderFinalStepContent .tblPriceTagsWrapper{
+	border:none;
+}
+
+.bottomAlign {
+	vertical-align: bottom !important;
+}
+
+/* file attachemnt duc */
+
+.Duc .fileAttachDropFilesHere a,
+.Duc .fileAttachDropFilesHere a:hover,
+.Duc .FileAttachmentDownloadTemplate a,
+.Duc .FileAttachmentDownloadTemplate a:hover{
+	border: 1px solid var(--color-line);
+	color: var(--text-color-dark);
+	border-radius: 25px;
+}
+
+.FileAttachmentDownloadTemplate a:before,
+.fileAttachDropFilesHere a:before{
+	background-color: var(--text-color-dark);
+}
+
+#fileAttachmentErrorMessage{
+	font-size: var(--text-size-fineprint);
+	color:var(--color-error);
+}
+
+#fileAttachmentErrorMessage>a{
+	color:var(--color-highlight);
+}
+
+.fileAttachDropFilesHere .NewItemMenu .VerticalMenuDiv{
+	border: 1px solid var(--color-line);
+}
+
+/* end file attachemnt duc */
+
+/* 3D preview */
+.viewer3d-displayArea{
+    position: relative;
+}
+
+.viewer3d-modelContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewer3d-progress{
+    z-index:9998;
+    background-color: black;
+    position:absolute;
+    text-align: center;
+    vertical-align: middle;
+    filter:alpha(opacity=20);
+    -moz-opacity:.20;
+    opacity:.20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewer3d-controls{
+    display: none;
+}
+
+
+/* End 3d Preview*/
+
+
+
+[id$="LblDescription"]{
+    background-image: url(info_16x16.png);
+    display: inline-block;
+    font-size: 0px;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: -14px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+[data-title]:after {
+    content: attr(data-title);
+    background-color: var(--color-fill);
+    color: var(--text-color-dark);
+    font-size: var(--text-size-regular);
+    position: absolute;
+    margin-left: -30px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15); 
+    opacity: 0;
+    border: 1px solid var(--color-line);
+    z-index: 99999;
+    visibility: hidden;
+	min-width: 240px;
+	max-width: 350px;
+    display: flex;
+    white-space: normal;
+    top: 22px;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;  
+    padding: 15px; 
+}
+[data-title] {
+    position: relative;
+}
+
+.popupFooter {
+    min-height: 21%;
+}
+
+form[action*="DocRepository.aspx"] .popupFooter {
+	display: none;       
+}
+
+form[action*="DocRepository.aspx"] .popupContent {
+	overflow-x: hidden;   
+	height: 100%;  
+}
+
+
+form[action*="ProductProperties.aspx"] .mainAreaFooterFullWidth,
+form[action*="ProductProperties.aspx"] #masterPageFooter,
+form[action*="ProductProperties.aspx"] #postFooter{
+    display: none;
+}
+
+form[action*="ProductProperties.aspx"] .mainareaFullWidth{
+	padding:0
+}
+
+form[action*="ProductProperties.aspx"] .dtiName {
+    width: 100%;
+}
+
+form[action*="CustomerAddress.aspx"] .popupContent{
+	max-height: 79%;
+}
+
+form[action*="ProductProperties.aspx"] ~ #wndUploadRepository {
+    height: 0;
+}
+
+.RadCalendarPopup {
+    left: 0 !important;
+}

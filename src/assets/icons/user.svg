@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <g id="homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="user_profile" transform="translate(1.000000, 1.000000)" fill-rule="nonzero" stroke="#000000">
+            <circle id="head" cx="9.5" cy="4.5" r="4.5"></circle>
+            <path d="M0.430175781,18.892334 C1.49254124,13.1782754 4.3997678,10.2271849 9.15185547,10.0390625 C17.5761719,9.70556641 18.5036621,18.892334 18.5036621,18.892334" id="body"></path>
+        </g>
+    </g>
+</svg>

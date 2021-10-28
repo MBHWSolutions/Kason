@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="513px" height="335px" viewBox="0 0 513 335" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>wallis-and-futuna (1)</title>
+    <desc>Created with Sketch.</desc>
+    <g id="menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wallis-and-futuna-(1)" transform="translate(0.000000, -1.000000)">
+            <g id="Group" transform="translate(256.500000, 168.322581) scale(-1, 1) rotate(-180.000000) translate(-256.500000, -168.322581) translate(0.000000, 0.322581)">
+                <g transform="translate(1.000000, 0.000000)" id="Path">
+                    <path d="M455.11125,334.318871 L227.555,334.318871 L227.555,193.01371 L-3.63797881e-12,193.01371 L-3.63797881e-12,51.7096774 C1,0.326290323 -1,0.326290323 56.88875,0.326290323 L455.11125,0.326290323 C512,0.324765455 509.973773,-0.677419355 512,51.7096774 L512,282.935484 C509.973773,334.318871 512,336 455.11125,334.318871 Z" fill="#ED2939"></path>
+                    <g transform="translate(331.250000, 111.774194)" fill="#FFFFFF">
+                        <polygon points="15.48625 0.0530645161 104.2325 0.0530645161 59.85875 40.1325806"></polygon>
+                        <polygon points="104.235 106.931774 15.48875 106.931774 59.8625 66.8522581"></polygon>
+                        <polygon points="119.025 13.4140323 119.025 93.5719355 74.65125 53.4924194"></polygon>
+                        <polygon points="0.69625 93.5719355 0.69625 13.4140323 45.07 53.4935484"></polygon>
+                    </g>
+                </g>
+                <g transform="translate(0.000000, 167.096774)" id="Path">
+                    <path d="M86.33375,167.222097 L57.88875,167.222097 C6.06181771e-13,168.225806 2.65565347e-13,167.222097 1,115.83871 L1,13.0719355 L86.33375,13.0719355 L86.33375,167.222097 Z" fill="#002395"></path>
+                    <polygon fill="#EEEEEE" points="86.33375 167.222097 86.33375 13.0719355 1 13.0719355 1 0.225806452 271.2225 0.225806452 271.2225 167.222097"></polygon>
+                    <polygon fill="#ED2939" points="257 13.0719355 171.66625 13.0719355 171.66625 167.222097 257 167.222097"></polygon>
+                    <polygon fill="#EEEEEE" points="171.66625 13.0719355 86.33375 13.0719355 86.33375 167.222097 171.6675 167.222097 171.6675 13.0719355"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

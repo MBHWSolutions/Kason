@@ -1,0 +1,33 @@
+.RadTreeView_Default {
+color: var(--text-color-dark);
+  font: normal 12px/16px "Segoe UI", Arial, Helvetica, sans-serif; }
+  .RadTreeView_Default .rtIn {
+    background-image: url('Common/radGradientListSprite.png');
+    background-image: linear-gradient(transparent, transparent); }
+  .RadTreeView_Default a.rtIn {
+    *color: #333333; }
+  .RadTreeView_Default .rtHover .rtIn {
+    border-color: #b0b0b0;
+    color: black;
+    background-color: #c5c5c5;
+    background-image: linear-gradient(var(--color-fill), #c5c5c5); }
+  .RadTreeView_Default .rtSelected .rtIn {
+    border-color: #6c6c6c;
+    color: #ffffff;
+    background-color: var(--border-dark-color);
+    background-image: linear-gradient(#969696, var(--border-dark-color)); }
+  .RadTreeView_Default .rtEdit .rtIn input {
+    *color: #ffffff; }
+  .RadTreeView_Default .rtChecked,
+  .RadTreeView_Default .rtUnchecked,
+  .RadTreeView_Default .rtIndeterminate {
+    background-image: url('Common/radFormToggleSprite.png'); }
+  .RadTreeView_Default .rtLoadingIcon {
+    background-image: url('Common/loading_small.gif'); }
+  .RadTreeView_Default .rtPlus,
+  .RadTreeView_Default .rtMinus {
+    background-image: url('TreeView/PlusMinus.png'); }
+
+.RadTreeView_Default_disabled .rtIn,
+.RadTreeView_Default .rtDisabled .rtIn {
+  color: #ccc; }

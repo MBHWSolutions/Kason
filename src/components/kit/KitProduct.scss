@@ -1,0 +1,526 @@
+@import "_theme.scss";
+
+:root {
+  --margin-xl: 35px;
+  --margin-lg: 25px;
+}
+
+html.modal-open {
+  overflow: hidden;
+}
+
+body.modal-open {
+  padding-right: unset !important;
+}
+
+.kit-product {
+  --right-side-width-xl: 1120px;
+  --right-side-width-lg: 800px;
+  --carousel-height: 60vh;
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: calc(100vw - var(--right-side-width-xl)) var(--right-side-width-xl);
+
+    @media (min-width: $lg) and (max-width: $xl) {
+      grid-template-columns: calc(100vw - var(--right-side-width-lg)) var(--right-side-width-lg);
+    }
+
+    @media (max-width: $lg) {
+      grid-template-columns: 100%;
+    }
+  }
+
+  .relative-size-left {
+    background-color: var(--image-box-background-color);
+    height: 100%;
+    padding: 80px 40px 80px 40px;
+    position: relative;
+
+    .imageCarousel-component {
+      height: var(--carousel-height);
+
+      &.floating {
+        position: fixed;
+        top: 80px;
+        width: calc(100vw - var(--right-side-width-xl) - 80px);
+        left: 40px;
+
+        @media (min-width: $lg) and (max-width: $xl) {
+          width: calc(100vw - var(--right-side-width-lg) - 80px);
+        }
+      }
+
+      .image-zoom .scroll-wrapper.contained img {
+        max-height: calc(var(--carousel-height) - 94px);
+        max-width: 100%;
+        object-fit: contain;
+      }
+
+      .image .animated.loading {
+        height: calc(var(--carousel-height) - 94px);
+        width: calc(100vw - var(--right-side-width-xl) - 2 * var(--margin-xl) - 100.5px - 40px);
+
+        @media (min-width: $lg) and (max-width: $xl) {
+          width: calc(100vw - var(--right-side-width-lg) - 2 * var(--margin-lg) - 100.5px - 40px);
+        }
+      }
+    }
+  }
+
+  .fixed-size-right {
+    background-color: #fff;
+    position: relative;
+    padding-top: 38px;
+    min-height: calc(100vh - var(--header-height-desktop));
+
+    @media (min-width: $lg) and (max-width: $xl) {
+      width: var(--right-side-width-lg);
+      min-height: calc(100vh - var(--header-height-desktop));
+    }
+    @media (max-width: $lg) {
+      width: 100%;
+      min-height: unset;
+    }
+    @media (min-width: $xl) {
+      padding-left: 130px;
+      padding-right: 160px;
+      padding-bottom: 135px;
+    }
+
+    @media (max-width: $xl) {
+      padding-left: 67px;
+      padding-right: 67px;
+      padding-bottom: 135px;
+    }
+
+    @media (max-width: $lg) {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 10px;
+      padding-bottom: 100px;
+    }
+
+    @media (max-width: $md) {
+      padding-bottom: 180px;
+      padding-left: 11px;
+      padding-right: 11px;
+    }
+
+    .right-side-loading-container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: var(--right-side-width-xl);
+      height: calc(100% - var(--header-height-desktop));
+      background-color: rgba(255, 255, 255, 0.8);
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .loading-content-container {
+        position: fixed;
+        top: 50%;
+      }
+
+      .reorder-loading-msg {
+        font-size: var(--text-size-regular);
+        color: var(--text-color-dark);
+        text-align: center;
+        width: 290px;
+        padding-bottom: 20px;
+      }
+
+      .loading-dots {
+        transform: scale(1.2, 1.2);
+        display: block;
+        margin: auto;
+        height: 14px;
+
+        > div {
+          background: var(--color-highlight);
+        }
+      }
+
+      @media (max-width: $xl) {
+        width: var(--right-side-width-lg);
+      }
+
+      @media (max-width: $lg) {
+        width: 100%;
+        position: fixed;
+      }
+    }
+
+    .kit-name {
+      margin-bottom: 35px;
+      font-size: var(--text-size-h2);
+      color: var(--text-color-heading);
+    }
+
+    .kit-reorder {
+      background-color: var(--color-fill);
+      font-size: var(--text-size-regular);
+      color: var(--text-color-dark);
+      padding: 9px 10px;
+      .reorder-link {
+        font-size: var(--text-size-regular);
+        color: var(--color-highlight);
+        cursor: pointer;
+        padding-left: 7px;
+      }
+    }
+
+    .kit-includes-title {
+      font-size: var(--text-size-h4);
+    }
+
+    .kit-description {
+      display: block;
+      margin-top: 35px;
+      color: var(--text-color-medium);
+      font-size: var(--text-size-regular);
+
+      @media (max-width: $lg) {
+        margin-top: 15px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .carousel-wrapper {
+      height: 700px;
+
+      @media (min-width: $sm) and (max-width: $md) {
+        height: 520px;
+      }
+
+      @media (min-width: $xs) and (max-width: $sm) {
+        height: 320px;
+      }
+
+      img {
+        max-height: 640px;
+        max-width: 100%;
+        object-fit: contain;
+
+        @media (min-width: $sm) and (max-width: $md) {
+          max-height: 460px;
+          max-width: 100%;
+          object-fit: contain;
+        }
+
+        @media (min-width: $xs) and (max-width: $sm) {
+          max-height: 260px;
+          max-width: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .image .animated.loading {
+        width: calc(100vw - 80px);
+        height: 640px;
+        @media (min-width: $sm) and (max-width: $md) {
+          width: calc(100vw - 50px);
+          height: 460px;
+        }
+
+        @media (min-width: $xs) and (max-width: $sm) {
+          width: calc(100vw - 50px);
+          height: 260px;
+        }
+      }
+    }
+
+    .quantity-wrapper {
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    .kit-quantity {
+      display: block;
+      margin-top: 33px;
+      font-size: var(--text-size-label);
+      color: var(--text-color-ultra-dark);
+
+      @media (max-width: $lg) {
+        margin-top: 61px;
+      }
+
+      @media (max-width: $md) {
+        margin-top: 30px;
+      }
+
+      > div {
+        margin-left: 15px;
+      }
+    }
+
+    .input-quantity {
+      height: 30px;
+      width: 90px;
+      border: 1px solid var(--color-line);
+      border-radius: 5px;
+      margin-left: 15px;
+      padding: 0 20px;
+    }
+
+    .quantity-error {
+      margin-top: 5px;
+      color: var(--color-error);
+      font-size: var(--text-size-fineprint);
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .divider {
+      height: 2px;
+      background-color: var(--color-line);
+      margin-bottom: 30px;
+      margin-top: 34px;
+    }
+
+    .kit-item-list-wrapper {
+      margin-top: 31px;
+
+      .list-loader {
+        position: relative;
+        min-width: 100%;
+        min-height: 50vh;
+
+        @media (max-width: $lg) {
+          min-height: 100px;
+        }
+
+        .loading-dots {
+          position: absolute;
+          top: 30px;
+          div {
+            background: var(--color-highlight);
+          }
+        }
+      }
+    }
+
+    .sticky-price-panel {
+      box-shadow: 9px -3px 20px 0 rgba(0, 0, 0, 0.12);
+      position: absolute;
+      bottom: 0;
+      height: 80px;
+      width: 100%;
+      padding-left: 130px;
+      padding-top: 18px;
+      padding-right: 160px;
+      background-color: white;
+      left: 0;
+      z-index: 9;
+
+      &.fixed {
+        @media (min-width: $xl) {
+          position: fixed;
+          width: var(--right-side-width-xl);
+          left: calc(100vw - var(--right-side-width-xl));
+        }
+
+        @media (min-width: $lg) and (max-width: $xl) {
+          position: fixed;
+          width: var(--right-side-width-lg);
+          left: calc(100vw - var(--right-side-width-lg));
+        }
+      }
+
+      @media (max-width: $xl) {
+        padding-left: 67px;
+        padding-right: 80px;
+        margin-top: 30px;
+      }
+
+      @media (max-width: $lg) {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: unset;
+        position: fixed;
+      }
+
+      @media (max-width: $md) {
+        height: unset;
+        margin-top: unset;
+        padding-top: 10px;
+      }
+
+      .button {
+        margin: 0;
+        width: 196px;
+        float: right;
+        height: 45px;
+
+        @media (max-width: $lg) {
+          width: 280px;
+        }
+
+        @media (max-width: $md) {
+          float: left;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          width: 100%;
+          height: 35px;
+        }
+      }
+
+      .total-price {
+        float: left;
+        color: var(--color-highlight);
+        margin: 5px 0;
+        font-size: var(--text-size-h4);
+        position: relative;
+        min-height: 20px;
+
+        .loading-dots {
+          position: absolute;
+          top: 5px;
+          div {
+            background: var(--color-highlight);
+          }
+        }
+
+        .price-display {
+          display: flex;
+          flex-direction: column;
+          align-items: unset;
+
+          .minimum-price-notation {
+            color: var(--text-color-medium);
+            font-size: var(--text-size-fineprint);
+            margin-right: 5px;
+
+            @media (max-width: $md) {
+              font-size: var(--text-size-regular);
+            }
+          }
+
+          @media (max-width: $md) {
+            flex-direction: row;
+            align-items: center;
+          }
+        }
+
+        @media (max-width: $md) {
+          float: unset;
+          margin: unset;
+          display: block;
+          line-height: 1;
+        }
+      }
+
+      .continue-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .loading-dots {
+          height: 12px;
+        }
+      }
+    }
+  }
+
+  .mobile-only {
+    @media (min-width: $lg) {
+      display: none;
+    }
+  }
+
+  .desktop-only {
+    @media (max-width: $lg) {
+      display: none;
+    }
+  }
+}
+
+.continue-popover.popover.show {
+  border-color: var(--color-line);
+  font-family: inherit;
+
+  &.warning {
+    max-width: 320px;
+    // height: 194px;
+
+    @media (min-width: $lg) {
+      max-width: 350px;
+    }
+
+    .continue-popover-message {
+      border-bottom: 1px solid var(--color-line);
+    }
+
+    .popover-buttons {
+      display: flex;
+      flex-direction: row;
+      height: 79px;
+      align-items: center;
+      padding: 25px;
+
+      .btn-popover-continue {
+        min-width: 170px;
+        cursor: pointer;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-left: 10px;
+        flex-grow: 1;
+
+        @media (min-width: $lg) {
+          min-width: 200px;
+        }
+      }
+
+      .btn-popover-cancel {
+        color: var(--color-highlight);
+        cursor: pointer;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        min-width: 45px;
+      }
+    }
+  }
+
+  &.error {
+    max-width: 320px;
+    @media (min-width: $lg) {
+      max-width: 350px;
+    }
+
+    .popover-close {
+      position: absolute;
+      right: 12px;
+      font-size: 20px;
+      cursor: pointer;
+      color: var(--text-color-medium);
+    }
+  }
+
+  .popover-body {
+    padding: 0;
+    font-size: var(--text-size-regular);
+
+    .continue-popover-message {
+      padding: 25px;
+      color: var(--text-color-medium);
+    }
+  }
+}

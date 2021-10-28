@@ -1,0 +1,65 @@
+@import '_theme.scss';
+
+.profile{
+    .profile-icon-container{
+      margin-right: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      .profile-icon {
+          stroke: var(--text-color-header);
+			}
+			
+			.notification-icon {
+				position: absolute;
+				right: 18px;
+				bottom: 4px;
+				fill: var(--color-error);
+			}
+    }
+
+	.dropdown-menu{
+		width: 320px;
+		z-index: 109;
+		box-shadow: 0 4px 11px 0 rgba(0,0,0,0.5);
+		margin-top: 8px;
+
+		.dd-body{
+			a{
+				height: 40px;
+				display: flex;
+				align-items: center;
+				font-size: var(--text-size-regular);
+				color: var(--text-color-ultra-dark);
+				padding-left: 20px;
+				cursor: pointer;
+
+				&.bold {
+					font-weight: bold;
+				}
+
+				&.drafts{
+					border-bottom: 1px solid var(--color-line);
+				}
+				&:hover{
+					background-color: var(--color-fill);
+				}
+				&:focus,&:active {
+					outline: none;
+					box-shadow: none;
+				}
+			}
+
+		}
+		/* stretching the dropdown menu to width of the viewport*/
+		@media (max-width: $lg) {
+			width: 100vw;
+			top: 13px !important;
+			left: -7px !important;
+			box-shadow: 0 23px 25px 0 rgba(0,0,0,0.5);
+		}
+	}
+}

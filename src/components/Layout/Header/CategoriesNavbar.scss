@@ -1,0 +1,99 @@
+@import '_theme.scss';
+
+.categories-navbar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: hidden;
+
+	.category-title-wrapper {
+		margin-bottom: calc(var(--header-height-desktop) / 2);
+		white-space: nowrap;
+		cursor: pointer;
+
+		@media (min-width: $lg) {
+			height: var(--header-height-desktop);
+			align-items: center;
+			display: flex;
+		}
+
+		&:nth-of-type(1) {
+			.category-title{
+				margin-right: 20px;
+			}
+
+			.category-title:after {
+				position: absolute;
+				content: '';
+				width: 1px;
+				height: 20px;
+				background-color: var(--color-line);
+				margin-left: 20px;
+			}
+		}
+
+		.category-title:first-child {
+			margin-left: 20px;
+		}
+
+		.category-title.highlight {
+			border-bottom: 1px solid var(--color-highlight);
+			// this is a css hack for ie11
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				position: relative;
+				top:1px;
+			}
+			color: var(--color-highlight);
+		}
+	}
+
+	.category-title, .category-title .link{
+		color: inherit;
+	}
+
+	.category-title:hover, .category-title .link:hover{
+		text-decoration: none;
+	}
+
+	@media (min-width: $lg) {
+		height: var(--header-height-desktop);
+    	line-height: 23px;
+	}
+
+	/* styling reactstrap popover */
+	.popover-wrapper {
+		@media (max-width: $lg) {
+			display:none;
+		}
+		.popover {
+			max-width: 981px;
+			width: auto;
+			font-family: inherit;
+			top: 15px !important;
+			border: none;
+			box-shadow: 0 2px 4px 2px rgba(0,0,0,0.5);
+			margin-right: 20px;
+
+			.popover-body {
+				padding: 0px;
+			}
+
+			.arrow{
+				filter: drop-shadow(0px -2px 1px rgba(0, 0, 0, 0.2));
+				z-index:-1;
+
+				&::after {
+					border-width: 0 1.1rem 1.1rem 1.1rem !important;
+					top: -7px !important;
+				}
+				&::before{
+					border-bottom-color: rgba(0, 0, 0, 0) !important;;
+				}
+			}
+
+			&.view-show-all .arrow::after {
+				border-bottom-color: var(--color-fill);
+			}
+		}
+	}
+}

@@ -1,0 +1,286 @@
+﻿/*#region responsive CSS styles*/
+
+@media only screen {
+	body /*Preventing selecting objects on tap in ipads*/ {
+		-webkit-user-select: none; /* disable cut copy paste */
+		-webkit-touch-callout: none; /* disable callout, image save panel */
+		-webkit-tap-highlight-color: transparent; /* "turn off" link highlight */
+	}
+
+	#ContainerDiv {
+		margin: 0px;
+		width: 100%;
+	}
+
+	#ContainerDivLeft {
+		float: left;
+		width: 75%;
+	}
+
+	#ContainerDivRight {	
+		width: 24%;
+		display: block;
+	}
+
+	#MainContentDiv {
+		width: 100%;
+	}
+
+	#LowerNavDiv {
+		width: 100%;
+	}
+
+		#LowerNavDiv .LowerNavDivInner.ViewOptions {
+			width: 50%; /*120px;*/
+		}
+
+		#LowerNavDiv .LowerNavDivInner#divPropertiesCheckBox {
+			display: none !important;
+		}
+
+		#LowerNavDiv .LowerNavDivInner#divZoomSlider {
+			width: 50%;
+			border-right-style:none;
+			padding: 0;
+			text-align: center;
+		}
+
+	#ZoomSlider {
+		width: 75%;
+	}
+
+	.SliderControls {	
+		margin: 0 auto;
+		padding-right: 5px;
+		display:inline-block;
+		float:none;
+		top: 10px;
+	}
+
+	#SliderDown {	
+		margin: 0 auto;
+		margin-left:0;
+		
+	}
+
+	#SliderDown, #SliderUp
+	{
+		top:10px;
+	}
+
+	#DocumentsContainerDiv {
+		width: 100%;
+	}
+
+		#DocumentsContainerDiv .viewport {
+			width: 95%;
+		}
+
+		#DocumentsContainerDiv .overview {
+			width: 100%;
+			height: 100%;
+		}
+
+	.View {
+		overflow-x: auto;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+
+	.AddItemDiv {
+		background-image: url(AddItem.png);
+	}
+
+
+	.RightMenuAccordion 
+	{
+		width: 100%;
+	}
+	
+	.RightMenuWrapper {
+		width: 100%;
+	}
+
+	.PropListAccordion .PropertyName
+	{
+		width:70%;
+	}
+
+	.PropListAccordion .PropertyValue
+	{
+		width:70%;
+	}
+
+	#divTotalPrice 
+	{
+		width: 100%;
+		margin: 0 3px 4px 3px;
+	}
+
+	#divPropertiesMenu {
+		margin: 0;
+		padding: 0;
+	}
+
+
+	/*#region copied from default.css*/
+
+
+
+	/*#region File submission property list styling */
+
+
+
+
+
+
+
+
+	/*#endregion*/
+
+
+	.dialCustomizationTable {
+		width: 100%;
+	}
+
+	.fileSubmissionCustomizationHeader {
+		padding-left: 10px;
+	}
+
+
+
+	/*#endregion */
+
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+	#divPaperSizeNotice .PaperSizeOptionIconDiv {
+		width: 100%;
+	}
+	#divPaperSizeNotice .PaperSizeOptionTextDiv {
+		width: 100%;
+		padding-left: 0;
+	}
+	#divPaperSizeNotice .PaperSizeOptionButtonDiv {
+		width: 100%;
+	}
+	
+	.View {
+		height: 100%;
+		position: relative;
+	}
+
+
+	#ContainerDivLeft {
+		width: 100%;
+	}
+
+	#ContainerDivRight {
+		width: 100%;
+	}
+
+	.RightMenuWrapper {
+		height: auto;
+		overflow:hidden;
+	}
+
+
+	.PropListAccordion .PropertyItem {
+		padding: 8px 5px 8px 5px;
+	}
+
+	.DocumentContainerDiv, .PageContainer {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		float: none;
+		height: 100%;
+	}
+
+	.SubOrderProductDiv, .PageDiv {
+		float: none;
+		display: inline-block;
+	}
+
+
+	#divZoomSlider {
+		display: none !important;
+	}
+
+
+
+	.AddItemDiv4, .EmptyAddItemDiv {
+		margin-left: 5px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+
+	.DocumentImgDivPortrait1 {
+		width: 183px;
+		height: 243px;
+	}
+
+	.DocumentImgDivLandscape1 {
+		width: 146px;
+		height: 180px;
+		margin: 0px 5px 0px 5px;
+	}
+
+		.DocumentImgDivLandscape1 .PropertyOverlayDiv {
+			width: 145px;
+		}
+
+	.DocumentBgImgDivPortrait1 {
+		background-image: url(Doc3.png);
+		width: 146px;
+		height: 180px;
+	}
+
+	.DocumentImgDivLandscape1 .DocumentFrontPageImg {
+		width: 100%;
+		height: 66%;
+	}
+
+	.DocumentImgDivPortrait1 .DocumentFrontPageImg {
+		width: 90%;
+		height: 90%;
+	}
+
+
+
+
+	.DocumentTitleDivPortrait1.DocumentTitleDiv,
+	.DocumentTitleDivLandscape1.DocumentTitleDiv {
+		font-size: var(--text-size-fineprint);
+	}
+
+	.emptyDocumentDiv1 {
+		display: inline-block;
+		width: 45vw;
+		height: 244px;
+		background: url('emptyDoc3_Normal.png');
+		margin: 12px 3px 3px 34px;
+		background-repeat: no-repeat;
+		float: none;
+		position: absolute;
+		top: 0%;
+	}
+
+	.AddItemDiv {
+		margin-top: 100px;
+	}
+
+	.DocumentImgDivPortrait1 .PropertyOverlayDiv {
+		height: 100%;
+	}
+
+
+
+
+
+}
+/*#endregion*/
+

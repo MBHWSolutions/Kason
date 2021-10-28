@@ -1,0 +1,169 @@
+/* override default uEditStoreView.css rules here */
+
+/*#region uEdit Missing Fonts Dialog */
+
+.MissingFontsDialog .ui-dialog-titlebar
+{
+	background: url("../../../jQueryUI/images/ui-bg_highlight-soft_75_cccccc_1x100.png") repeat-x scroll 50% 50% var(--color-fill);
+	border: none;
+}
+.ui-dialog {
+	background-color:#ffffff;
+}
+#uEditContainer {
+	background-color:var(--color-fill);
+	border: 1px solid var(--color-line);
+}
+
+#bottomControlPanel
+{
+	background-color:var(--color-fill);
+	background-image: none;
+	background-repeat: none;
+	border-top: 1px solid var(--color-line);
+}
+
+#bottomControlPanel>div>div{
+	border-left-color:var(--color-line);
+}
+.uedit-application .combo .combo-menu input[type=text],
+.uedit-application .combo .combo-menu,
+.uedit-application .combo .combo-title,
+#rightControlPanel select,
+#mnuColorPicker input[type=text],
+.color-sample>div,
+.drop-menu,
+.palette
+{
+	border-color:var(--color-line);
+}
+.drop-menu{
+	border-radius:var(--formfield-border-radius);
+}
+.uedit-application .combo .combo-caret,
+.uedit-application .disabled .combo-caret>a,
+.uedit-application .disabled .combo-title{
+	color:var(--text-color-disabled);
+}
+.MissingFontsDialog,
+.UEdit-progress-label,
+#uEditContainer,
+.uedit-application,
+.uedit-application .combo .combo-menu>li>a{
+	color:var(--text-color-dark);
+}
+.uedit-application,
+.uedit-application input,
+#uEditContainer
+{
+	font-family:var(--font-family);
+}
+#MissingFontsWarning,
+#rightControlPanel .palette,
+#mnuColorPicker input[type=text],
+#rightControlPanel select,
+.uedit-application .combo .combo-menu input[type=text],
+.uedit-application .simple-controls-container button,
+.uedit-application .simple-controls-container input,
+.uedit-application .simple-controls-container a,
+.uedit-application .simple-controls-container span,
+.uedit-application .combo
+{
+	font-size:var(--text-size-regular);
+}
+.panel-title{
+	font-size:var(--text-size-label);
+	background-color:var(--color-fill);
+	color:var(--text-color-dark);
+}
+#mnuImageSelection .modal-body>.carousel-control {
+	font-size:var(--text-size-h1);
+}
+.UEdit-progress-label{
+	font-size:var(--text-size-label);
+}
+div.UEdit-selection-text-link.UEdit-selection-text-link-left.UEdit-positionable-transformable,
+div.UEdit-selection-text-link.UEdit-selection-text-link-right.UEdit-positionable-transformable,
+div.UEdit-selection-handle,
+div.UEdit-selection-border.UEdit-positionable-transformable.UEdit-simple-border,
+div.UEdit-selection-text-content.UEdit-positionable-transformable.UEdit-simple-border{
+	user-select: none; 
+	border-color: var(--color-highlight)!important;
+	outline-color:var(--color-highlight)!important;
+}
+div.UEdit-selection-text-link.UEdit-selection-text-link-left.UEdit-positionable-transformable,
+div.UEdit-selection-text-link.UEdit-selection-text-link-right.UEdit-positionable-transformable{
+	color:var(--color-highlight)!important;
+	outline-color:var(--color-highlight)!important;
+}
+.UEdit-selection-text-link:hover,
+div.UEdit-selection-handle:hover
+{
+	box-shadow: 0 0 10px var(--color-highlight-alpha);
+}
+.glyphicon{
+	color:var(--text-color-dark);
+}
+.uedit-application .modal-body .btn:focus{
+	outline-color:var(--color-highlight);
+}
+
+.uedit-application .combo
+{
+	font-size: var(--text-size-regular);
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.uedit-application .combo .combo-title
+{
+	border-color: 1px solid var(--color-line);
+}
+.uedit-application .combo .combo-value
+{
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+.uedit-application .combo .combo-caret
+{
+	background-color: var(--color-fill);
+}
+.uedit-application .color-button
+{
+	padding:2px!important;
+	margin: 5px 5px;
+	width: 32px;
+	height: 32px;
+}
+.uedit-application .color-menu-button
+{
+	margin: 1px 5px;
+	width: 32px;
+	height: 32px;
+}
+.uedit-application .small-icon-button
+{
+	padding: 0;
+	line-height: 100%;
+	width: 32px;
+	height: 32px;
+}
+.uedit-application .color-button>div,
+.uedit-application .color-button>img
+{
+	display:block;
+	line-height:normal;
+}
+
+.uedit-application .btn.active, .uedit-application .btn:active {
+    -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15),0 1px 2px rgba(0,0,0,.05);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+
+#uEditControl .UEdit-text-frame-view.UEdit-positionable-transformable.UEdit-story-text-frame.UEdit-text-inedit,
+#uEditControl .UEdit-story-view.UEdit-transformable,
+#uEditControl{
+	height:40vh!important;
+}
+/*#endregion */

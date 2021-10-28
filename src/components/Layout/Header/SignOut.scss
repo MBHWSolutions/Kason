@@ -1,0 +1,38 @@
+@import '_theme.scss';
+
+.signout{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid var(--color-line);
+  padding: 15px 20px;
+  height: 80px;
+
+  .info{
+    width: 60%;
+    padding-right: 10px;
+    color: var(--text-color-medium);
+
+    .title{
+      font-size: var(--text-size-h4);
+      padding: 0;
+      text-align: left;
+    }
+    .greeting{
+      font-size: var(--text-size-label);
+      white-space: nowrap;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+}
+
+@media (min-width: $lg) {
+  .drawer-wrapper {
+    .signout {
+      display: none;
+    }
+  }
+}

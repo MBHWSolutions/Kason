@@ -1,0 +1,71 @@
+@import '_theme.scss';
+
+.promotion-item {
+  height: var(--carousel-height-desktop);
+
+  .promotion-image{
+    height: var(--carousel-height-desktop);
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .main{
+    height: var(--carousel-height-desktop);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: calc(-1 * var(--carousel-height-desktop));
+  }
+
+  & * {
+    align-self: center;
+  }
+
+  .text{
+    color: var(--text-color-carousel);
+  }
+
+  .button {
+    margin: 20px;
+    max-width: 600px;
+    min-width: 200px;
+  }
+
+  .title-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .title{
+    font-size: var(--text-size-h1);
+  }
+
+  .subtitle{
+    font-size: var(--text-size-h3);
+  }
+
+  @media (max-width: $lg) {
+    height: var(--carousel-height-mobile);
+
+    .title{
+      font-size: calc(0.5 * var(--text-size-h1));
+    }
+
+    .subtitle{
+      font-size: calc(0.7 * var(--text-size-h3));
+    }
+
+    .promotion-image {
+      height: var(--carousel-height-mobile);
+    }
+
+    .main {
+      height: var(--carousel-height-mobile);
+      top: calc(-1 * var(--carousel-height-mobile));
+    }
+  }
+}
+

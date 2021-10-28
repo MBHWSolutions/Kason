@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="336px" viewBox="0 0 512 336" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>eh</title>
+    <desc>Created with Sketch.</desc>
+    <g id="menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="eh">
+            <path d="M512.001,112.093 L0,112.093 L0,9.104 C0,4.229 3.953,0.276 8.828,0.276 L503.173,0.276 C508.048,0.276 512.001,4.229 512.001,9.104 L512.001,112.093 Z" id="Path" fill="#464655"></path>
+            <path d="M503.172,335.725 L8.828,335.725 C3.953,335.725 0,331.772 0,326.897 L0,223.909 L512,223.909 L512,326.897 C512,331.773 508.047,335.725 503.172,335.725 Z" id="Path" fill="#73AF00"></path>
+            <rect id="Rectangle" fill="#F5F5F5" x="0" y="112.091" width="512" height="111.81"></rect>
+            <g id="Group" transform="translate(0.000000, 2.000000)" fill="#FF4B55">
+                <path d="M3.256,331.591 L206.097,170.576 C209.043,168.238 209.043,163.764 206.097,161.425 L3.256,0.411 C1.311,2.03 0,4.376 0,7.104 L0,324.897 C0,327.626 1.311,329.972 3.256,331.591 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

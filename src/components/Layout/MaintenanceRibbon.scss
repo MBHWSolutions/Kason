@@ -1,0 +1,56 @@
+@import "_theme.scss";
+
+.maintenance-ribbon {
+  display: var(--maintenance-ribbon-display);
+  align-items: center;
+  position: fixed;
+  top: var(--header-height-desktop);
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  z-index: 1;
+
+  @media (max-width: $lg) {
+    justify-content: space-between;
+    top: calc(var(--header-height-mobile) + var(--search-height))
+  }
+  
+  .maintenance-text{
+    display: block;
+    @media (min-width: $lg) {
+      margin: 20px auto;
+    }
+  
+    @media (max-width: $lg) {
+      margin: 20px;
+    }
+  }
+  .maintenance-text:after{
+    content: var(--maintenance-text); 
+    visibility: visible;
+    display: var(--maintenance-ribbon-display);
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+    margin: 20px;
+  }
+
+  .close-btn-container {
+    margin: 22px;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+
+    .close-btn {
+      vertical-align: unset;
+    }
+
+    @media (min-width: $lg) {
+      position: absolute;
+    }
+
+    @media (min-width: $xs) and (max-width: $sm) {
+      margin: 20px 20px 40px 20px;
+    }
+  }
+}

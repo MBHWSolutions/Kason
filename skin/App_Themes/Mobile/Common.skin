@@ -1,0 +1,23 @@
+<asp:Panel SkinID="ProductDetails_ProductSlideShow" runat="server" Width="286" Height="200" cssClass="ProductDetails_SlideShow" />
+<asp:Panel SkinID="Customization_ProductSlideShow" runat="server"  cssClass="productSlideShow" />
+<asp:Panel SkinID="Customization_ProductSlideShow_FileSubmission" runat="server" Width="260" Height="182"  />
+<%-- <uStoreControls:InfoPopup SkinID="InfoPopupDefaultSkin" runat="server" ButtonImageUrl="~/Images/someImage.gif" /> --%>
+
+<uStoreControls:CaptchaControl SkinID="Login_Captcha" runat="server" />
+
+
+<%-- BEGIN TELERIK SKIN --
+uStore offers you a flexible mechanism for changing it's look and feel of your store.
+There are two options for Telerik controls.
+1) Edit the css of the controls located at "[some skin name]\RadSkins\Default\"
+2) Use Embedded Skins. Edit "EnableEmbeddedSkins" property to have value "true", edit "Skin" property to have one of the values below.
+  Black, BlackMetroTouch, Default, Glow, Metro, MetroTouch, Office2007, Office2010Black, Office2010Blue, Office2010Silver,Outlook,Silk,Telerik,vista,Web20,WebBlue,Windows7
+--%>
+<rad:RadGrid SkinID="RadGrid_SkinID" EnableEmbeddedSkins="false" Skin="Default" runat="server" ImagesPath="/uStore/Images/AquaBlue/RadSkins/MetroTouch/Grid/" />
+<rad:RadTreeView SkinID="RadTreeView_SkinID" EnableEmbeddedSkins="false" Skin="MetroTouch" runat="server" />
+<rad:RadSpell SkinID="RadSpell_SkinID" EnableEmbeddedSkins="true" Skin="MetroTouch" runat="server" />
+<rad:RadCalendar SkinID="RadCalendar_SkinID" EnableEmbeddedSkins="false" Skin="MetroTouch" runat="server"   />
+<rad:RadDatePicker SkinID="RadDateTime_SkinID" EnableEmbeddedSkins="false" Skin="MetroTouch" runat="server"  />
+<rad:RadTimePicker SkinID="RadDateTime_SkinID" EnableEmbeddedSkins="false" Skin="MetroTouch" runat="server" />
+<rad:radImageEditor SkinID="RadImageEditor_SkinID" EnableEmbeddedSkins="true" Skin="Default" runat="server" />
+<%-- END TELERIK SKIN --%>

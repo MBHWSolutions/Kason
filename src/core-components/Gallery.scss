@@ -1,0 +1,224 @@
+@import "_theme.scss";
+
+.gallery {
+  margin: 0 auto;
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .main-title {
+      font-size: var(--text-size-h2);
+      color: var(--text-color-heading);
+
+      &.scrollable-title {
+        font-size: calc(var(--text-size-h4)*1.2);
+      }
+    }
+
+    .see-all {
+      color: var(--color-highlight);
+      font-size: var(--text-size-regular);
+      cursor: pointer;
+      white-space: nowrap;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @media (min-width: $md) {
+        display: block;
+        margin-top: 10px;
+      }
+
+      @media (max-width: $md) {
+        display: none;
+      }
+    }
+  }
+
+  .main > * {
+    flex-basis: var(--flex-basis);
+    max-width: var(--flex-basis);
+  }
+
+  .main {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .bottom > .button-secondary {
+    @media (min-width: $md) {
+      display: none;
+    }
+
+    @media (max-width: $md) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $xl) {
+    --flex-basis: 25%;
+
+    .main > *:nth-child(4n + 1) {
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 0;
+    }
+
+    .main > *:nth-child(4n + 2) {
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
+
+    .main > *:nth-child(4n + 3) {
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
+
+    .main > *:nth-child(4n + 4) {
+      padding-top: 20px;
+      padding-right: 0;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
+
+    .bottom {
+      padding: 0px 10px;
+    }
+  }
+
+  @media (min-width: $lg) and (max-width: $xl) {
+    --flex-basis: 25%;
+
+    .main > *:nth-child(4n + 1) {
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 0;
+    }
+
+    .main > *:nth-child(4n + 2) {
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
+
+    .main > *:nth-child(4n + 3) {
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
+
+    .main > *:nth-child(4n + 4) {
+      padding-top: 20px;
+      padding-right: 0;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
+
+    .bottom {
+      padding: 0px 10px;
+    }
+  }
+
+  @media (min-width: $md) and (max-width: $lg) {
+    --flex-basis: 33.333%;
+
+    .main > *:nth-child(3n + 1) {
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 0;
+    }
+
+    .main > *:nth-child(3n + 2) {
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
+
+    .main > *:nth-child(3n + 3) {
+      padding-top: 20px;
+      padding-right: 0;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
+
+    .bottom {
+      padding: 0px 10px;
+    }
+  }
+
+  @media (min-width: $sm) and (max-width: $md) {
+    --flex-basis: 50%;
+
+    .main > *:nth-child(2n + 1) {
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-bottom: 20px;
+      padding-left: 0;
+    }
+
+    .main > *:nth-child(2n + 2) {
+      padding-top: 20px;
+      padding-right: 0;
+      padding-bottom: 20px;
+      padding-left: 10px;
+    }
+
+    .bottom {
+      padding: 0px 10px;
+    }
+  }
+
+  @media (min-width: $xs) and (max-width: $sm) {
+    --flex-basis: 50%;
+
+    .main > *:nth-child(2n + 1) {
+      padding-top: 20px;
+      padding-right: 5px;
+      padding-bottom: 20px;
+      padding-left: 0;
+    }
+
+    .main > *:nth-child(2n + 2) {
+      padding-top: 20px;
+      padding-right: 0;
+      padding-bottom: 20px;
+      padding-left: 5px;
+    }
+
+    .bottom {
+      padding: 0px 5px;
+    }
+  }
+
+  @media (max-width: $xs) {
+    --flex-basis: 50%;
+
+    .main > *:nth-child(2n + 1) {
+      padding-top: 20px;
+      padding-right: 5px;
+      padding-bottom: 20px;
+      padding-left: 0;
+    }
+
+    .main > *:nth-child(2n + 2) {
+      padding-top: 20px;
+      padding-right: 0;
+      padding-bottom: 20px;
+      padding-left: 5px;
+    }
+  }
+}

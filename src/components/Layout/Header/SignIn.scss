@@ -1,0 +1,33 @@
+@import '_theme.scss';
+
+.signin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid var(--color-line);
+  padding: 15px 20px;
+  height: 80px;
+
+  &-info {
+    width: 60%;
+    padding-right: 10px;
+    align-self: flex-start;
+    color: var(--text-color-medium);
+  }
+
+  &-title {
+    font-size: var(--text-size-h4);
+    padding: 0;
+    text-align: left;
+  }
+
+}
+
+@media (min-width: $lg) {
+  .drawer-wrapper {
+    .signin {
+      display: none;
+    }
+  }
+}

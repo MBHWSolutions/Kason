@@ -1,0 +1,118 @@
+@import '_theme.scss';
+
+.home{
+  
+  .welcome-text{
+    margin: 0 auto;
+    width: 800px;
+    font-size: 45px;
+    text-align: center;
+    color: #00305e;
+    
+    a:link {
+      color: #00305e;
+      text-decoration: none;
+    }
+    a:visited {
+      color: #00305e;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #00305e;
+      text-decoration: underline;
+    }
+    a:active {
+      color: #00305e;
+      text-decoration: underline;
+    }
+    .button-primary {visibility: hidden;}
+  }
+
+  .middle-section {
+    margin: 0 auto;
+
+    @media (min-width: $lg) {
+      width: 1160px;
+    }
+
+    @media (min-width: $md) and (max-width: $lg) {
+      width: 727px;
+    }
+
+    @media (min-width: $sm) and (max-width: $md) {
+      width: 536px;
+    }
+
+    @media (min-width: $xs) and (max-width: $sm) {
+      width: 300px;
+    }
+  }
+
+  .categories-wrapper {
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: $xl) {
+      padding: 55px 0px 12px 0px;
+    }
+  
+    @media (min-width: $lg) and (max-width: $xl) {
+      padding: 55px 0px 12px 0px;
+    }
+  
+    @media (min-width: $md) and (max-width: $lg) {
+      padding: 40px 0px 12px 0px;
+    }
+  
+    @media (min-width: $sm) and (max-width: $md) {
+      padding: 40px 0px 12px 0px;
+    }
+  
+    @media (min-width: $xs) and (max-width: $sm) {
+      padding: 40px 0px 12px 0px;
+    }
+  
+    @media (max-width: $xs) {
+      padding: 40px 0px 12px 0px;
+    }
+  }
+
+  .divider{
+    height: 1px;
+    margin: 0 auto;
+    background: var(--color-line);   
+  }
+
+  .featured-products-wrapper {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: $xl) {
+      padding: 55px 0px;
+    }
+  
+    @media (min-width: $lg) and (max-width: $xl) {
+      padding: 55px 0px;
+    }
+  
+    @media (min-width: $md) and (max-width: $lg) {
+      padding: 40px 0px;
+    }
+  
+    @media (min-width: $sm) and (max-width: $md) {
+      padding: 40px 0px;
+    }
+  
+    @media (min-width: $xs) and (max-width: $sm) {
+      padding: 40px 0px;
+    }
+  
+    @media (max-width: $xs) {
+      padding: 40px 0px;
+    }
+  }
+}
+
+
+

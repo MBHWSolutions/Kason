@@ -1,0 +1,18 @@
+﻿.emptyDocumentDiv {
+	width: 108px;
+	height: 139px;
+	background-image: url(emptyDoc_Normal.png);
+	margin: 0;
+}
+
+	.emptyDocumentDiv:hover {
+		background-image: url(emptyDoc_Hover.png);
+		cursor: pointer;
+	}
+
+	.emptyDocumentDiv:active {
+		background-image: url(emptyDoc_Clicked.png);
+		cursor: pointer;
+	}
+
+

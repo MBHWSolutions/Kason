@@ -1,0 +1,35 @@
+@import "_theme.scss";
+
+.image-zoom {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  .scroll-wrapper.zoomed {
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+
+    img {
+      cursor: all-scroll;
+      height: unset;
+      width: unset;
+      object-fit: none;
+    }
+  }
+
+  .scroll-wrapper {
+    margin: auto;
+
+    &.contained img {
+      cursor: zoom-in;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &.small-image .scroll-wrapper.contained img {
+    cursor: default !important;
+  }
+}

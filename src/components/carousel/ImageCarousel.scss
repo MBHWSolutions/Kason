@@ -1,0 +1,126 @@
+@import "_theme.scss";
+
+.main-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .multi-carousel-container,
+  .dot-carousel {
+    margin: 15px auto 0;
+  }
+
+  @media (max-width: $md) {
+    .multi-carousel-container {
+      display: none;
+    }
+  }
+
+  @media (min-width: $md) {
+    .dot-carousel {
+      display: none;
+    }
+  }
+
+  .image-carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 100%;
+
+    div:not(.image):not(.thumbnail-title-wrapper):not(.img-zoomed) {
+      height: 100%;
+      width: 100%;
+    }
+
+    &:hover {
+      .arrows {
+        opacity: 0.8;
+      }
+    }
+
+    .image-wrapper {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-color: #ffffff;
+
+      img {
+        border: var(--image-border-width) solid var(--image-border-color);
+      }
+
+      .img-zoomed {
+        bottom: unset;
+        left: unset;
+      }
+
+      @media (max-width: $md) {
+        background-color: var(--color-fill);
+      }
+
+      .image {
+        object-fit: contain;
+        display: flex;
+
+        @media (max-width: $md) {
+          height: 100%;
+          width: 100%;
+        }
+
+        img {
+          margin: auto;
+          max-width: 100%;
+          max-height: 100%;
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+
+    .arrows {
+      display: block;
+      top: calc(50% - 20px);
+      position: absolute;
+      cursor: pointer;
+      opacity: 0;
+      transition: all 0.3s ease;
+      z-index: 3;
+
+      @media (max-width: $md) {
+        display: none;
+      }
+
+      &.left-arrow {
+        margin-left: 30px;
+        left: -60px;
+
+        &.show {
+          left: 0;
+        }
+      }
+
+      &.right-arrow {
+        margin-right: 30px;
+        right: -60px;
+
+        &.show {
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+.thumbnail-title-wrapper {
+  width: 70%;
+  font-size: var(--text-size-regular);
+  color: #484848;
+  text-align: center;
+  margin: 5px auto 0;
+
+  @media (max-width: $md) {
+    display: none;
+  }
+}

@@ -1,0 +1,224 @@
+﻿
+.divUploadWrapper {
+	text-align: left;
+	padding: 0 18px;
+    margin-top: 5px;
+}
+
+.dialogTitle {
+	font-weight: var(--default-font-weight);
+}
+
+
+.upload-panel {
+}
+
+	/* RadAsyncUpload control START */
+	.upload-panel .RadUpload .ruFakeInput {
+		width: 290px;
+		max-width: 50%;
+		border: 1px solid var(--color-line);
+		margin-right: 5px;
+		cursor: default !important;
+		z-index: 100;
+		height: 18px;
+		padding-top: 0px !important;
+		margin-top: 2px !important;
+	}
+
+
+.ruBrowse {
+	margin-top: 1px !important;
+
+}
+
+
+
+.upload-panel .RadUpload .ruFileInput,
+.upload-panel .RadUpload .ruBrowse {
+	cursor: pointer !important;
+	padding-top: 0px !important;
+}
+
+.upload-panel .RadUpload .ruBrowse {
+	border: none !important;
+	color: #ffffff !important;
+	height: 23px !important;
+	width: auto !important;
+	font-family: var(--font-family) !important;
+	font-size: var(--text-size-label) !important;
+	border-radius: 5px 5px 5px 5px !important;
+	box-shadow: 1px 1px 2px var(--color-line) !important;
+	outline: medium none !important;
+	padding-right: 18px !important;
+	padding-left: 18px !important;
+	background-color: var(--button-primary-background-color);
+}
+
+.upload-panel .RadUpload .ruCancel,
+.upload-panel .RadUpload .ruRemove {
+	display: none !important;
+}
+
+.upload-panel .RadUpload .ruUploadProgress {
+	width: 280px !important;
+	display: none !important;
+}
+
+.upload-panel .RadUpload .ruFileWrap {
+	overflow: hidden !important;
+	width: 100%;
+	height: initial;
+}
+
+.upload-panel .RadUpload .ruInputs li {
+	margin: 0 !important;
+	height: 0;
+}
+
+
+.upload-panel .RadUpload .ruFileProgress,
+.upload-panel .RadUpload .ruFileProgressWrap {
+}
+
+.upload-panel .RadUpload .ruProgressStarted,
+.upload-panel .RadUpload .ruProgressComplete {
+}
+
+.upload-panel .RadUpload .ruButton {
+	background-color: var(--button-primary-background-color) !important;
+	background-position:150px 0 !important;
+}
+
+.upload-panel .RadUpload .ruButtonHover {
+	background-color: var(--button-primary-background-color) !important;
+}
+
+.upload-panel .RadUpload .ruButton:active {
+background-color: var(--button-primary-background-color) !important;
+}
+
+.RadUpload_Default .ruStyled .ruFileInput {
+	border-color:var(--color-line)!important;
+}
+
+/* RadAsyncUpload control END */
+
+
+.divSlidesOption {
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	cursor: pointer;
+	text-align: center;
+	width: 110px;
+}
+
+	.divSlidesOption.hover {
+		font-weight: var(--default-font-weight);
+	}
+
+	.divSlidesOption.selected {
+		color: var(--button-primary-background-color);
+		font-weight: var(--default-font-weight);
+	}
+
+	.divSlidesOption .divImgOption {
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		border: solid 3px #ffffff;
+		margin-right: 5px;
+	}
+
+	.divSlidesOption.selected .divImgOption {
+		border-color: var(--button-primary-background-color);
+	}
+
+#divSlidesPerPage {
+	padding: 18px;
+	text-align: left;
+}
+
+#btnSlidesSelect {
+	float: right;
+}
+
+.fileUploadDialog {
+	border-radius: 20px;
+}
+
+#uploadProgressBar {
+	z-index: 100;
+	width: 0px;
+	background-color: #484848;
+	opacity: 0.5;
+	display: none;
+	position: absolute;
+	height: 23px;
+}
+
+
+
+/* SINGLE PROGRESS BAR */
+#UploadProgressBarDialog {
+	padding: 20px;
+}
+
+.progressBarDialog {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+
+
+.progressBar {
+	width: 216px;
+	height: 41px;
+	background: url(progressBar/bg_bar.gif) no-repeat 0 0;
+	position: relative;
+}
+
+	.progressBar span {
+		position: absolute;
+		display: block;
+		width: 200px;
+		height: 25px;
+		background: url(progressBar/bar.png) no-repeat 0 0;
+		top: 8px;
+		left: 8px;
+		overflow: hidden;
+		text-indent: -8000px;
+	}
+
+	.progressBar em {
+		position: absolute;
+		display: block;
+		width: 200px;
+		height: 25px;
+		background: url(progressBar/bg_cover.gif) repeat-x 0 0;
+		top: 0;
+		left: 0px;
+	}
+
+
+#divProgressBar {
+	width: 200px;
+	margin: auto auto;
+}
+
+#btnRemoveFile,
+#btnConvertFile{
+	color:#ffffff;
+}
+#btnAddNewRecord{
+	border: none;
+    background: none;
+    color: var(--color-highlight)!important;
+    font-size: var(--text-size-regular);
+    padding: 0!important;
+    border-radius: 0;
+    line-height: 16px;
+    box-shadow: none;
+}

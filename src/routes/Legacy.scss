@@ -1,0 +1,15 @@
+@import '_theme.scss';
+
+.iframe{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border: none;
+  background-color: white;
+}
+
+.iframe-container{
+  height: 500px;
+}
+
+

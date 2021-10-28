@@ -1,0 +1,1226 @@
+﻿/*PAGE STRUCTURE */
+#ContainerDiv {
+	margin: 0px;
+}
+
+#ContainerDivLeft {
+	float: left;
+	width: 890px;
+}
+
+#ContainerDivRight {
+	float: right;
+	width: 250px;
+}
+
+#ProgressBarDiv {
+	float: left;
+	width: 712px;
+	height: 42px;
+	display: inline;
+}
+
+
+#MainContentDiv {
+	float: left;
+	width: 890px;
+	background-color: var(--color-fill);
+	padding: 0px;
+	margin-bottom: 7px;
+	margin-top: 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+	#MainContentDiv.RecipientOff {
+		border: 1px solid var(--color-line);
+		-webkit-box-shadow: 2px 1px 2px 1px #F1F1F1;
+		-moz-box-shadow: 2px 1px 2px 1px #F1F1F1;
+		box-shadow: 2px 1px 2px 1px #F1F1F1;
+	}
+
+	#MainContentDiv.RecipientOn {
+		border: 1px solid var(--color-line);
+		-webkit-box-shadow: 2px 1px 2px 1px var(--color-line);
+		-moz-box-shadow: 2px 1px 2px 1px var(--color-line);
+		box-shadow: 2px 1px 2px 1px var(--color-line);
+	}
+
+/* Lower Navigation Bar*/
+#LowerNavDiv {
+	float: left;
+	width: 890px; 
+	height: 40px;
+	border-top: 1px solid var(--color-line);
+	background: #f6f6f6;
+	background: -moz-linear-gradient(top, #f6f6f6 33%, #e2e2e2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(33%,#f6f6f6), color-stop(100%,#e2e2e2));
+	background: -webkit-linear-gradient(top, #f6f6f6 33%,#e2e2e2 100%);
+	background: -o-linear-gradient(top, #f6f6f6 33%,#e2e2e2 100%);
+	background: -ms-linear-gradient(top, #f6f6f6 33%,#e2e2e2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#e2e2e2',GradientType=0 );
+	background: linear-gradient(top, #f6f6f6 33%,#e2e2e2 100%);
+}
+
+	#LowerNavDiv .LowerNavDivInner {
+		border-right: 1px solid var(--color-line);
+		display: inline-block;
+		float: left;
+		vertical-align: middle;
+		padding: 8px;
+		line-height: 1em;
+	}
+
+		#LowerNavDiv .LowerNavDivInner.ViewOptions {
+			width: 160px;
+		}
+
+		#LowerNavDiv .LowerNavDivInner #divPropertiesCheckBox {
+			border-right: none;
+			margin-left: 20px;
+			display: none;
+		}
+
+		#LowerNavDiv .LowerNavDivInner #divZoomSlider {
+			width: 350px;
+		}
+
+#ZoomSlider {
+	width: 200px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.SliderControls {
+	float: left;
+	margin: 6px 15px;
+	cursor: pointer;
+}
+
+#SliderDown, #SliderUp {
+	font-size: var(--text-size-h2);
+	font-weight: var(--default-font-weight);
+	color: var(--color-line);
+	position: relative;
+	top: -3px;
+}
+
+.ie7 #SliderDown, .ie7 #SliderUp {
+	top: -12px;
+	line-height: 1em;
+}
+
+#SliderDown {
+	font-size: var(--text-size-h2);
+	margin-left: 43px;
+}
+
+	#SliderDown:hover, #SliderUp:hover {
+		color: var(--button-primary-background-color);
+	}
+
+#imgChapterView {
+	background-image: url(Chapter_Sprite.png);
+}
+
+#imgPageView {
+	background-image: url(Page_Sprite.png);
+}
+
+#imgCompositeProofView {
+	background-image: url(CompositeProof_Sprite.png);
+}
+
+	#imgCompositeProofView.disabled, #imgCompositeProofView.disabled:hover {
+		background-image: url(CompositeProof_disabled.png);
+		background-position: 0px;
+		cursor: default;
+	}
+
+.BtnViewMode {
+	width: 27px;
+	height: 25px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: top left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+	.BtnViewMode:hover {
+		background-position: -27px;
+	}
+
+	.BtnViewMode.selected {
+		background-position: -54px;
+	}
+
+/* Lower Navigation Bar END */
+
+
+
+/* Documents Container and SCROLL BAR */
+#DocumentsContainerDiv {
+	float: left;
+	width: 890px;
+	height: 623px;
+	display: inline;
+	margin-top: 5px;
+}
+
+#DocumentsContainerDiv {
+	clear: both;
+}
+
+	#DocumentsContainerDiv .viewport {
+		width: 97%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	#DocumentsContainerDiv .overview {
+		list-style: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	#DocumentsContainerDiv .thumb .end,
+	#DocumentsContainerDiv .thumb {
+		background-color: #003D5D;
+	}
+
+	#DocumentsContainerDiv .scrollbar {
+		background: transparent url(scrollbar/bg-scrollbar-track-y.png) no-repeat 0 0;
+		position: relative;
+		background-position: 0 0;
+		float: right;
+		width: 15px;
+	}
+
+	#DocumentsContainerDiv .track {
+		background: transparent url(scrollbar/bg-scrollbar-trackend-y.png) no-repeat 0 100%;
+		height: 100%;
+		width: 13px;
+		position: relative;
+		padding: 0 1px;
+	}
+
+	#DocumentsContainerDiv .thumb {
+		background: transparent url(scrollbar/bg-scrollbar-thumb-y.png) no-repeat 50% 100%;
+		height: 20px;
+		width: 25px;
+		cursor: pointer;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: -5px;
+	}
+
+		#DocumentsContainerDiv .thumb .end {
+			background: transparent url(scrollbar/bg-scrollbar-thumb-y.png) no-repeat 50% 0;
+			overflow: hidden;
+			height: 5px;
+			width: 25px;
+		}
+
+	#DocumentsContainerDiv .disable {
+		display: none;
+	}
+
+
+
+
+
+/*DOCUMENT TEMPLATE*/
+.DocumentContainerDiv {
+	display: inline;
+	float: left;
+	position: relative;
+}
+
+
+.SubOrderProductDiv:hover, .SortableDiv:hover {
+	cursor: move;
+}
+
+.DocumentBgImgDivPortrait1 {
+	background-image: url(Doc1.png);
+}
+
+.DocumentBgImgDivLandscape1 {
+	background-image: url(Doc1L.png);
+}
+
+.DocumentBgImgDivPortrait2 {
+	background-image: url(Doc2.png);
+}
+
+.DocumentBgImgDivLandscape2 {
+	background-image: url(Doc2L.png);
+}
+
+.DocumentBgImgDivPortrait3 {
+	background-image: url(Doc3.png);
+}
+
+.DocumentBgImgDivLandscape3 {
+	background-image: url(Doc3L.png);
+}
+
+.DocumentBgImgDivPortrait4 {
+	background-image: url(Doc4.png);
+}
+
+.DocumentBgImgDivLandscape4 {
+	background-image: url(Doc4L.png);
+}
+
+.DocumentImgDiv {
+	display: block;
+	background-repeat: no-repeat;
+	margin: 3px;
+	position: relative;
+}
+
+.PageContainer {
+	float: left;
+	display: inline;
+	position: relative;
+}
+
+
+
+.PropertyOverlayDiv {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.DocumentImgDivLandscape1 .PropertyOverlayDiv {
+	width: 92px;
+	height: 74px;
+	left: -1px;
+	top: -1px;
+}
+
+.DocumentImgDivLandscape2 .PropertyOverlayDiv {
+	width: 123px;
+	height: 99px;
+	left: -1px;
+	top: -1px;
+}
+
+.DocumentImgDivLandscape3 .PropertyOverlayDiv {
+	width: 168px;
+	height: 138px;
+	left: -3px;
+	top: -3px;
+}
+
+.DocumentImgDivLandscape4 .PropertyOverlayDiv {
+	width: 527px;
+	height: 423px;
+	left: -10px;
+	top: -10px;
+}
+
+.DocumentImgDivPortrait1 .PropertyOverlayDiv {
+	width: 74px;
+	height: 92px;
+	left: -1px;
+	top: -1px;
+}
+
+.DocumentImgDivPortrait2 .PropertyOverlayDiv {
+	width: 99px;
+	height: 123px;
+	left: -1px;
+	top: -1px;
+}
+
+.DocumentImgDivPortrait3 .PropertyOverlayDiv {
+	width: 138px;
+	height: 168px;
+	left: -3px;
+	top: -3px;
+}
+
+.DocumentImgDivPortrait4 .PropertyOverlayDiv {
+	width: 423px;
+	height: 527px;
+	left: -10px;
+	top: -10px;
+}
+
+.DocumentBoxStyle {
+	border: 1px solid #C8DBED;
+	-webkit-box-shadow: 6px 7px 7px -3px #C1C1C1;
+	-moz-box-shadow: 6px 7px 7px -3px #C1C1C1;
+	box-shadow: 6px 7px 7px -3px #C1C1C1;
+}
+
+.DocumentImgDivPortrait1 {
+	width: 81px;
+	height: 101px;
+	margin: 0px 0px 0px 14px;
+}
+
+.DocumentImgDivPortrait2 {
+	width: 108px;
+	height: 134px;
+	padding: 2px 1px 0px 2px;
+	margin: 0px 0px 0px 14px;
+}
+
+.DocumentImgDivPortrait3 {
+	width: 147px;
+	height: 181px;
+	padding: 2px 0px 0px 1px;
+	margin: 0px 25px 0px 25px;
+}
+
+.DocumentImgDivPortrait4 {
+	width: 435px;
+	height: 540px;
+	margin: 0px 25px 0px 25px;
+}
+
+.DocumentImgDivLandscape1 {
+	width: 101px;
+	height: 91px;
+	margin: 10px 0px 0px 4px;
+}
+
+.DocumentImgDivLandscape2 {
+	width: 134px;
+	height: 124px;
+	padding: 2px 1px 0px 2px;
+	margin: 10px 0px 0px 4px;
+}
+
+.DocumentImgDivLandscape3 {
+	width: 181px;
+	height: 161px;
+	padding: 2px 0px 0px 1px;
+	margin: 20px 4px 0px 4px;
+}
+
+.DocumentImgDivLandscape4 {
+	width: 540px;
+	height: 435px;
+	margin: 20px 4px 0px 4px;
+}
+
+
+.DocumentImgDivLandscape1 .DocumentFrontPageImg {
+	width: 88px;
+	height: 70px;
+}
+
+.DocumentImgDivLandscape2 .DocumentFrontPageImg {
+	width: 118px;
+	height: 92px;
+}
+
+.DocumentImgDivLandscape3 .DocumentFrontPageImg {
+	width: 162px;
+	height: 128px;
+}
+
+.DocumentImgDivLandscape4 .DocumentFrontPageImg {
+	width: 507px;
+	height: 403px;
+}
+
+
+.DocumentImgDivPortrait1 .DocumentFrontPageImg {
+	width: 70px;
+	height: 88px;
+}
+
+.DocumentImgDivPortrait2 .DocumentFrontPageImg {
+	width: 92px;
+	height: 118px;
+}
+
+.DocumentImgDivPortrait3 .DocumentFrontPageImg {
+	width: 132px;
+	height: 162px;
+}
+
+.DocumentImgDivPortrait4 .DocumentFrontPageImg {
+	width: 403px;
+	height: 507px;
+}
+
+.float_left {
+	float: left;
+}
+
+.RotatedDiv {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg); /* IE9 */
+	transform: rotate(90deg);
+}
+
+.ie8 .RotatedDiv, .ie7 .RotatedDiv {
+	/* IE7-IE8  */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(Rotation=1);
+}
+
+.DocumentTitleDivPortrait1.DocumentTitleDiv,
+.DocumentTitleDivLandscape1.DocumentTitleDiv {
+	font-size: 9px;
+	max-width: 60px;
+	padding: 5px 16px 5px 5px;
+	height: 45px;
+}
+
+.DocumentTitleDivPortrait4.DocumentTitleDiv,
+.DocumentTitleDivLandscape4.DocumentTitleDiv {
+	font-size: var(--text-size-fineprint);
+}
+
+.DocumentTitleDiv {
+	text-align: left;
+	font-size: var(--text-size-fineprint);
+	padding: 5px 16px 5px 5px;
+	max-width: 95px;
+	height: 50px;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+	.DocumentTitleDiv INPUT {
+		font-family: inherit !important;
+		font-size: var(--text-size-fineprint);
+		width: 90px;
+		line-height: 100%;
+		margin: -3px;
+	}
+
+.DocumentTitleHover {
+	background-color: transparent;
+	background-position: right 3px;
+	background-image: url(../icon-edit.gif);
+	background-repeat: no-repeat;
+}
+
+.DocumentFileIconDiv {
+	float: left;
+	padding: 3px;
+	margin-right: 2px;
+	position: relative;
+}
+
+	.DocumentFileIconDiv:hover {
+		cursor: pointer;
+		-webkit-box-shadow: 2px 2.5px 2px 0.5px #C1C1C1;
+		-moz-box-shadow: 2px 2.5px 2px 0.5px #C1C1C1;
+		box-shadow: 2px 2.5px 2px 0.5px #C1C1C1;
+	}
+
+.DocumentFileNotValidImg {
+	width: 16px;
+	height: 16px;
+	z-index: 100;
+	position: absolute;
+	right: 0px;
+}
+
+.DocumentFileIconImg {
+	width: 16px;
+	height: 16px;
+}
+
+.DocumentPagesDiv {
+	text-align: right;
+	margin-right: 20px;
+	font-size: var(--text-size-fineprint);
+}
+
+.NoticeBox {
+	font-size: var(--text-size-fineprint);
+	border: 1px solid var(--color-line);
+	background-color: #F9F9F9;
+	overflow: hidden;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 2px #aaaaaa;
+	-moz-box-shadow: 1px 1px 2px #aaaaaa;
+	box-shadow: 1px 1px 2px #aaaaaa;
+}
+
+.DocumentIrrelevantMsg {
+	position: absolute;
+	top: 12px;
+	z-index: 1001;
+	padding: 5px;
+}
+
+.NoRelevantContent {
+	padding: 10px;
+	width: 150px;
+	margin-left: 275px;
+	margin-top: 30px;
+}
+
+.NoticeBoxIcon {
+	float: left;
+}
+
+.DocumentIrrelevantMsgPortrait1 .NoticeBoxIcon,
+.DocumentIrrelevantMsgLandscape1 .NoticeBoxIcon {
+	width: 15px;
+	height: 15px;
+}
+
+.NoticeBoxContentText {
+	margin-left: 25px;
+}
+
+.DocumentIrrelevantMsgLandscape1.DocumentIrrelevantMsg {
+	font-size: 8px;
+	max-width: 125px;
+	max-height: 40px;
+}
+
+.DocumentIrrelevantMsgLandscape2.DocumentIrrelevantMsg {
+	max-width: 136px;
+	max-height: 57px;
+	left: 5px;
+}
+
+.DocumentIrrelevantMsgLandscape3.DocumentIrrelevantMsg {
+	max-width: 136px;
+	max-height: 57px;
+	left: 35px;
+}
+
+.DocumentIrrelevantMsgPortrait1.DocumentIrrelevantMsg {
+	font-size: 8px;
+	max-width: 125px;
+	max-height: 40px;
+	left: -10px;
+}
+
+.DocumentIrrelevantMsgPortrait2.DocumentIrrelevantMsg {
+	max-width: 136px;
+	max-height: 57px;
+	left: -15px;
+}
+
+.DocumentIrrelevantMsgPortrait3.DocumentIrrelevantMsg {
+	max-width: 136px;
+	max-height: 57px;
+	left: 20px;
+}
+
+.DocumentMenuDialog {
+	padding: 5px !important;
+}
+
+	.DocumentMenuDialog div {
+		margin: 0px 6px 0px 6px;
+		padding: 1px 1px 1px 1px;
+		background-repeat: no-repeat;
+	}
+
+		.DocumentMenuDialog div:hover {
+			cursor: pointer;
+			-webkit-box-shadow: 2px 2.5px 2px 0.5px #C1C1C1;
+			-moz-box-shadow: 2px 2.5px 2px 0.5px #C1C1C1;
+			box-shadow: 2px 2.5px 2px 0.5px #C1C1C1;
+		}
+
+#WrenchBtnDiv {
+	cursor: pointer;
+	width: 67px;
+	height: 67px;
+	z-index: 2000;
+	display: none;
+	background-image: url(IconWrench.png);
+}
+
+	#WrenchBtnDiv:active {
+		background-image: url(Wrench_Clicked.png);
+	}
+
+#IconTrashBtnDiv {
+	float: left;
+	width: 14px;
+	height: 20px;
+	background-image: url(IconTrash.png);
+}
+
+#IconPreflightBtnDiv {
+	float: right;
+	width: 14px;
+	height: 20px;
+	background-image: url(IconPreflight.png);
+}
+
+/*EMPTY DOCUMENT TEMPLATE*/
+.emptyDocumentDiv {
+	display: inline;
+	float: left;
+	background-repeat: no-repeat;
+}
+
+	.emptyDocumentDiv:hover {
+		cursor: pointer;
+	}
+
+.emptyDocumentDiv1 {
+	width: 81px;
+	height: 104px;
+	background-image: url(emptyDoc1_Normal.png);
+	margin: 12px 3px 3px 34px;
+}
+
+	.emptyDocumentDiv1:hover {
+		background-image: url(emptyDoc1_Hover.png);
+	}
+
+	.emptyDocumentDiv1.clicked {
+		background-image: url(emptyDoc1_Clicked.png);
+		cursor: pointer;
+	}
+
+.emptyDocumentDiv2 {
+	width: 108px;
+	height: 139px;
+	background-image: url(emptyDoc2_Normal.png);
+	margin: 12px 3px 3px 34px;
+}
+
+	.emptyDocumentDiv2:hover {
+		background-image: url(emptyDoc2_Hover.png);
+	}
+
+	.emptyDocumentDiv2.clicked {
+		background-image: url(emptyDoc2_Clicked.png);
+		cursor: pointer;
+	}
+
+.emptyDocumentDiv3 {
+	width: 147px;
+	height: 189px;
+	background-image: url(emptyDoc3_Normal.png);
+	margin: 12px 3px 3px 50px;
+}
+
+	.emptyDocumentDiv3:hover {
+		background-image: url(emptyDoc3_Hover.png);
+	}
+
+	.emptyDocumentDiv3.clicked {
+		background-image: url(emptyDoc3_Clicked.png);
+		cursor: pointer;
+	}
+
+
+
+
+
+/*Horizontal Menu*/
+
+
+
+
+
+
+/* AddItem button */
+.AddItemDiv, .EmptyAddItemDiv {
+	padding: 0 0px 0 0px;
+	float: left;
+	width: 28px;
+	height: 36px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.EmptyAddItemDiv4 {
+	margin-left: 65px;
+}
+
+.AddItemDiv:hover {
+	cursor: pointer;
+	background-image: url(AddItem.png);
+}
+
+.AddItemDiv1 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.AddItemDiv2 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.AddItemDiv3 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.AddItemDiv4 {
+	margin-left: 65px;
+	padding-top: 184px;
+	padding-bottom: 184px;
+}
+
+/* Pages overview*/
+#PagesOverview {
+}
+
+#RemoveFileWrapper {
+	text-align: left;
+	padding: 18px;
+}
+
+.RemoveFileIconImg {
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 5px;
+}
+
+#ApproveFileWrapper {
+	text-align: left;
+	padding: 0 18px;
+	margin-top:15px;
+}
+
+.WarningIconImg {
+	width: 39px;
+	height: 38px;
+	float: left;
+	margin: 0 10px 0 -5px;
+	background-image: url(IconWarningBig.png);
+	background-repeat: no-repeat;
+}
+
+
+
+/*styles for dialog buttons BEGIN*/
+
+/* Button styling taken from:
+/* http://webdesignerwall.com/tutorials/css3-gradient-buttons */
+
+/* button */
+.button {
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+	display: inline;
+	vertical-align: baseline;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	padding: 5px 20px 5px 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 2px var(--color-line);
+	-moz-box-shadow: 1px 1px 2px var(--color-line);
+	box-shadow: 1px 1px 2px var(--color-line);
+}
+
+/* green */
+.green {
+	color: #e8f0de;
+	border: solid 1px #538312;
+	background: #64991e;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7db72f), to(#4e7d0e));
+	background: -moz-linear-gradient(top, #7db72f, #4e7d0e);
+}
+
+	.green:hover,
+	.green.Hover {
+		background: #538018;
+		background: -webkit-gradient(linear, left top, left bottom, from(#6b9d28), to(#436b0c));
+		background: -moz-linear-gradient(top, #6b9d28, #436b0c);
+	}
+
+	.green:active,
+	.green:Active {
+		color: #a9c08c;
+		background: -webkit-gradient(linear, left top, left bottom, from(#4e7d0e), to(#7db72f));
+		background: -moz-linear-gradient(top, #4e7d0e, #7db72f);
+	}
+
+.divDialogButtons {
+	float: right;
+	padding: 10px 18px;
+}
+
+/*styles for dialog buttons END*/
+
+/*price control*/
+#divTotalPrice {
+	border-radius: 4px 4px 8px 8px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid var(--color-line);
+	min-height: 20px;
+	width: 234px;
+	float: right;
+	padding-left: 6px;
+	padding-top: 15px;
+	margin: 0px 0px 4px 0px;
+	border-bottom: 8px solid var(--color-highlight);
+	font-size:var(--text-size-regular);
+}
+#spnTotalPrice,
+#lnkTotalPrice{
+	font-size:var(--text-size-label);
+	color:var(--color-highlight);
+}
+#txtQuantityPerRecipient{
+	padding: 2px 0px;
+}
+.RightMenuWrapper
+{
+	width: 240px;
+	
+}
+
+#divPriceExtraData {
+	height: auto;
+	display: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.divPriceExtraDataLeft {
+	width: 130px;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+
+/*price control END*/
+
+
+#divPreviewRecipients {
+	background-color: #EBF1DE;
+	min-height: 50px;
+	border-bottom: 1px solid #A6A6A6;
+	border-top: 1px solid #A6A6A6;
+	margin: 3px 0px 0px 0px;
+	padding: 5px 0px 0px 5px;
+}
+
+
+#divPreviewNumPager {
+	text-align: center;
+}
+
+#txtboxPreviewNum {
+	width: 30px;
+}
+
+#divPropertiesMenu .ui-accordion-content {
+	padding: 0 !important;
+	overflow: visible !important;
+	z-index: 1;
+}
+
+@media only screen and (min-width : 992px) {
+	#divPropertiesMenu .ui-accordion-content:after {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 60%;
+		background-color: #F1F1F1 !important;
+	}
+}
+
+#divPropertiesMenu .ui-accordion-content P {
+	display: none;
+}
+
+#lblTemplateChanged {
+	color: var(--color-error);
+	font-size: var(--text-size-fineprint);
+	padding:5px;
+}
+
+#RemoveFileDialog #btnRemoveFileOK {
+	float: left;
+}
+
+#RemoveFileDialog #btnRemoveFileCancel {
+	float: right;
+}
+
+#wndPrintProperties {
+	overflow: hidden;
+}
+
+/*PrintProprtiesDialog*/
+
+.liEditTemplate > .propertyWrapper {
+	background-image: url('../PropertyIcons/edit%20template.png');
+}
+
+/*#PrintProprtiesDialog {
+	margin-bottom: 0;
+	margin-left: 0;
+	height: auto;
+	padding-top: 0;
+	height: 100%;
+}
+
+.PrintProperties_divPopupContentInner {
+	padding: 0px !important;
+	height: 100%;
+}
+
+.propertySeparator {
+	border-bottom: 1px solid #AAA;
+}
+
+#divPropertyDucs {
+	float: right;
+	width: 76%;
+	border-left: 1px solid var(--color-line);
+	margin-left: -1px;
+}
+
+	#divPropertyDucs div {
+		word-wrap: break-word;
+	}
+
+	#divPropertyDucs #divValidationSummary {
+		margin: 10px 0px 0px 10px;
+		display: block;
+	}
+
+
+#PrintProprtiesDialog .VerticalMenuDiv {
+	float: left;
+	height: 100%;
+	width: 24%;
+	overflow: auto;
+}
+
+#PrintProprtiesDialog .HorizontalMenuDataList {
+	border-right: 1px solid var(--color-line);
+	height: 100%;
+}
+
+	#PrintProprtiesDialog .HorizontalMenuDataList .HeadLine {
+		padding: 5px;
+		font-weight: bold;
+		display: block;
+	}
+
+		#PrintProprtiesDialog .HorizontalMenuDataList .HeadLine:nth-of-type(2) {
+			margin-top: 2px;
+			border-top: 1px solid var(--color-line);
+		}
+
+#PrintProprtiesDialog .Duc {
+	margin-left: 0;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+}
+
+
+#PrintProprtiesDialog .VerticalMenuDiv ul li {
+	word-wrap: break-word;
+}
+
+.liEditTemplate > .propertyWrapper {
+	background-image: url('../PropertyIcons/edit%20template.png');
+}
+
+#PrintProprtiesDialog #divButtons div {
+	float: right;
+}
+
+#PrintProprtiesDialog #divButtons .XmpImageButton {
+	float: left;
+}
+
+#PrintProprtiesDialog .propertyWrapper {
+	padding: 4px 0 3px 27px;
+	background-repeat: no-repeat;
+	margin-right: 3px;
+	background-position: 5px center;
+	background-repeat: no-repeat;
+}
+
+#divProcessDocument {
+	position: absolute;
+	top: 40%;
+	left: 37%;
+}
+
+#divUploadProcessDocument {
+	position: absolute;
+	top: 60%;
+	left: 30%;
+}
+
+#lblNoPropertiesMessage {
+	padding: 10px;
+	display: block;
+}*/
+/* end PrintProprtiesDialog */
+
+/* File Information Popup */
+#FileInformationDialog .VerticalMenuDiv {
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	width: 170px;
+	border-right: 1px solid var(--color-line);
+	cursor: pointer;
+}
+
+#FileInformationDialog #divInfoDetails {
+	padding: 10px;
+	margin: 0px 0px 0px 170px;
+}
+
+
+#FileInformationDialog #divFooter {
+	float: right;
+	border-top: 1px solid var(--color-line);
+	width: 100%;
+	padding-top: 15px;
+}
+
+#FileInformationDialog #divErrorsContinue {
+	float: left;
+	padding: 0px;
+	margin: 0px 5px 0px 0px;
+	vertical-align: middle;
+}
+
+.FileInfoRow {
+	vertical-align: top;
+}
+
+	.FileInfoRow TD {
+		padding: 8px;
+	}
+
+.FileInfoIcon {
+	text-align: center;
+	padding-top: 6px !important;
+}
+
+	.FileInfoIcon IMG {
+		text-align: center;
+		vertical-align: middle;
+	}
+
+.infoToggleArea {
+	margin: 5px 0;
+	padding: 5px 8px;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	max-height: 78px;
+	overflow: auto;
+	background-color: #F1F1F1;
+}
+
+#divMissingFonts DL {
+	padding: 0;
+	margin: 0;
+}
+
+#divLowresImages DL {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+	#divLowresImages DL DT {
+		float: left;
+		width: 30%;
+		margin: 0;
+	}
+
+	#divLowresImages DL DD {
+		float: left;
+		width: 50%;
+		margin: 0;
+	}
+
+/* Paper Size Notice Popup */
+#divPaperSizeNotice {
+	text-align: center;
+}
+
+
+	#divPaperSizeNotice .lblPaperSizeNotice {
+		margin-top: 20px;
+		text-align: center;
+		display: block;
+	}
+
+	#divPaperSizeNotice .PaperSizeOptionDiv {
+		border: 1px solid var(--color-line);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		padding: 8px;
+		margin: 20px 0px;
+		display: inline-block;
+	}
+
+	#divPaperSizeNotice .PaperSizeOptionContentDiv {
+		padding: 8px;
+		float: left;
+	}
+
+	#divPaperSizeNotice .PaperSizeOptionIconDiv {
+		width: 90px;
+		text-align: center;
+	}
+
+	#divPaperSizeNotice .PaperSizeOptionTextDiv {
+		width: 250px;
+		padding-left: 30px;
+	}
+
+	#divPaperSizeNotice .PaperSizeOptionButtonDiv {
+		width: 110px;
+	}
+
+	#divPaperSizeNotice .PaperSizeOptionTitle {
+		font-weight: var(--default-font-weight);
+	}
+.PropListAccordion .PropertyValue {
+	font-size:var(--text-size-regular);
+	color:var(--text-color-dark);
+}
+.PropListWrapper,
+.PropListAccordion img.PropertyImage {
+	border-color:var(--color-line);
+}
+#PrintProprtiesDialog .HorizontalMenuDataList .HeadLine {
+		padding: 5px;
+		font-weight: var(--default-font-weight);
+		display: block;
+		font-size:var(--text-size-label);
+	}
+
+
+
+

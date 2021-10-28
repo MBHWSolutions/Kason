@@ -1,0 +1,203 @@
+@import "_theme.scss";
+
+.product-item {
+  font-size: var(--text-size-regular);
+  color: var(--text-color-ultra-dark);
+  display: flex;
+  flex-direction: column;
+
+  .product-name {
+    margin: 5px 0 2px 0;
+    cursor: pointer;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+  
+  .price {
+    color: var(--color-highlight);
+    margin-right: 20px;
+    font-size: var(--text-size-regular);
+  }
+
+  .icon-wrapper {
+    height: 33px;
+    width: 33px;
+    background-color: var(--color-highlight);
+    border-radius: 50%;
+    padding: 4px;
+    margin-left: 20px;
+    }
+
+  .anchor-flex-end{
+    flex-grow: 1;
+  }
+
+  .add-to-cart{
+    display: flex;
+    flex-direction: column;
+    min-height: 70px;
+    align-items: center;
+    margin: 13px 5px 0 5px;
+  
+    .add-to-cart-controls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .add-to-cart-button-wrapper {
+        margin-top: 10px;
+
+        .add-to-cart-button {
+          min-width: 175px;
+          max-width: 270px;
+          height: 35px;
+          line-height: normal;
+          padding: unset;
+          display: flex;
+
+          span {
+            margin: auto;
+          }
+
+          @media (min-width: $md) and (max-width: $lg)  {
+            max-width: 222px;
+          }
+          @media (min-width: $sm) and (max-width: $md) {
+            max-width: 248px;
+          }
+          @media (max-width: $sm) {
+            display: none;
+          }
+        }
+        .add-button {
+          min-width: 135px;
+          height: 35px;
+          line-height: normal;
+          max-width: 135px;
+
+          @media (min-width: $sm) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .add-to-cart-success{
+      margin: auto;
+      color: var(--color-success);
+      font-size: var(--text-size-label);
+      display: flex;
+      text-align: center;
+
+      @media (max-width: $sm){
+        font-size: var(--text-size-fineprint);
+      }
+
+      animation: fadeInFadeOut 3s;
+      animation-fill-mode: forwards;
+
+      @keyframes fadeInFadeOut {
+        0% { 
+          opacity: 0; 
+        } 
+        40% {
+          opacity: 1; 
+        }
+        80%{
+          opacity: 1;
+        }
+        95% { 
+          opacity: 0; 
+        }
+        100% { 
+          opacity: 0; 
+        } 
+      }
+
+      .success-checkmark-icon-wrapper{
+        margin: 0 5px 0 5px;
+        .icon-holder {
+          width: unset !important;
+          text-align: center;
+        }
+        
+        .success-checkmark-icon{
+          fill: var(--color-success);
+        }
+      }
+    }
+  }
+  
+  
+
+  .product-price {
+    color: var(--color-highlight);
+    
+    .loading-dots {
+      height: 10px;
+
+      .loading-dot {
+        background: var(--color-highlight);
+      }
+    }
+  }
+
+  .inventory {
+    font-size: var(--text-size-fineprint);
+  }
+
+  .image-wrapper {
+    border: var(--image-box-border-width) solid var(--image-box-border-color);
+    background: var(--image-box-background-color);
+    position: relative;
+    cursor: pointer;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .product-description {
+    font-size: var(--text-size-fineprint);
+    color: var(--text-color-medium);
+  }
+
+  @media (min-width: $lg) {
+    .image-wrapper {
+      padding: var(--image-box-padding);
+      height: var(--image-box-height);
+    }
+  }
+
+  @media (min-width: $md) and (max-width: $lg) {
+    .image-wrapper {
+      padding: var(--image-box-padding);
+      height: calc(var(--image-box-height) * 0.833);
+    }
+  }
+
+  @media (min-width: $sm) and (max-width: $md) {
+    .image-wrapper {
+      padding: var(--image-box-padding);
+      height: calc(var(--image-box-height) * 0.931);
+    }
+  }
+
+  @media (min-width: $xs) and (max-width: $sm) {
+    .image-wrapper {
+      padding: calc(0.5 * var(--image-box-padding));
+      height: calc(var(--image-box-height) * 0.527);
+    }
+  }
+
+  @media (max-width: $xs) {
+    &:hover {
+      .arrow-btns {
+        opacity: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import "_theme.scss";
+
+// connect NG Store
+.connect .product-layout .main-wrapper .left {
+  top: 0;
+}
+
+.product-layout {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+
+  .main-wrapper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "left right";
+    background-color: var(--color-fill);
+
+    @media (max-width: $md) {
+      grid-template-columns: 100%;
+      grid-template-areas: "right";
+    }
+
+    .left {
+      display: block;
+      grid-area: left;
+      position: sticky;
+      max-height: 100vh;
+      top: var(--header-height-desktop);
+      padding: 80px 50px;
+      text-align: center;
+
+      @media (min-width: $md) and (max-width: $lg) {
+        padding: 80px 30px;
+      }
+
+      @media (max-width: $md) {
+        display: none;
+      }
+    }
+
+    .right {
+      grid-area: right;
+      background-color: white;
+
+      .sticky-price {
+        position: sticky;
+        bottom: 0;
+        background: white;
+        border: none;
+
+        &.hidden {
+          display: none;
+        }
+      }
+    }
+  }
+}

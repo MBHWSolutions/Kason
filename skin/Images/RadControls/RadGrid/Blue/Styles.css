@@ -1,0 +1,367 @@
+.RadGrid_Blue
+{
+    background:#f2f9ff;
+color: #ffffff;
+    BORDER-BOTTOM: #c6dddf 1px solid;
+}
+
+.RadGrid_Blue,
+.MasterTable_Blue,
+.GridFilterMenu_Blue table,
+.GridEditEditForm_Blue,
+.GridEditForm_Blue table,
+.GridEditForm_Blue table input,
+.GridEditForm_Blue table textarea{
+	font: normal 11px Arial, Verdana, Sans-serif;
+	text-align: left;
+	cursor: default;
+}
+
+
+.MasterTable_Blue
+{
+}
+
+.MasterTable_Blue th,
+.MasterTable_Blue td
+{
+	padding-left: 10px;
+}
+
+.MasterTable_Blue td
+{
+color: #ffffff;
+}
+
+.MasterTable_Blue .GridHeader_Blue,
+.MasterTable_Blue .ResizeHeader_Blue
+{
+    height:24px;
+    background: #5898c5;
+    text-align:left;
+    padding-left:11px;
+    border-bottom:1px solid #0062a7;
+}
+
+
+/*hierarchy*/
+
+.MasterTable_Blue table
+{
+	border-left:2px solid #0062a7;
+	border-bottom:1px solid #0062a7;
+}
+* html .MasterTable_Blue table{border-left-width:1px}
+*+html .MasterTable_Blue table{border-left-width:1px}
+.MasterTable_Blue .GridCommandRow_Blue table{border:0}
+.MasterTable_Blue .GridEditForm_Blue table{border:0;border-bottom: solid 1px #0062a7;}
+
+.MasterTable_Blue td
+{
+	background:#f2f9ff;
+}
+.MasterTable_Blue table .GridHeader_Blue,
+.MasterTable_Blue table .ResizeHeader_Blue
+{
+    height:24px;
+}
+
+.GridHeader_Blue,
+.GridHeader_Blue a
+{
+    font-size:1.13em;
+color: #ffffff;
+    font-weight:normal;
+    text-decoration:none;
+}
+
+.GridRow_Blue td,
+.GridAltRow_Blue td,
+.GridEditRow_Blue td,
+.SelectedRow_Default td,
+.ActiveRow_Default td
+{
+    padding-top:2px;
+    padding-bottom:1px;
+    height:20px;
+}
+
+.GridAltRow_Blue td
+{
+    background-color:#e2f3ff;
+}
+
+.GridRow_Blue td,
+.GridAltRow_Blue td
+{
+color: var(--text-color-dark);
+    BORDER-BOTTOM: #c6dddf 1px solid;
+}
+
+
+
+.SelectedRow_Blue td
+{
+	background-color: #fd7b24;
+}
+
+.ActiveRow_Blue td
+{
+    background:#43b300;
+}
+
+.GridEditRow_Blue td
+{
+    background:var(--color-fill);
+}
+
+.GridEditForm_Blue table
+{
+	background:none transparent;
+	border-bottom:1px solid var(--color-line);
+}
+
+.GridEditForm_Blue table td
+{
+color: var(--text-color-dark);
+	border:0;
+}
+
+.GridEditForm_Blue table input
+{
+	border:1px solid #6f91ae;
+}
+
+.GridEditRow_Blue a
+{
+	color:#6f91ae;
+}
+
+.GridRow_Blue a,
+.GridAltRow_Blue a,
+.GridEditForm_Blue table a
+{
+	color:#6f91ae;
+}
+
+.SelectedRow_Blue a
+{
+	color:#6f91ae;
+}
+
+.GridFooter_Blue td
+{
+    background:#f3faff;
+    border-top:1px solid #dceefc;
+    padding-top:0.3em;
+    padding-bottom:0.3em;
+    color:#93adc4;
+}
+
+.GridPager_Blue .PagerPanel *
+{
+	vertical-align:middle;
+}
+
+.GridPager_Blue td
+{
+    background:#e4eef5;
+    border-top:1px solid #bcd5eb;
+    padding-top:0.3em;
+    padding-bottom:0.3em;
+    color:#35495a;
+}
+
+.GridPager_Blue a
+{
+    color:#35495a;
+}
+
+.GroupPanel_Blue
+{
+	BACKGROUND-COLOR: #467a9e;
+}
+.GridCommandRow_Blue td
+{
+    WIDTH: 100%;
+    	BORDER-BOTTOM: #c6dddf 1px solid;
+    		BORDER-COLLAPSE: collapse;
+    	BACKGROUND-COLOR: #f2f9ff;
+    	
+}
+
+
+
+.GroupPanelItems_Blue
+{	
+	BORDER-RIGHT: #bbd8e8 1px solid;
+	BORDER-TOP: #bbd8e8 1px solid;
+	font-size: var(--text-size-fineprint);
+	BACKGROUND: #6ca7d2;
+	BORDER-LEFT: #bbd8e8 1px solid;
+	COLOR: #fff !important;
+	BORDER-BOTTOM: #bbd8e8 1px solid;
+	WHITE-SPACE: nowrap
+}
+
+.GridCommandRow_Blue td td
+{
+	background:none transparent;
+	border:0;
+}
+
+.GridCommandRow_Blue a
+{
+color: var(--text-color-ultra-dark);
+	text-decoration:none;
+}
+
+.GridCommandRow_Blue a img
+{
+	vertical-align:bottom;
+}
+
+.GroupHeader_Blue
+{
+    background:#fff;
+    FONT-WEIGHT: bold;	
+    BACKGROUND: #deeffe;
+    HEIGHT: 20px
+}
+
+.GroupHeader_Blue td
+{
+    padding-top:0.7em;
+    padding-bottom:0.5em;
+    padding-left:0;
+    background:url(img/groupHeaderBg.gif) left center repeat-x #fff;
+    color:#015ca8;
+    
+    BORDER-BOTTOM: #c6dddf 1px solid
+}
+
+* html .GroupHeader_Blue td{padding-right:10px;}
+*+html .GroupHeader_Blue td{padding-right:10px;}
+
+.GroupHeader_Blue td p
+{
+    display:inline;
+    padding:0 10px;
+    background:#fff;
+}
+
+.GroupHeader_Blue td p
+{
+    display:inline;
+    padding:0 10px;
+    background:#fff;
+}
+
+.GroupHeader_Blue td div div
+{
+	top:-0.7em;
+	padding:0 15px;
+	background:#fff;
+}
+
+.GroupHeader_Blue td div div div
+{
+	top:0;
+	padding:0;
+	border:0;
+}
+
+TR.GroupHeader_Blue {	FONT-WEIGHT: bold;	BACKGROUND: #deeffe;	HEIGHT: 20px}
+TR.GroupHeader_Blue TD {	BORDER-BOTTOM: #c6dddf 1px solid}
+
+.GridFilterRow_Blue td
+{
+    padding-top:0.2em;
+    padding-bottom:0.2em;
+    background: var(--color-fill);
+    border-bottom:1px solid var(--color-line);
+}
+
+.GridFilterRow_Blue input
+{
+    border:1px solid #6f91ae;
+    margin:0 4px 0 0;
+}
+
+.GridFilterMenu_Blue
+{
+    cursor:default;
+	border: solid 1px #0062a7;
+}
+
+.GridFilterMenu_Blue .GridFilterMenuSelectColumn_Blue,
+.GridFilterMenu_Blue .GridFilterMenuTextColumn_Blue
+{
+	padding:3px 4px;
+}
+
+.GridFilterMenu_Blue .GridFilterMenuSelectColumn_Blue
+{
+    background:#d2ecff;
+    text-align:center;
+}
+
+.GridFilterMenu_Blue .GridFilterMenuTextColumn_Blue
+{
+    background:#fff;
+color: var(--text-color-dark);
+}
+
+.GridFilterMenu_Blue .GridFilterMenuHover_Blue
+{
+    background:#6dc800;
+color: #ffffff;
+}
+
+.TopReorderIndicator_Blue
+{
+	background: url('img/MoveDown.gif') no-repeat;
+	margin-left:-5px;
+}
+
+.BottomReorderIndicator_Blue
+{
+	background: url('img/MoveUp.gif') no-repeat;
+	margin-left:-5px;
+}
+
+.GridCommandRow_Blue
+{
+	
+}
+
+/*AJAX Loading*/
+
+.GridLoadingTemplate_Blue
+{
+	background:#fff !important;
+	font:normal 24px/54px arial,sans-serif;
+	color:#72bc1b;
+}
+
+/* rtl support */
+
+.RadGridRTL_Blue .GridHeader_Blue,
+.RadGridRTL_Blue td
+{
+    text-align:right;
+}
+
+.RadGridRTL_Blue .GridPager_Blue td
+{
+    padding-right:11px;
+    padding-left:1px;
+}
+
+.RadGridRTL_Blue .GridPager_Blue span
+{
+    float:none !important;
+}
+
+.RadGrid_Blue TH {	FONT: bold 11px Tahoma;	COLOR: #fff}
+.RadGrid_Blue TH A {	FONT: bold 11px Tahoma;	COLOR: #fff}

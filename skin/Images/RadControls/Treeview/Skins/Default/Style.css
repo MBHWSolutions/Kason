@@ -1,0 +1,107 @@
+.TreeNode 
+{ 
+	font-family: var(--font-family);
+	font-size: var(--text-size-fineprint); 
+	color: black;	
+	padding-left: 3px;
+	text-decoration: none;	
+}
+
+.TreeNodeOver 
+{
+	font-family: var(--font-family);
+	font-size: var(--text-size-fineprint);
+	color: black;
+	text-decoration: underline; 
+	cursor: pointer;
+	cursor: hand;
+	padding-left: 3px;	
+}
+
+.TreeNodeSelect 
+{     
+	font-family: var(--font-family);
+	font-size: var(--text-size-fineprint); 
+	color: #ffffff; 
+	background: #316AC5; 	
+    cursor: pointer;
+	cursor: hand;
+	margin-left: 3px;
+}
+
+.TreeNodeDisabled
+{ 
+	font-family: var(--font-family);
+	font-size: var(--text-size-fineprint); 
+	color: gray;	
+	padding-left: 3px;
+	text-decoration: none;
+	cursor: default;
+}
+
+.TreeNodeEdit 
+{
+  border:1px gray solid;
+  font-family: var(--font-family);
+  font-size: var(--text-size-fineprint);
+  margin-left: 4px;  
+}
+
+.LoadingMessage
+{
+	font-family: var(--font-family);
+	font-size: var(--text-size-fineprint); 
+	background:LemonChiffon; 
+	border: solid 1px;
+	padding: 2px;
+}
+
+.LoadingMessageBlue
+{
+	font-family: var(--font-family); 
+	font-size: var(--text-size-fineprint); 
+	color: Blue;
+	padding: 2px;
+}
+
+
+.TreeContextItem
+{ 
+	font-family: var(--font-family);
+	font-size: var(--text-size-fineprint);
+	cursor: pointer;
+	cursor: hand;
+	padding-left:4px;
+	height:24px;
+	background-color:#fdfdfd;
+	background-image:url(contextMenu.gif); 
+	background-repeat:repeat-y;
+	width:100%; 
+	text-align: left;
+	border-bottom: solid 1px #e3e3e3;
+}
+ 
+.TreeContextItemOver
+{
+	font-family: var(--font-family);
+	font-size: var(--text-size-fineprint);
+	cursor: pointer;
+	cursor: hand;
+	padding-left:4px;
+	height:24px;
+	background-color:#f3f3f3;
+	background-image:url(contextMenu.gif); 
+	background-repeat:repeat-y;
+	width:100%; 
+	text-align: left;
+	border-bottom: solid 1px #d4d4d4;
+}
+ 
+.TreeNodeEdit 
+{
+	border:1px gray solid;
+	font-family: var(--font-family); 
+	font-size: var(--text-size-fineprint);
+	margin-left: 3px;  
+	text-align: left;
+}

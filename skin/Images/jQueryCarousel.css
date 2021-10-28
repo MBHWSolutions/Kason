@@ -1,0 +1,96 @@
+﻿  .TemplatesHolder
+    {
+        width: 100%;
+        overflow:auto;
+        min-height:380px;
+     
+      
+    }
+	.ultemplate{
+		box-sizing: content-box;
+	}
+	
+    
+    .selectedTemplateImg
+    {
+        border-color:var(--color-highlight) !important;   
+    }
+    .ultemplate.selected{
+	color:var(--color-highlight);
+}
+    
+		/** base carousel **/
+		.carousel ul {
+		    position:absolute;
+		    overflow:hidden;
+		    margin:0;
+		    padding:0;
+		    list-style:none;
+		    width:100%;
+		}
+
+		.carousel .mask {
+		    position:relative;
+		    overflow:hidden;
+		    
+		}
+
+		.carousel ul li {
+ 
+			
+			 float: left;
+            width:180px;
+            height:180px;
+            padding:10px 5px 5px 5px;
+            text-align: center;
+            color:var(--text-color-dark);
+           cursor:pointer;
+            
+		}
+
+
+      .carousel ul li img
+      {
+        border-style:solid;
+        border-width:1px !important; 
+        border-color:var(--color-line);         
+       }
+
+		.carousel .pagination-links {
+		    list-style:none;
+		    margin:0;
+		    padding:0;
+		}
+		 
+		.carousel .pagination-links li {
+		    display:inline;
+		}
+
+		.carousel .pagination-links li a {
+			padding:2px 6px;	
+		}
+
+		.carousel .pagination-links li a:hover {text-decoration:none;}
+
+		.carousel .pagination-links li.current a {
+			 background:#444;
+color: #ffffff;
+		}
+		 
+		.carousel .disabled {
+		    color:gray;
+		    cursor:default;
+		}
+		
+		#TemplatesCarousel
+		{
+		overflow:hidden;
+		}
+		#TemplatesCarousel .mask {
+			width:100%;
+		}
+
+		a.next
+		{
+			margin-left: 10px;
+		}

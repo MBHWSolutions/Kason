@@ -1,0 +1,140 @@
+@import "_theme.scss";
+
+.imageCarousel-component {
+  width: 100%;
+  height: 100%;
+
+  .carousel-indicators {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+
+    li {
+      cursor: pointer;
+      width: 7px;
+      height: 7px;
+      margin-right: 5px;
+      margin-left: 5px;
+      border-radius: 50%;
+      background-color: #d6d6d6;
+
+      &.active {
+        background-color: var(--color-highlight);
+      }
+    }
+  }
+
+  .carousel-arrows {
+    height: calc(100% - 54px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .arrows {
+      cursor: pointer;
+      color: var(--text-color-medium);
+      font-size: 50px;
+      line-height: 45px;
+
+      @media (max-width: $xl) and (min-width: $lg) {
+        font-size: 40px;
+      }
+
+      @media (max-width: $lg) {
+        display: none;
+      }
+    }
+
+    .images-wrapper {
+      height: 100%;
+      width: calc(100vw - 1120px - 2 * var(--margin-xl) - 100.5px);
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 var(--margin-xl);
+
+      @media (max-width: $xl) and (min-width: $lg) {
+        margin: 0 21px;
+        width: calc(100vw - 800px - 2 * var(--margin-lg) - 100.5px);
+      }
+
+      @media (max-width: $lg) {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .imageCarousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > div {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .carousel-fade .carousel-inner .item {
+      opacity: 0;
+      -webkit-transition-property: opacity;
+      -moz-transition-property: opacity;
+      -o-transition-property: opacity;
+      transition-property: opacity;
+    }
+    .carousel-fade .carousel-inner .active {
+      opacity: 1;
+    }
+
+    .carousel-fade .carousel-control {
+      z-index: 2;
+    }
+
+    .carousel.slide {
+      margin: auto;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .carousel-inner {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .carousel-item {
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .img-wrapper {
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      padding: var(--image-box-padding);
+      background-color: #ffffff;
+
+      @media (max-width: $sm){
+        padding: calc(var(--image-box-padding) * 0.75);
+      }
+
+      .image {
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

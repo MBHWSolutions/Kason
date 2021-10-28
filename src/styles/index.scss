@@ -1,0 +1,60 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/modal";
+
+//@import "~bootstrap/scss/type";
+//@import "~bootstrap/scss/images";
+//@import "~bootstrap/scss/code";
+//@import "~bootstrap/scss/grid";
+//@import "~bootstrap/scss/tables";
+//@import "~bootstrap/scss/buttons";
+//@import "~bootstrap/scss/button-group";
+//@import "~bootstrap/scss/custom-forms";
+//@import "~bootstrap/scss/card";
+//@import "~bootstrap/scss/breadcrumb";
+//@import "~bootstrap/scss/pagination";
+//@import "~bootstrap/scss/badge";
+//@import "~bootstrap/scss/jumbotron";
+//@import "~bootstrap/scss/alert";
+//@import "~bootstrap/scss/progress";
+//@import "~bootstrap/scss/media";
+//@import "~bootstrap/scss/list-group";
+//@import "~bootstrap/scss/close";
+//@import "~bootstrap/scss/modal";
+//@import "~bootstrap/scss/carousel";
+//@import "~bootstrap/scss/utilities";
+//@import "~bootstrap/scss/print";
+
+@import "variables";
+@import "fonts";
+@import "theme";
+@import "input";
+@import "buttons";
+@import "truncate";
+
+html {
+  //overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+  background-color: #ffffff;
+  font-size: var(--text-size-regular);
+  font-family: var(--font-family);
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%; //fix for iOS
+}
+
+

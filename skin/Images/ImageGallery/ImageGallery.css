@@ -1,0 +1,8 @@
+.RadImageEditor .rtbSplBtnActivator {
+    padding-right: 0px !important;
+}
+
+.RadImageEditor .RadToolBar span.rtbIcon {
+    width: 16px !important;
+    padding-right: 0px !important;
+}

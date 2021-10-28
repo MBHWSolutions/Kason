@@ -1,0 +1,14 @@
+.product-delivery-method {
+  .delivery-method-label {
+    font-size: var(--text-size-label);
+    // margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--text-color-dark);
+  }
+
+  .static-delivery {
+    color: var(--text-color-medium);
+    font-size: var(--text-size-label);
+    margin-bottom: 30px;
+  }
+}

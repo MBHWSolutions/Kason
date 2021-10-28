@@ -1,0 +1,395 @@
+/* ==========================================================
+* UEdit.clean.css 5.0, build 442
+* ==========================================================
+* Copyright 2015 XMPie, LTD.
+* ========================================================== */
+
+.UEdit-panel
+{
+    background-color: #9c9c9c;
+    overflow:auto;
+    position:relative;
+    top: 0;
+    left: 0;
+    line-height:normal;
+}
+.UEdit-progress-modal
+{
+    right:inherit;
+    bottom:inherit;
+    overflow:auto;
+    overflow-y:auto;
+}
+.UEdit-box-frame-normal
+{
+    border-color: black;
+    border-style: dotted;
+    border-width: 2px;
+}
+.UEdit-selection-frame
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.UEdit-selection-border
+{
+    background-color:rgba(255,255,255,0.01);
+}
+.UEdit-positionable-transformable
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    -ms-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+}
+.UEdit-transformable
+{
+    -ms-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+}
+.UEdit-simple-border
+{
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;    
+}
+.UEdit-selection-handle
+{
+    position:relative;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #ffffff;
+    top: 6px;
+    left: 6px;
+    width:10px;
+    height:10px;
+}
+.UEdit-selection-handle:hover
+{
+  -webkit-box-shadow: 0 0 10px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: 0 0 10px rgba(82, 168, 236, 0.6);
+          box-shadow: 0 0 10px rgba(82, 168, 236, 0.6);
+}
+.UEdit-selection-handle-proxy
+{
+    position:absolute;
+    width:24px;
+    height:24px;
+}
+.UEdit-rotate-proxy
+{
+    cursor: url(../images/rotate.cur), all-scroll;  
+    background-color:rgba(255,255,255,0.01);
+}
+.UEdit-link-state
+{
+    cursor: url(../images/link.cur), alias;  
+}
+.UEdit-locked
+{
+    cursor: url(../images/lock.cur), alias;  
+}
+.UEdit-document-view
+{
+    -ms-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+}
+.UEdit-grid-row
+{
+    width:100%;
+}
+.UEdit-document-margin,
+.UEdit-document-padding
+{
+    width:100%;
+    display:block;
+    margin-left:0;
+    float:left;
+    min-height:30px;
+}
+.UEdit-story-view
+{
+background-color: #ffffff;
+    display:none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.UEdit-story-text-frame
+{
+    position:relative;
+}
+.UEdit-page-view
+{
+background-color: #ffffff;
+    margin-left: 0;
+    float: left;
+    position: relative;
+    top : 0;
+    left : 0;
+}
+.UEdit-page-mask-view
+{
+    margin-left: 0;
+    float: left;
+    position: relative;
+    top : 0;
+    left : 0;
+}
+.UEdit-page-layer-view
+{
+    position: absolute;
+    top : 0;
+    left : 0;
+}
+.UEdit-document-mask
+{
+    background-color: #9c9c9c;
+}
+.UEdit-spread-margin
+{
+    margin-left: 0;
+    float: left;
+}
+.UEdit-spread-mask-margin
+{
+    margin-left: 0;
+    float: left;
+}
+.UEdit-spread-padding
+{
+    margin-left: 0;
+    float: left;
+}
+.UEdit-margin-guides
+{
+   border-width: 1px; 
+   border-style: solid;
+   border-top-color: #ff4fff;
+   border-bottom-color: #ff4fff;
+   border-left-color: #9933ff;
+   border-right-color:#9933ff;
+   
+}
+.UEdit-empty-graphic-diagonal
+{
+   border-top-width: 1px; 
+   border-top-style: dotted;
+}
+.UEdit-missing-image
+{
+    background-image:url(../images/SampleImage.jpg); 
+    width:235px;
+    height:234px;
+    background-repeat: no-repeat;
+}
+.UEdit-image-content
+{
+    max-width: none;
+}
+.UEdit-image-ador-adorner
+{
+    width:100%;
+    height:100%;
+    text-align: center;
+    opacity: 0.5;
+}
+.UEdit-image-ador-adorner-text
+{
+    position:relative;
+    top:50%;           
+    font-size: var(--text-size-regular);
+    margin-top:-7pt;
+    color: #ed1c24;
+    background-color: #a2b3d9;
+}
+.UEdit-text-ador-adorner
+{
+    opacity: 0.5;
+    background-color: #a2b3d9;
+}
+.UEdit-line
+{
+    line-height:100%;
+    display:block;
+}
+.UEdit-inline
+{
+    padding:0;
+    margin:0;
+}
+.UEdit-default-override
+{
+    padding:0;
+    margin:0;
+}
+.UEdit-paragraph
+{
+    line-height:100%; 
+    display:block;
+    padding:0;
+    margin:0;
+    white-space: pre;
+    word-wrap: normal;
+}
+.UEdit-text-frame-view
+{
+    -webkit-font-smoothing: antialiased;
+color: var(--text-color-ultra-dark);
+    font-family: "Times New Roman", Times, serif;
+    text-rendering: optimizeLegibility;
+    font-size: var(--text-size-fineprint);
+	-moz-font-feature-settings:"kern" 1;
+	-moz-font-feature-settings:"kern=1";
+	-ms-font-feature-settings:"kern" 1;
+	-o-font-feature-settings:"kern" 1;
+	-webkit-font-feature-settings:"kern" 1;
+	font-feature-settings:"kern" 1; 
+	
+    
+}
+.UEdit-text-frame-view:focus,.UEdit-text-frame-view:active{
+	outline-color:var(--color-line);
+	outline-style:outset;
+}
+.UEdit-default-text-resize
+{
+    font-size: 600px;
+    -ms-transform: matrix(0.02, 0, 0, 0.02, 0, 0);
+    -moz-transform: matrix(0.02, 0, 0, 0.02, 0, 0);
+    -webkit-transform: matrix(0.02, 0, 0, 0.02, 0, 0);
+    -o-transform: matrix(0.02, 0, 0, 0.02, 0, 0);
+    transform: matrix(0.02, 0, 0, 0.02, 0, 0);
+}
+.UEdit-tab
+{
+    display:inline-block;
+    line-height: 100%;
+}
+.UEdit-text-caret
+{
+    border-left-style: solid;
+    border-left-color: black;
+    border-left-width: 50px;
+}
+.UEdit-overflow-indication
+{
+    border-color: var(--color-error);
+    color: var(--color-error);
+    border-style: solid;
+    border-width: 1px;
+    width:10px;
+    height:10px;
+    background-color: #ffffff;
+    font-size: var(--text-size-regular);
+    font-family: "Times New Roman", Times, serif;
+}
+.UEdit-overflow
+{
+    color:transparent;
+    line-height:100%;
+    font-size: var(--text-size-fineprint);
+    display:block;
+    padding:0;
+    margin:0;
+    white-space: pre;
+    word-wrap: normal;	
+}
+.UEdit-selection-text-link
+{
+    border-color: var(--color-error);
+    color: var(--color-error);
+    border-style: solid;
+    border-width: 1px;
+    width:8px;
+    height:8px;
+    background-color: #ffffff;
+    font-size: var(--text-size-regular);
+    font-family: "Times New Roman", Times, serif;
+}
+.UEdit-selection-text-link:hover
+{
+  -webkit-box-shadow: 0 0 10px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: 0 0 10px rgba(82, 168, 236, 0.6);
+          box-shadow: 0 0 10px rgba(82, 168, 236, 0.6);
+}
+.UEdit-selection-text-link>div
+{
+    text-decoration:none;
+    cursor: pointer;
+}
+.UEdit-selection-text-link>div:hover
+{
+    text-decoration:none;
+}
+.UEdit-space-reserve
+{
+    display:none
+}
+.UEdit-indent-to-here-marker
+{
+    width:0;
+}
+.UEdit-missing-font
+{
+    background-color: #ffcccc;
+}
+.UEdit-preview-mode .UEdit-box-frame-normal,
+.UEdit-preview-mode .UEdit-image-ador-adorner
+{
+    display:none;
+}
+.UEdit-preview-mode .UEdit-text-ador-adorner
+{
+    opacity: inherit;
+    background-color: inherit;
+}
+.UEdit-preview-mode .UEdit-missing-font
+{
+    background-color: inherit;
+}
+.UEdit-anchor
+{
+    display:inline-block;
+    padding:0;
+    margin:0;
+    position:relative;
+    top:0;
+    left:0;
+    line-height:normal;
+    font-size: var(--text-size-regular);
+}
+.UEdit-underline,
+.UEdit-strikethrough
+{
+    display:block;
+    padding:0;
+    margin:0;
+    width:100%;
+    height:1px;
+    background-color: black;
+}
+.UEdit-anchor-default-resize>div
+{
+    -ms-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    -ms-transform: matrix(50, 0, 0, 50, 0, 0);
+    -moz-transform: matrix(50, 0, 0, 50, 0, 0);
+    -webkit-transform: matrix(50, 0, 0, 50, 0, 0);
+    -o-transform: matrix(50, 0, 0, 50, 0, 0);
+    transform: matrix(50, 0, 0, 50, 0, 0);
+}

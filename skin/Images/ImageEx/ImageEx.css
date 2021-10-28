@@ -1,0 +1,4011 @@
+﻿body 
+{
+	font-family: var(--font-family);
+	background-repeat:no-repeat;
+}
+a:link 
+{
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+img
+{
+	border: 0px;
+}
+
+.OperationLink
+{
+	text-decoration: none;
+	font-size: var(--text-size-fineprint);
+color: var(--text-color-ultra-dark);
+	font-weight: var(--default-font-weight);
+}
+
+
+.ImageName
+{
+	text-decoration: none;
+	font-size: var(--text-size-fineprint);
+	margin-top:  0px;
+color: var(--text-color-ultra-dark);
+	white-space: nowrap;
+}
+
+.ImageNameSelected, .Selected .ImageName
+{
+	text-decoration: none;
+	font-size: var(--text-size-fineprint);
+	margin-top:  0px;
+color: #ffffff;
+	white-space: nowrap;
+
+}
+.ImgInfo
+{
+	display: none;
+}
+
+.TitleText
+{
+	font-size: var(--text-size-fineprint);
+	font-weight: var(--default-font-weight);
+	text-align: center;
+}
+
+.InstructionsText
+{
+	font-size: var(--text-size-fineprint);
+	font-weight: normal;
+	font-style: italic;
+
+}
+.FormText
+{
+	font-size: var(--text-size-fineprint);
+	font-weight: normal;
+}
+/****************************************************************/
+/*							ImageExMain					*/
+/****************************************************************/
+.LoadingDiv
+{
+	top: 20px;
+	left: 20px;
+	height: 580px;	
+	width: 750px;
+	position: absolute;
+	display: block;
+	background-color:  Black;
+	border: 0px #000000 solid;
+}
+
+.ImageExMain_ProgressImage
+{
+	height: 16px;
+	width: 16px;
+	background-image: url(buttons/Progress.gif);
+	background-repeat:no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.ImageLibExMain_ProgressImage
+{
+	height: 16px;
+	width: 16px;
+	background-image: url(buttons/Progress.gif);
+	background-repeat:no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.ImageLibExMain_DownloadImage
+{
+	height: 16px;
+	width: 16px;
+	background-image: url(buttons/download.jpg);
+	background-repeat:no-repeat;
+}
+.ImageExMain_FrameDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 580px;
+	width: 750px;
+	position: absolute;
+	border: 0px #000000 solid;
+	display: none;
+}
+
+.ImageExMain_MainDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 580px;	
+	width: 750px;
+	position: absolute;
+	display: block;
+	border: 0px #000000 solid;
+	display: none;
+}
+
+.ImageExMain_MenuBox
+{
+	top: 15px;
+	left: 15px;
+	height: 363px;
+	width: 157px;
+	position: absolute;
+	background-color: #d8e9f1;
+	border: 1px #d9e2e7 solid;
+}
+
+.ImageExMain_MainMenuDiv
+{
+	top: 0px;
+	left: 0px;	
+	height: 197px;	
+	width: 157px;
+	position: absolute;
+	display: block;
+}
+.ImageExMain_SelectedImage_UndoRedoMenuDiv
+{
+	top: 197px;
+	left: 0px;	
+	height: 108px;
+	width: 157px;	
+	position: absolute;
+	display: block;
+}
+
+.ImageExMain_EnhanceDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 580px;	
+	width: 750px;
+	position: absolute;
+background-color: #ffffff;
+	display: block;
+	z-index: 2;
+}
+
+.ImageExMain_DivEnhanceButton
+{
+	position: absolute;
+	top: 77px;
+	left: 18px;
+}
+
+.ImageExMain_RotateDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 580px;	
+	width: 750px;
+	position: absolute;
+	display: block;
+}
+
+
+.ImageExMain_CropDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 580px;	
+	width: 750px;
+	position: absolute;
+background-color: #ffffff;
+	display: block;
+	z-index: 2;
+}
+
+.ImageLibExMain_CloseOrOK_Div
+{
+	position:absolute;
+	bottom: 0;
+	left: 0; 
+	right: 0;
+	height: 30px;
+}
+.ImageLibExMain_OKBtn_Div
+{
+	position: absolute;
+	top: 0px;
+	right: 100px;
+	width: 90px;
+	height: 30px;
+	text-align: right;
+}
+.ImageLibExMain_CloseBtn_Div
+{
+	position: absolute;
+	top: 0px;
+	right:10px;
+	width: 90px;
+	height: 30px;
+	text-align: right;
+}
+
+.ImageExMain_CloseOrOK_Div
+{
+	position:absolute;
+	bottom: 0;
+	left: 0; 
+	right: 0;
+	height: 30px;
+}
+.ImageExMain_OKBtn_Div
+{
+	position: absolute;
+	top: 0px;
+	right: 100px;
+	width: 90px;
+	height: 30px;
+	text-align: right;
+}
+.ImageExMain_CloseBtn_Div
+{
+	position: absolute;
+	top: 0px;
+	right:10px;
+	width: 90px;
+	height: 30px;
+	text-align: right;
+}
+
+/* To activate Rotate change none to block */
+.ImageExMain_DivRotateButton
+{
+	position: absolute;
+	top: 0px;
+	left: 18px;
+	display: none;
+}
+
+.ImageExMain_DivCropButton
+{
+	position: absolute;
+	top: 21px;
+	left: 18px;
+}
+
+.ImageExMain_DivDeleteButton
+{
+	position: absolute;
+	top: 131px;
+	left: 17px;
+}
+
+
+.ImageExMain_OperationLinkRotate 
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 40px;
+	width: 89px;
+	background-image: url(buttons/Rotate.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExMain_OperationLinkRotate:hover
+{
+	background-image: url(buttons/Rotate.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+
+}
+.ImageExMain_OperationLinkRotate span 
+{ 
+	font-size: var(--text-size-fineprint);
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 50px; 
+	top: 18px;
+}
+
+.ImageExMain_OperationLinkCrop 
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 48px;
+	width: 115px;
+	background-image: url(buttons/Crop.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExMain_OperationLinkCrop:hover
+{
+	background-image: url(buttons/Crop.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+}
+
+.ImageExMain_OperationLinkCrop span 
+{ 
+	font-size: var(--text-size-fineprint);
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 50px; 
+	top: 18px;
+}
+
+/* Delete */
+
+.ImageExMain_OperationLinkDelete 
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 48px;
+	width: 115px;
+	background-image: url(buttons/Delete.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExMain_OperationLinkDelete:hover
+{
+	background-image: url(buttons/Delete.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+
+}
+
+.ImageExMain_OperationLinkDelete span 
+{ 
+	font-size: var(--text-size-fineprint);
+	font-weight: var(--default-font-weight);
+	position: absolute;
+	left: 50px; 
+	top: 18px;
+}
+
+/* Enhanced */
+.ImageExMain_OperationLinkEnhance 
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 48px;
+	width: 115px;
+	background-image: url(buttons/Enhance.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExMain_OperationLinkEnhance:hover
+{
+	background-image: url(buttons/Enhance.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+}
+
+.ImageExMain_OperationLinkEnhance span 
+{ 
+	font-size: var(--text-size-fineprint);
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 50px; 
+	top: 18px;
+}
+
+/****************************************************************/
+/*							ImageExMainTab					*/
+/****************************************************************/
+
+.ImageExMainTab_SelectedImage_MainDiv
+{
+	top: 0px;
+	left: 0px;
+	width: 747px;
+	height: 534px;
+	position: absolute;
+	border: 0px black solid;
+}
+
+.ImageExMainTab_SelectedImageBoxDiv
+{
+	position: absolute;
+	width: 541px;
+	height: 363px;
+	top: 15px;
+	left: 179px;
+	vertical-align: middle;
+	overflow: hidden;
+	background-color: #d8e9f1;
+	border: 1px #efefed solid;
+	text-align: center;
+	display: none;
+}
+
+.ImageExMainTab_SelectedImage_ImageDiv
+{
+	position: absolute;
+	width: 539px;
+	height: 333px;
+	top: 35px;
+	left: 189px;
+	vertical-align: middle;
+	overflow: hidden;
+background-color: #ffffff;
+	border: 1px #efefed solid;
+	text-align: center;
+	display: none;
+}
+
+.ImageExMainTab_SelectedImageNoSelImage_Div
+{
+	position: absolute;
+	width: 541px;
+	height: 334px;
+	top: 18px;
+	left: 179px;
+	overflow: hidden;
+	background-color: #d8e9f1;
+	border: 0px #efefed solid;
+	text-align: center;
+	vertical-align: middle;
+	display: none;
+
+}
+
+.ImageLibExMain_SelectedImageNoSelImage_Div
+{
+	position: absolute;
+	width: 125px;
+	height: 109px;
+	top: 46px;
+	left: 12px;
+	position: absolute;
+	border: 1px #d9e2e7 solid;
+	overflow: hidden;
+	text-align: center;
+	vertical-align: middle;
+	display: none;
+}
+
+
+.ImageLibExMain_SelectedImageNoSelImageInternal_Div
+{
+	position: relative;
+	top: 15px;
+	left: 0px;
+	width: 125px;
+	height: 109px;
+	overflow: hidden;
+	border: 0px black solid;
+	text-align: center;
+	vertical-align:middle;
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: normal;
+	padding: 0px;
+	z-index: 100;
+color: #ffffff;
+}
+.ImageExMainTab_UploadLink
+{
+	text-decoration: underline;
+}
+
+.ImageExMainTab_SelectedImageNoSelImageInternal_Div
+{
+	position: relative;
+	top: 100px;
+	width: 300px;
+	height: 60px;
+	overflow: hidden;
+	border: 1px black solid;
+	text-align: center;
+	vertical-align:middle;
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: normal;
+	padding: 20px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.ImageExMainTab_SelectedImage_InfoDiv
+{
+	position: absolute;
+	top:  15px;
+	width: 559px;
+	height: 363px;
+	left: 179px;
+	vertical-align: middle;
+	text-align: center;
+	background-color: #d8e9f1;
+}
+
+
+.ImageExMainTab_SelectedImage_Image
+{
+	width: 500px;
+	height: 305px;
+	border: 3px #ffffff solid;
+	margin: 3px;
+}
+
+
+.ImageExMainTab_SelectedImage_TitleDiv
+{
+	position: absolute;
+	top:  0px;
+	height: 25px;
+	left: 196px;
+	width: 100px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/* Undo  Redo */
+.UndoRedoButtonsDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 200px;	
+	width: 100px;
+	position: absolute;
+	display: block;
+}
+
+/* Undo */
+
+.OperationUndo 
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 22px;
+	width: 119px;
+	background-image: url(buttons/Undo.jpg);
+	background-repeat:no-repeat;
+}
+
+.OperationUndo:hover
+{
+	background-image: url(buttons/Undo.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+}
+
+.OperationUndo span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 30px; 
+	top: 5px;
+}
+
+.OperationUndoDisable
+{
+	background-image:url(buttons/UndoDisable.jpg);
+	background-repeat:no-repeat;
+	height: 22px;
+	width: 119px;
+	color: #a7a8a9;
+}
+
+.OperationUndoDisable:hover
+{
+	background-image: url(buttons/UndoDisable.jpg);
+	background-repeat:no-repeat;
+}
+.UndoBtnDiv
+{
+	top: 20px;
+	left: 18px;
+	height: 22px;
+	width: 119px;
+	position: absolute;
+	display: block;
+}
+
+/* Redo */
+.OperationRedo 
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 22px;
+	width: 119px;
+	background-image: url(buttons/Redo.jpg);
+	background-repeat:no-repeat;
+}
+
+.OperationRedo:hover
+{
+	background-image: url(buttons/Redo.jpg);
+	background-repeat:no-repeat;
+}
+
+.OperationRedo span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 30px; 
+	top: 5px;
+}
+
+.OperationRedoDisable
+{
+	background-image:url(buttons/RedoDisable.jpg);
+	background-repeat:no-repeat;
+	height: 22px;
+	width: 119px;
+	color: #a7a8a9;
+}
+.OperationRedoDisable:hover
+{
+	background-image: url(buttons/RedoDisable.jpg);
+	background-repeat:no-repeat;
+}
+
+.RedoBtnDiv
+{
+	top: 53px;
+	left: 18px;
+	height: 22px;
+	width: 119px;
+	position: absolute;
+	display: block;
+}
+.RedoButtonOn
+{
+}
+
+.RedoButtonOff
+{
+}
+/* Select */
+.ImageExCropTab_OperationCropSelect 
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 22px;
+	width: 119px;
+	background-image: url(buttons/Select.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExCropTab_OperationCropSelect:hover
+{
+	color: #3cb7fb;
+	background-image: url(buttons/Select.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExCropTab_OperationCropSelect span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 40px; 
+	top: 5px;
+}
+
+.ImageCropTab_OperationCropDisable
+{
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #000!important; 
+	text-decoration: none; 
+	cursor: pointer!important; 
+	background-image:url(buttons/CropDisable.jpg)!important;
+	background-repeat:no-repeat;
+}
+.ImageCropTab_OperationCropDisable:hover
+{
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+color: var(--text-color-ultra-dark); 
+	text-decoration: none; 
+	cursor: pointer; 
+	background-image:url(buttons/CropDisable.jpg);
+	background-repeat:no-repeat;
+}
+
+/* Cancel */
+.ImageExCropTab_OperationCropCancel
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78; 
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 22px;
+	width: 119px;
+	background-image: url(buttons/Cancel.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExCropTab_OperationCropCancel:hover
+{
+	color: #3cb7fb;
+	background-image: url(buttons/Cancel.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExCropTab_OperationCropCancel span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 40px; 
+	top: 5px;
+}
+
+/* Crop */
+.ImageExCropTab_CropInstructions
+{
+	position: absolute;
+	top: 85px;
+	left: 20px;
+	height: 100px;
+	width:110px;
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+	text-align: center;
+	vertical-align: middle;
+
+}
+.ImageExCropTab_CropLogoDiv
+{
+	top: 26px;
+	left: 26px;
+	display: block; 
+	position: absolute; 
+	padding: 0px; 
+	height: 40px;
+	width: 89px;
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+}
+
+.ImageExCropTab_CropLogo 
+{
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+color: var(--text-color-ultra-dark); 
+	text-decoration: none; 
+	height: 40px;
+	width: 89px;
+	background-image: url(buttons/Crop_icon.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExCropTab_CropLogo span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 40px; 
+	top: 10px;
+}
+
+
+/* Edit */
+.ImageLibExEdit_EditInstructions
+{
+	position: absolute;
+	top: 85px;
+	left: 20px;
+	height: 100px;
+	width:110px;
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+	text-align: center;
+	vertical-align: middle;
+
+}
+.ImageLibExEdit_EditLogoDiv
+{
+	top: 26px;
+	left: 26px;
+	display: block; 
+	position: absolute; 
+	padding: 0px; 
+	margin: auto;
+	height: 40px;
+	width: 89px;
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+	text-align: center;
+	vertical-align: middle;
+}
+
+.ImageLibExEdit_EditLogo 
+{
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+color: var(--text-color-ultra-dark); 
+	text-decoration: none; 
+	height: 40px;
+	width: 89px;
+	background-image: url(buttons/Edit_icon.gif);
+	background-repeat:no-repeat;
+}
+
+.ImageLibExEdit_EditLogo span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 40px; 
+	top: 10px;
+}
+
+/* Select */
+.ImageExRotateTab_OperationRotateSelect 
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 21px;
+	width: 85px;
+	background-image: url(buttons/Select_Reg.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExRotateTab_OperationRotateSelect:hover
+{
+	background-image: url(buttons/Select_Over.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExRotateTab_OperationRotateSelect span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 40px; 
+	top: 5px;
+}
+
+/* Cancel */
+.ImageExRotateTab_OperationRotateCancel
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 21px;
+	width: 85px;
+	background-image: url(buttons/Cancel_Reg.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExRotateTab_OperationRotateCancel:hover
+{
+	background-image: url(buttons/Cancel_Over.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExRotateTab_OperationRotateCancel span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 40px; 
+	top: 5px;
+}
+
+.ImageExRotateTab_OperationRotateDisable
+{
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	background-image:url(buttons/RotateDisable.jpg)!important;
+	background-repeat:no-repeat;
+}
+.ImageExRotateTab_OperationRotateDisable:hover
+{
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+color: var(--text-color-ultra-dark); 
+	text-decoration: none; 
+	cursor: pointer; 
+	background-image:url(buttons/RotateDisable.jpg)!important;
+	background-repeat:no-repeat;
+}
+/* Rotate */
+.ImageExRotateTab_RotateInstructions
+{
+	position: absolute;
+	top: 85px;
+	left: 20px;
+	height: 100px;
+	width:110px;
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+	text-align: center;
+	vertical-align: middle;
+
+}
+.ImageExRotateTab_RotateLogoDiv
+{
+	top: 26px;
+	left: 26px;
+	display: block; 
+	position: absolute; 
+	padding: 0px; 
+	height: 40px;
+	width: 89px;
+}
+
+.ImageExRotateTab_RotateLogo 
+{
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+color: var(--text-color-ultra-dark); 
+	text-decoration: none; 
+	height: 40px;
+	width: 89px;
+	background-image: url(buttons/Crop_Title.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExRotateTab_RotateLogo span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 40px; 
+	top: 13px;
+}
+
+/****************************************************************/
+/*							JCrop					*/
+/****************************************************************/
+/* Fixes issue here http://code.google.com/p/jcrop/issues/detail?id=1 */
+.jcrop-holder { text-align: left; }
+
+.jcrop-vline, .jcrop-hline
+{
+	font-size: 0;
+	position: absolute;
+	background: white url('Jcrop.gif') top left repeat;
+}
+.jcrop-vline { height: 100%; width: 1px !important; }
+.jcrop-hline { width: 100%; height: 1px !important; }
+.jcrop-handle {
+	font-size: 1px;
+	width: 7px !important;
+	height: 7px !important;
+	border: 1px #eee solid;
+	background-color: #333;
+	*width: 9px;
+	*height: 9px;
+}
+
+.jcrop-tracker { width: 100%; height: 100%; }
+
+.custom .jcrop-vline,
+.custom .jcrop-hline
+{
+	background: yellow;
+}
+.custom .jcrop-handle
+{
+	border-color: black;
+	background-color: #C7BB00;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+/****************************************************************/
+/*							ImageExEnhanceTab					*/
+/****************************************************************/
+
+.EnSelected
+{
+	background-color: #004f78 !important;
+	
+	color: #ffffff;
+}
+
+.ImageExEnhanceTab_MainEnhanceDiv
+{
+	top: 0px;
+	left: 0px;
+	width: 747px;
+	height: 534px;
+	position: absolute;
+	border: 0px black solid;
+}
+
+.ImageExEnhanceTab_EnhanceSelectDiv
+{
+	position: absolute;
+	top: 215px;
+	left: 20px;
+	width: 90px;
+	height: 30px;
+}
+
+.ImageExEnhanceTab_EnhanceCancelDiv
+{
+	position: absolute;
+	top: 246px;
+	left: 20px;
+	width: 90px;
+	height: 30px;
+}
+
+.ImageExEnhanceTab_OperationEnhanceSelect 
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 22px;
+	width: 119px;
+	background-image: url(buttons/Select.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExEnhanceTab_OperationEnhanceSelect:hover
+{
+	background-image: url(buttons/Select.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+}
+
+.ImageExEnhanceTab_OperationEnhanceSelect span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+	position: absolute;
+	left: 40px; 
+	top: 5px;
+}
+
+.ImageExEnhanceTab_OperationEnhanceDisable
+{
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #000!important; 
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	background-image:url(buttons/EnhanceDisable.jpg)!important;
+	background-repeat:no-repeat;
+}
+.ImageExEnhanceTab_OperationEnhanceDisable:hover
+{
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+color: var(--text-color-ultra-dark); 
+	text-decoration: none; 
+	cursor: pointer; 
+	background-image:url(buttons/EnhanceDisable.jpg);
+	background-repeat:no-repeat;
+}
+/* EnhanceCancel */
+.ImageExEnhanceTab_OperationEnhanceCancel
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 22px;
+	width: 119px;
+	background-image: url(buttons/Cancel.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExEnhanceTab_OperationEnhanceCancel:hover
+{
+	background-image: url(buttons/Cancel.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+}
+
+.ImageExEnhanceTab_OperationEnhanceCancel span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 40px; 
+	top: 5px;
+}
+
+.ImageExEnhanceTab_MainMenuEnhanceDiv
+{
+	top: 15px;
+	left: 15px;
+	height: 527px;
+	width: 160px;
+	position: absolute;
+	background-color: #d8e9f1;
+	border: 1px #d9e2e7 solid;
+	padding: 0px;
+	margin: 0px;
+}
+
+.ImageExEnhanceTab_EnhanceSelectedImage_TitleDiv
+{
+	position: absolute;
+	top:  0px;
+	left: 20px;
+	text-align: left;
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+}
+.ImageExEnhanceTab_CompareDiv
+{
+	position: absolute;
+	top:  0px;
+	left: 200px;
+	width: 200px;
+	height: 20px;
+	text-align: left;
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+}
+
+.ImageExEnhanceTab_Enhance_BoxDiv
+{
+	top: 15px;
+	left: 190px;
+	height: 527px;	
+	width: 545px;
+	position: absolute;
+	display: block;
+	background-color: #d8e9f1;
+	border: 1px #d9e2e7 solid;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+
+
+.ImageExEnhanceTab_En1_Div
+{
+	position: absolute;
+	top: 15px;
+	left: 367px;
+	width: 166px;
+	height: 159px;
+background-color: #ffffff;
+
+}
+
+.ImageExEnhanceTab_En2_Div
+{
+	position: absolute;
+	top: 184px;
+	left: 367px;
+	width: 166px;
+	height: 159px;
+background-color: #ffffff;
+
+}
+.EnImgDiv
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 166px;
+	height: 163px;
+}
+
+.ImageExEnhance_EnImgDiv
+{
+	position: absolute;
+	top: 20px;
+	left: 3px;
+	width: 160px;
+	height: 139px;
+}
+
+.ImageExEnhanceTab_En3_Div
+{
+	position: absolute;
+	top: 353px;
+	left: 367px;
+	width: 166px;
+	height: 159px;
+background-color: #ffffff;
+
+}
+
+.ImageExEnhanceTab_En4_Div
+{
+	position: absolute;
+	top: 353px;
+	left: 191px;
+	width: 166px;
+	height: 159px;
+background-color: #ffffff;
+}
+.ImageExEnhance_EnBoxDiv
+{
+	position: absolute;
+	top: 353px;
+	left: 191px;
+	width: 166px;
+	height: 159px;
+}
+
+.ImageExEnhanceTab_En5_Div
+{
+	position: absolute;
+	top: 353px;
+	left: 15px;
+	width: 166px;
+	height: 159px;
+background-color: #ffffff;
+}
+.ImageExEnhanceTab_EnMainImg
+{
+	width: 329px;
+	height: 243px;
+	border: 2px #ffffff solid;
+
+}
+
+.ImageExEnhanceTab_CompareCheckbox
+{
+	visibility: visible;
+}
+.ImageExEnhanceTab_SpanCompare
+{
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+	text-align: right;
+color: var(--text-color-ultra-dark);
+	width: 300px;
+}
+
+
+/* Enhance */
+
+.ImageExEnhanceTab_EnhanceConfigName
+{
+	
+	text-decoration: none;
+	font-size: var(--text-size-fineprint);
+color: var(--text-color-ultra-dark);
+	font-weight: normal;
+}
+
+.ImageExEnhanceTab_EnhanceConfigNameSelected
+{
+	
+	text-decoration: none;
+	font-size: var(--text-size-fineprint);
+	color: #ffffff !important;
+	font-weight: normal;
+}
+
+.ImageExEnhanceTab_EnhanceConfigNameSelected_a
+{
+	color: #ffffff !important;
+}
+
+ImageExEnhanceTab_EnhanceConfigName_a
+{
+	color: #000000 !important;
+}
+
+.ImageExEnhanceTab_EnhanceInstructions
+{
+	position: absolute;
+	top: 85px;
+	left: 20px;
+	height: 100px;
+	width:110px;
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+	text-align: center;
+	vertical-align: middle;
+}
+.ImageExEnhanceTab_EnhanceLogoDiv
+{
+	top: 26px;
+	left: 26px;
+	display: block; 
+	position: absolute; 
+	padding: 0px; 
+	height: 40px;
+	width: 89px;
+}
+
+.ImageExEnhanceTab_EnhanceLogo 
+{
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+color: var(--text-color-ultra-dark); 
+	text-decoration: none; 
+	height: 40px;
+	width: 89px;
+	background-image: url(buttons/Enhance_icon.jpg);
+	background-repeat:no-repeat;
+	cursor: default;
+}
+
+.ImageExEnhanceTab_EnhanceLogo span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 40px; 
+	top: 10px;
+}
+.ImageExEnhanceTab_EnhanceMainDiv
+{
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 342px;
+	height: 328px;
+	text-align: center;
+background-color: #ffffff;
+}
+
+.ImageExEnhanceTab_EnMain
+{
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	width: 342px;
+	height: 308px;
+	text-align: center;
+background-color: #ffffff;
+}
+
+.ImageExEnhance_EnImg
+{
+	height: 119px;
+	border: 2px #ffffff solid;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.ImageExEnhance_MainDiv
+{
+	top: 2px;
+	left: 2px;
+	height: 585px;	
+	width: 675px;
+	position: absolute;
+	display: block;
+}
+/****************************************************************/
+/*							ImageExRotateTab					*/
+/****************************************************************/
+
+.ImageExRotateTab_Rotate_BoxDiv
+{
+	position: absolute;
+	width: 567px;
+	height: 476px;
+	top: 28px;
+	left: 163px;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	background-color: var(--color-fill);
+	border: 2px #efefed solid;
+}
+
+.ImageExRotateTab_RotateSelectedImage_ImageDiv
+{
+	position: absolute;
+	width: 561px;
+	height: 470px;
+	top: 3px;
+	left: 3px;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.ImageExRotateTab_RotateSelectedImage_ImageDiv
+{
+	position: absolute;
+	width: 561px;
+	height: 470px;
+	top: 3px;
+	left: 3px;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+}
+.ImageExRotateTab_RotateSelectedImage_InfoDiv
+{
+	position: absolute;
+	width: 490px;
+	height: 25px;
+	top: 0px;
+	left: 210px;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.ImageExRotateTab_RotateSelectedImage_TitleDiv
+{
+	position: absolute;
+	top:  0px;
+	left: 164px;
+	text-align: left;
+}
+
+.ImageExRotateTab_RotateSelectedImage_Image
+{
+	width: 520px;
+	border: 3px #adabac solid;
+}
+
+.ImageExRotateTab_MainRotateDiv
+{
+	top: 0px;
+	left: 0px;
+	width: 747px;
+	height: 534px;
+	position: absolute;
+	border: 0px black solid;
+}
+
+.ImageExRotateTab_MainMenuRotateDiv
+{
+	top: 35px;
+	left: 19px;
+	height: 307px;
+	width: 120px;
+	position: absolute;
+	background-color: var(--color-fill);
+	z-index: 1;
+	border: 1px #efefed solid;
+}
+
+.ImageExRotateTab_RotateSelectDiv
+{
+	position: absolute;
+	top: 215px;
+	left: 20px;
+	width: 90px;
+	height: 30px;
+}
+
+
+.ImageExRotateTab_Rotate90Div
+{
+	position: absolute;
+	top: 275px;
+	left: 20px;
+	width: 90px;
+	height: 30px;
+}
+
+.ImageExRotateTab_FlipXDiv
+{
+	position: absolute;
+	top: 275px;
+	left: 20px;
+	width: 90px;
+	height: 30px;
+}
+
+.ImageExRotateTab_RotateCancelDiv
+{
+	position: absolute;
+	top: 246px;
+	left: 20px;
+	width: 90px;
+	height: 30px;
+}
+
+
+
+
+/****************************************************************/
+/*							ImageExCropTab					*/
+/****************************************************************/
+.ImageExCropTab_Crop_BoxDiv
+{
+	top: 15px;
+	left: 190px;
+	height: 527px;	
+	width: 545px;
+	position: absolute;
+	display: block;
+	background-color: #d8e9f1;
+	border: 1px #d9e2e7 solid;
+	padding: 0px;
+	margin: 0px;
+}
+.ImageExCropTab_Crop_BoxInnerDiv
+{
+	top: 15px;
+	left: 15px;
+	height: 497px;	
+	width: 515px;
+	position: absolute;
+	display: block;
+background-color: #ffffff;
+}
+.ImageExCropTab_CropSelectedImage_ImageDiv
+{
+	position: absolute;
+	top: 15px;
+	left: 0px;
+	height: 482px;	
+	width: 515px;
+	vertical-align: middle;
+	overflow: hidden;
+background-color: #ffffff;
+	text-align: center;
+}
+
+.ImageExCropTab_CropSelectedImage_InfoDiv
+{
+	position: absolute;
+	width: 524px;
+	height: 20px;
+	top: 0px;
+	left: 0px;
+	text-align: right;
+	display: none;
+}
+
+.ImageExCropTab_CropSelectedImage_TitleDiv
+{
+	position: absolute;
+	top:  0px;
+	left: 20px;
+	width: 200px;
+	height: 20px;
+	text-align: left;
+}
+
+.ImageExCropTab_CropSelectedImage_Image
+{
+	width: 500px;
+	height: 305px;
+	border: 0px #ffffff solid;
+	margin: 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.ImageLibExMainTab_SelectedImage_InfoDiv
+{
+	position: absolute;
+	width: 500px;
+	height: 20px;
+	top: 0px;
+	left: 20px;
+}
+
+.ImageExCropTab_MainCropDiv
+{
+	top: 0px;
+	left: 0px;
+	width: 747px;
+	height: 534px;
+	position: absolute;
+	border: 0px black solid;
+}
+
+.ImageExCropTab_MainMenuCropDiv
+{
+	top: 15px;
+	left: 15px;
+	height: 527px;
+	width: 160px;
+	position: absolute;
+	background-color: #d8e9f1;
+	border: 1px #d9e2e7 solid;
+	padding: 0px;
+	margin: 0px;
+}
+
+.ImageExCropTab_CropSelectDiv
+{
+	position: absolute;
+	top: 215px;
+	left: 20px;
+	width: 90px;
+	height: 30px;
+}
+
+.ImageExCropTab_CropCancelDiv
+{
+	position: absolute;
+	top: 246px;
+	left: 20px;
+	width: 90px;
+	height: 30px;
+}
+
+
+
+/****************************************************************/
+/*							Magnify	- Magnify glass				*/
+/****************************************************************/
+.Magnify_CloseMagnifyWindow
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	background-image:url(buttons/X_Reg.jpg);
+	background-repeat:no-repeat;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	display: none; 
+}
+
+.Magnify_CloseMagnifyWindow:hover
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image:url(buttons/X_Over.jpg);
+	background-repeat:no-repeat;
+	width: 40px;
+	height: 40px;
+}
+
+.Magnify_MagnifyGlass
+{
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	background-image:url(buttons/Enlarge_Reg.jpg);
+	background-repeat:no-repeat;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	z-index: 2;
+}
+.Magnify_MagnifyGlass:hover
+{
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	background-image:url(buttons/Enlarge_Over.jpg);
+	background-repeat:no-repeat;
+	width: 30px;
+	height: 30px;
+}
+.ImageExGallerific_download
+{
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	background-repeat:no-repeat;
+	width: 100px;
+	height: 50px;
+	cursor: pointer;
+	z-index: 100;
+	padding: 0px;
+}
+.ImageExGallerific_ImgDownload
+{
+	padding: 0px;
+	width: 12px;
+	height: 12px;
+}
+.ImageExGallerific_uploaded
+{
+	position: absolute;
+	top: 2px;
+	left: 106px;
+	background-repeat:no-repeat;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	z-index: 90;
+	padding: 0px;
+	background-image: url(buttons/upload_icon.png);
+	background-repeat:no-repeat;
+}
+.XMPieScrollable_uploaded
+{
+	position: absolute;
+	top: 2px;
+	left: 95px;
+	background-repeat:no-repeat;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	z-index: 90;
+	padding: 0px;
+	background-image: url(buttons/upload_icon.png);
+	background-repeat:no-repeat;
+}
+
+.ImageExGallerific_ADownload
+{
+	padding: 0px;
+	text-decoration: none;
+
+}
+
+.Magnify_ThumbMagnifyGlass
+{
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	background-image:url(buttons/Glass.png);
+	background-repeat:no-repeat;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	z-index: 99;
+	padding: 0px;
+	margin: 0px;
+	border: 0px #ffffff solid;
+}
+
+.Magnify_ThumbMagnifyGlassSelected
+{
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	background-color: #004f78;
+	background-image:url(buttons/GlassSelected.jpg) !important;
+	background-repeat:no-repeat;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	z-index: 99;
+	padding: 0px;
+	margin: 0px;
+	border: 0px #ffffff solid;
+}
+
+.Magnify_ThumbMagnifyGlass:hover
+{
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	background-image:url(buttons/Glass.png);
+	background-repeat:no-repeat;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	z-index: 100;
+	padding: 0px;
+	margin: 0px;
+	border: 0px #000000 solid;
+
+}
+
+.Magnify_MagnifiedImgDiv
+{
+	top: 15px;
+	left: 15px;
+	height: 527px;	
+	width: 720px;
+	position: absolute;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #d8e9f1;
+	border: 1px #000000 solid;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 100 !important;
+}
+.Magnify_BoxDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 580px;	
+	width: 750px;
+	position: absolute;
+	border: 0px #000000 solid;
+background-color: #ffffff;
+	z-index: 100;
+}
+.Magnify_Img
+{
+	width: 500px;
+	height: 500px;
+	padding: 2px;
+	background-color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	border: solid 3px #d8e9f1;
+	z-index: 100;
+}
+ .Magnify_CloseButtonMagnifyWindow
+ {
+	position: absolute; 
+	top: 550px;
+	left: 0px;
+	height: 25px;
+	width: 725px;
+	text-align: center !important;
+	vertical-align: middle !important;
+background-color: #ffffff;
+ }       
+.Magnify_CloseMagnifyBtn
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+color: var(--text-color-ultra-dark); 
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 22px;
+	width: 119px;
+	text-align: center;
+	vertical-align: middle;
+	background-image: url(buttons/BackToLibrary.jpg);
+	background-repeat:no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.Magnify_CloseMagnifyBtn:hover
+{
+	color: #3cb7fb;
+	background-image: url(buttons/BackToLibrary.jpg);
+	background-repeat:no-repeat;
+}
+
+.Magnify_CloseMagnifyBtn span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 40px; 
+	top: 4px;
+}
+
+/****************************************************************/
+/*							ImageExScrollable					*/
+/****************************************************************/
+/*
+The hirarcy of the template:
+	div.AvailablePresetImage or div.AvailableUploadedImage
+		div.AvailableImagesInnerDiv
+			a_AvailablePresetImage or a_AvailableUploadedImage
+				img_AvailablePresetImage or img_AvailableUploadedImage
+				span
+
+*/
+.AvailablePresetImage
+{	
+	width: 110px;
+	height: 100px;
+	position: relative;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+background-color: #ffffff;
+	border: solid 10px #d8e9f1;
+}
+
+.AvailableUploadedImage
+{	
+	width: 110px;
+	height: 100px;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+background-color: #ffffff;
+	border: solid 10px #d8e9f1;
+
+}
+
+.AvailableImagesInnerDiv
+{
+	position: relative;
+	display: inline;
+	top: 2px;
+	width: 110px;
+	height: 80px;
+	text-align: center !important;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+/*
+.ImageExGallery_AvailableImagesInnerDiv
+{
+	position: relative;
+	display: inline;
+	width: 124px;
+	height: 98px;
+	text-align: center !important;
+	vertical-align: middle;
+}
+*/
+.a_AvailablePresetImage
+{
+	font-size: 9px;
+	
+	height: 80px;
+	text-align: center;
+}
+/*
+.ImageExGallery_a_AvailablePresetImage
+{
+	font-size: 9px;
+	
+	height: 120px;
+	width: 120px;
+	text-align: center;
+}
+
+.ImageExGallery_a_AvailableUploadedImage
+{
+	font-size: 9px;
+	
+	height: 120px;
+	width: 120px;
+	text-align: center;
+}
+*/
+.a_AvailableUploadedImage
+{
+	font-size: 9px;
+	
+	height: 80px;
+	
+}
+.img_AvailableUploadedImage
+{
+	height: 100px;
+	border: solid 1px #ffffff;
+}
+/*
+.ImageExGallery_img_AvailableUploadedImage
+{
+	height: 70px;
+	border: solid 3px #84d0e7;
+}
+*/
+.img_AvailablePresetImage
+{	
+	height: 75px;
+	border: solid 1px #ffffff;
+}
+/*
+.ImageExGallery_img_AvailablePresetImage
+{
+	height: 70px;
+	border: solid 3px #84d0e7;
+}
+*/
+/*----------------------------------------
+JQuery Upload 
+------------------------------------------*/
+ul { list-style: none; }
+
+.wrapper {
+	width: 133px;
+	margin: 0 auto;
+}
+div.uploadedFiles 
+{
+	display: none;
+}
+div.button {
+	height: 29px;	
+	width: 133px;
+	font-size: var(--text-size-h2);
+	text-align: center;
+	padding-top: 15px;
+}
+/* 
+We can't use ":hover" preudo-class because we have
+invisible file input above, so we have to simulate
+hover effect with javascript. 
+ */
+div.button.hover {
+	background: url(button.png) 0 56px;
+	color: #95A226;	
+}
+
+
+/*----------------------------------------
+Images List
+------------------------------------------*/
+
+/*	root element for the scrollable.      
+	when scrolling occurs this element stays still.  */
+.scrollable
+{
+	/* required settings */
+	overflow: hidden;
+	width: 658px;
+	height: 115px;
+	position: absolute;
+	top: 2px;
+	left: 30px;
+	background-color: #ffffff;
+}
+
+
+.items
+{
+	height: 115px;
+	background-color: #d8e9f1;
+	left: 0px;
+}
+
+/*	root element for scrollable items. Must be absolutely positioned
+	and it should have a super large width to accomodate scrollable items.     
+	it's enough that you set width and height for the root element and     
+	not for this element. */
+div.scrollable div.items
+{
+	/* this cannot be too large */
+	width: 20000em;
+	position: absolute;
+}
+
+/*	a single item. must be floated on horizontal scrolling    
+	typically this element is the one that *you* will style
+	the most. */
+/*div.ImageExGallery_Items
+{
+	float: left;
+}
+*/
+/*	a single item. must be floated on horizontal scrolling    
+	typically this element is the one that *you* will style
+	the most. */
+div.scrollable div.items div 
+{
+	float: left;
+}
+/* you may want to setup some decorations to active item */
+/*div.items div.active div.ImageExGallery_Items
+{
+	border: 1px inset #ccc;
+background-color: #ffffff;
+}
+*/
+.disabled {
+	visibility:hidden !important;		
+}
+
+
+.ImageExGallerific_info
+{
+	position: absolute;
+	background-color: #d8e9f1;
+	
+	font-size: var(--text-size-fineprint);
+	border: 1px #000000 solid;
+	height: 250px;
+	width: 200px;
+	text-align: center;
+}
+
+.ImageExGallerific_info_ImageBoxDiv
+{
+	position: absolute;
+	background-color: #d8e9f1;
+	
+	font-size: var(--text-size-fineprint);
+	border: 0px #000000 solid;
+	height: 200px;
+	width: 200px;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 200px;
+}
+
+.ImageExGallerific_info_SpanBoxDiv
+{
+	position: absolute;
+	background-color: #d8e9f1;
+	
+	font-size: var(--text-size-fineprint);
+	border: 0px #000000 solid;
+	height: 50px;
+	width: 200px;
+	top: 200px;
+	left: 0px;
+	text-align: center;
+	 overflow: hidden;
+}
+.ImageExGallerific_infoImage
+{
+	border: 3px #d8e9f1 solid;
+	height: 200px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.ImageExGallerific_infoImageTitle
+{
+	
+	font-size: var(--text-size-fineprint);
+	font-weight: var(--default-font-weight);
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+.XMPieScrollable_info
+{
+	position: absolute;
+	background-color:	#d8e9f1;
+	
+	font-size: var(--text-size-fineprint);
+	border: 1px #000000 solid;
+	height: 170px;
+	width: 150px;
+	text-align: center;
+	z-index: 100;
+}
+
+.XMPieScrollable_info_ImageBoxDiv
+{
+	position: absolute;
+	background-color:	#d8e9f1;
+	
+	font-size: var(--text-size-fineprint);
+	border: 0px #000000 solid;
+	height: 120px;
+	width: 150px;
+	text-align: center;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+
+.XMPieScrollable_info_SpanBoxDiv
+{
+	position: absolute;
+	background-color:	#d8e9f1;
+	
+	font-size: var(--text-size-fineprint);
+	border: 0px #000000 solid;
+	height: 45px;
+	width: 140px;
+	text-align: center;
+	top: 122px;
+	left: 5px;
+	overflow: hidden;
+}
+
+.XMPieScrollable_infoImage
+{
+	border: 5px #d8e9f1 solid;
+	height: 200px;
+}
+.XMPieScrollable_ImgDownload
+{
+	padding: 0px;
+	width: 12px !important;
+	height: 12px !important;
+}
+
+.XMPieScrollable_download
+{
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	background-repeat:no-repeat;
+	width: 100px;
+	height: 50px;
+	cursor: pointer;
+	z-index: 100;
+	padding: 0px;
+}
+.ImageExGallerific_ADownloadSpan
+{
+color: var(--text-color-ultra-dark);
+	font-size: var(--text-size-fineprint);
+	
+}
+
+.ImageExGallerific_ADownload
+{
+	text-decoration: underline !important;
+	font-size: 9px;
+	
+	color: #004f78;
+}
+.ImageExGallerific_ADownload .XMPieScrollable_ADownload
+{
+	text-decoration: underline;
+}
+.XMPieScrollable_ADownloadSpan
+{
+color: var(--text-color-ultra-dark);
+	font-size: var(--text-size-fineprint);
+	
+}
+.XMPieScrollable_ADownload
+{
+	text-decoration: underline !important;
+	font-size: 9px;
+	
+	color: #004f78;
+}
+.XMPieScrollable_infoImageTitle
+{
+	white-space: nowrap;
+	
+	font-size: var(--text-size-fineprint);
+	font-weight: var(--default-font-weight);
+	overflow: hidden;
+	
+}
+
+.XMPieScrollable_infoImageDimensions
+{
+	white-space: nowrap;
+	
+	font-size: var(--text-size-fineprint);
+	font-weight: normal;
+	overflow: hidden;
+
+}
+.ImageExScrollable_HyperLinkAll
+{
+	font-size: 9px;
+	
+	color: var(--color-highlight); 
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.ImageExScrollable_HyperLinkPreset
+{
+	font-size: 9px;
+	
+	color: var(--color-highlight); 
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.ImageExScrollable_FilterSelected
+{
+	text-decoration: none !important;
+	color: Black !important;
+	font-weight: bold !important;
+}
+
+.ImageExScrollable_HyperLinkUploaded
+{
+	font-size: 9px;
+	
+	color: var(--color-highlight); 
+	text-decoration: underline;
+	cursor: pointer;
+}
+.ImageExMainTab_UploadDivLink
+{
+	position: absolute;
+	top: 382px;
+	left: 160px;
+	width: 100px;
+	height: 25px;
+	vertical-align: top;
+	z-index: 2;
+}
+.ImageExMainTab_OperationUploadLink
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 22px;
+	width: 86px;
+	background-image: url(buttons/UploadScrollable.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExMainTab_OperationUploadLink:hover
+{
+	background-image: url(buttons/UploadScrollable.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+}
+
+.ImageExMainTab_OperationUploadLink span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 30px; 
+	top: 4px;
+}
+.ImageExScrollable_UploadDivLink
+{
+	position: absolute;
+	top: -2px;
+	width: 100px;
+	height: 25px;
+	vertical-align: top;
+	display: none;
+}
+.ImageExScrollable_PrevBtnDiv
+{
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	top: 55px;
+	left: 0px;
+	height: 30px;
+	width: 30px;
+	cursor: pointer; 
+	background-image: url(buttons/left.gif);
+	background-repeat:no-repeat;
+
+}
+
+.ImageExScrollable_NextBtnDiv
+{
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	top: 55px;
+	left: 695px;
+	height: 30px;
+	width: 30px;
+	cursor: pointer; 
+	background-image: url(buttons/right.gif);
+	background-repeat:no-repeat;
+}
+
+/* Upload */
+.ImageExScrollable_MessageDiv
+{
+	display: none;
+	top: 250px;
+	left: 370px;
+	height: 120px;	
+	width: 200px;
+	position: absolute;
+	color: var(--color-error);
+	background-color:  White;
+	border: 1px #000000 solid;
+}
+
+.ImageExScrollable_OperationUploadLink
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 22px;
+	width: 86px;
+	background-image: url(buttons/UploadScrollable.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageExScrollable_OperationUploadLink:hover
+{
+	background-image: url(buttons/UploadScrollable.jpg);
+	color: #3cb7fb;
+}
+
+.ImageExScrollable_OperationUploadLink span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 30px; 
+	top: 4px;
+}
+
+.ImageExScrollable_AvailableImages_MainDiv
+{
+	top: 382px;
+	left:0px;
+	height: 160px;	
+	width: 748px;
+	position: absolute;
+	overflow: hidden;
+
+}
+
+.ImageExScrollable_AvailableImages_TitleDiv
+{
+	position: absolute;
+	width: 130px;
+	top:  5px;
+	left: 20px;
+	text-align: left;
+}
+
+.ImageExScrollable_AvailableImages_MenuDiv
+{
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	width: 200px;
+}
+
+
+.ImageExScrollable_AvailableImages_LeftMenuDiv
+{
+	position: absolute;
+	top: 0px;
+	left: 500px;
+	width: 250px;	
+}
+
+.ImageExScrollable_MainScrollDiv
+{
+	position: absolute;
+	top: 26px;
+	left: 15px;
+	width: 720px;
+	height: 130px;
+	background-color: #d8e9f1;	
+	border: 1px #eeeeee solid;
+	overflow: hidden;
+}
+
+
+
+
+
+/* #03adbe; */
+.Selected
+{
+	background-color: #004f78 !important;
+	
+	color: #ffffff !important;
+}
+
+.ImageExEnhanceTab_BeforeAfterDiv
+{
+	position: absolute;
+	top: 22px;
+	left: 2px;
+	width: 336px;
+	height: 268px;
+	text-align: center;
+	
+}
+.BeforeAfter_arrows
+{
+	top: 0px;
+	left: 0px;
+}
+
+.ImageExEnhanceTab_BeforeAfterWrapperDiv
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 344px;
+	height: 288px;
+	text-align: center;
+	display: none;
+}
+.BeforeAfterContainer
+{
+}
+.BeforeAfter_ShowLeftAndRight
+{
+	
+	color: Black;
+	font-size: var(--text-size-fineprint);
+	text-decoration: underline !important;
+}
+
+
+
+/************** ImageLibEx **********/
+.ImageLibExMain_FrameDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 580px;	
+	width: 750px;
+	position: absolute;
+	display: block;
+	border: 0px #000000 solid;
+	display: none;
+}
+.ImageLibExMain_MessageDiv
+{
+	top: 200px;
+	left: 240px;
+	height: 100px;	
+	width: 270px;
+	position: absolute;
+	border: 3px #ffffff solid;
+color: #ffffff;
+	background-color: #06517b;
+	vertical-align: middle;
+	text-align: center;
+}
+.ImageExMain_MessageDiv
+{
+	top: 200px;
+	left: 240px;
+	height: 100px;	
+	width: 270px;
+	position: absolute;
+	display: block;
+	border: 3px #ffffff solid;
+color: #ffffff;
+	background-color: #06517b;
+	vertical-align: middle;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+.ImageLibExMain_LoadingDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 580px;	
+	width: 750px;
+	position: absolute;
+	display: block;
+	border: 0px #000000 solid;
+	display: none;
+background-color: #ffffff;
+	z-index: 100;
+}
+
+.ImageLibExMain_LabelMessage
+{
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+}
+
+.ImageLibExMain_LabelLoading
+{
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+}
+
+.ImageLibExMain_SelectedImageBox
+{
+	position: absolute;
+	top: 46px;
+	left: 12px;
+	height: 109px;
+	width: 125px;
+	clear: both;
+	background-color: #004f78;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.ImageLibExMain_SelectedImageDiv 
+{
+	position: absolute;
+	top: 20px;
+	left: 4px;
+	height: 86px;
+	width: 118px;
+	clear: both;
+	text-align: center;
+	vertical-align: middle;	
+}
+
+.ImageLibExMain_SelectedImageTitleDiv
+{
+	position: absolute;
+	top: 25px;
+	left: 12px;
+	height: 20px;
+	width: 125px;
+	clear: both;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.ImageLibExMain_SelectedImage_Image
+{
+	/*max-width: 115px;*/
+    max-height: 86px;
+}
+
+.ImageLibExMain_SelectedImageTitle
+{
+	font-size: var(--text-size-fineprint);	
+	font-weight: var(--default-font-weight);
+}
+.ImageLibExMain_SelectedImageName
+{
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+color: #ffffff;
+}
+
+.ImageLibExMain_SelectedImageNameDiv 
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 20px;
+	width: 125px;
+	clear: both;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.ImageLibExMain_Image_Image 
+{
+	width: 500px;
+	height: 305px;
+	border: 3px #adabac solid;
+	margin: 3px;
+}
+.ImageLibExMain_MainDiv
+{
+	top: 2px;
+	left: 2px;
+	height: 585px;	
+	width: 675px;
+	position: absolute;
+	display: block;
+}
+.ImageLibExMain_MenuBox
+{
+	top: 15px;
+	left: 15px;
+	height: 527px;
+	width: 160px;
+	position: absolute;
+	background-color: #d8e9f1;
+	border: 1px #d9e2e7 solid;
+	padding: 0px;
+	margin: 0px;
+}
+
+.ImageLibExMain_MainMenuDiv
+{
+	top: 165px;
+	left: 0px;	
+	height: 197px;	
+	width: 157px;
+	position: absolute;
+	display: block;
+}
+
+
+.ImageLibExMain_OperationLinkUpload
+{
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+color: var(--text-color-ultra-dark); 
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 48px;
+	width: 115px;
+	background-image: url(buttons/Upload.jpg);
+	background-repeat:no-repeat;
+}
+.ImageLibExMain_EditDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 580px;	
+	width: 750px;
+	position: absolute;
+	display: block;
+}
+/*
+.ImageLibExMain_GalleryDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 580px;	
+	width: 750px;
+	position: absolute;
+	display: none;
+}
+*/
+.ImageLibExMain_GallerificDiv
+{
+	top: 15px;
+	left: 190px;
+	height: 527px;	
+	width: 545px;
+	position: absolute;
+	display: block;
+	background-color: #d8e9f1;
+	border: 1px #d9e2e7 solid;
+	padding: 0px;
+	margin: 0px;
+
+}
+.ImageExGallerific_ImagesBox
+{
+	top: 25px;
+	left: 15px;
+	height: 477px;	
+	width: 515px;
+	position: absolute;
+	display: block;
+}
+
+/* Edit */
+.ImageLibExMain_OperationLinkEdit 
+{ 
+	
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 48px;
+	width: 115px;
+	background-image: url(buttons/Edit.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageLibExMain_OperationLinkEdit:hover
+{
+	background-image: url(buttons/Edit.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+
+}
+
+.ImageLibExMain_OperationLinkEdit span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+	position: absolute;
+	left: 50px; 
+	top: 18px;
+}
+
+.ImageLibExMain_OperationEditDisable
+{
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #a7a8a9;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	background-image:url(buttons/EditDisable.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageLibExMain_OperationEditDisable:hover
+{
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+color: var(--text-color-ultra-dark); 
+	text-decoration: none; 
+	cursor: pointer; 
+	background-image:url(buttons/EditDisable.jpg);
+	background-repeat:no-repeat;
+}
+/* Delete */
+.ImageLibExMain_OperationLinkDelete 
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 48px;
+	width: 115px;
+	background-image: url(buttons/Delete.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageLibExMain_OperationLinkDelete:hover
+{
+	background-image: url(buttons/Delete.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+}
+
+.ImageLibExMain_OperationLinkDelete span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+	position: absolute;
+	left: 40px; 
+	top: 13px;
+}
+
+/* Upload */
+
+.ImageLibExMain_OperationLinkUpload 
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 48px;
+	width: 115px;
+	background-image: url(buttons/Upload.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageLibExMain_OperationLinkUpload:hover
+{
+	background-image: url(buttons/Upload.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+}
+
+.ImageLibExMain_OperationLinkUpload span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+	position: absolute;
+	left: 50px; 
+	top: 18px;
+}
+
+.ImageLibExMain_DivEditButton
+{
+	position: absolute;
+	top: 21px;
+	left: 18px;
+}
+
+.ImageLibExMain_DivUploadButton
+{
+	position: absolute;
+	top: 77px;
+	left: 18px;
+}
+
+.ImageLibExMain_DivDeleteButton
+{
+	position: absolute;
+	top: 131px;
+	left: 18px;
+}
+
+.ImageLibExMain_SelectedImage_UndoRedoMenuDiv
+{
+	top: 420px;
+	left: 0px;	
+	height: 108px;
+	width: 157px;	
+	position: absolute;
+	display: block;
+}
+
+/*  ImageLibExEdit */
+.ImageLibExEdit_FrameDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 580px;	
+	width: 750px;
+	position: absolute;
+	display: block;
+	border: 0px #000000 solid;
+}
+
+.ImageLibExEdit_MainDiv
+{
+	top: 2px;
+	left: 2px;
+	height: 585px;	
+	width: 675px;
+	position: absolute;
+	display: block;
+}
+
+.ImageLibExEdit_MenuBox
+{
+	top: 15px;
+	left: 15px;
+	height: 505px;
+	width: 157px;
+	position: absolute;
+	background-color: #d8e9f1;
+	border: 1px #d9e2e7 solid;
+}
+.ImageLibExEdit_MainMenuDiv
+{
+	top: 0px;
+	left: 0px;	
+	height: 197px;	
+	width: 157px;
+	position: absolute;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+}
+.ImageLibExEdit_MainMenuOperationsDiv
+{
+	top: 165px;
+	left: 0px;	
+	height: 197px;	
+	width: 157px;
+	position: absolute;
+	display: block;
+}
+.ImageLibExEdit_SelectedImage_UndoRedoMenuDiv
+{
+	top: 297px;
+	left: 0px;	
+	height: 108px;
+	width: 118px;	
+	position: absolute;
+	display: block;
+}
+
+.ImageLibExEdit_EnhanceDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 585px;	
+	width: 675px;
+	position: absolute;
+	display: block;
+}
+
+.ImageLibExEdit_DivEnhanceButton
+{
+	position: absolute;
+	top: 77px;
+	left: 18px;
+}
+
+.ImageLibExEdit_RotateDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 585px;	
+	width: 675px;
+	position: absolute;
+	display: block;
+background-color: #ffffff;
+	z-index: 2;
+}
+.ImageLibExEdit_DivBackToLibraryButton
+{
+	position: absolute;
+	top: 470px;
+	left: 18px;
+}
+
+.ImageLibExEdit_RotateDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 585px;	
+	width: 675px;
+	position: absolute;
+	display: block;
+}
+
+.ImageLibExEdit_CropDiv
+{
+	top: 0px;
+	left: 0px;
+	height: 585px;	
+	width: 675px;
+	position: absolute;
+	display: block;
+}
+.ImageLibExEdit_MainTabDiv
+{
+	top: 15px;
+	left: 190px;
+	height: 527px;	
+	width: 545px;
+	position: absolute;
+	display: block;
+	background-color: #d8e9f1;
+	border: 1px #d9e2e7 solid;
+	padding: 0px;
+	margin: 0px;
+}
+
+.ImageLibExEdit_CloseOrOK_Divdeleteme
+{
+	position:absolute;
+	bottom: 0;
+	left: 0; 
+	right: 0;
+	height: 30px;
+}
+.ImageLibExEdit_OKBtn_Div
+{
+	position: absolute;
+	top: 0px;
+	right: 100px;
+	width: 90px;
+	height: 30px;
+	text-align: right;
+}
+.ImageLibExEdit_CloseBtn_Div
+{
+	position: absolute;
+	top: 0px;
+	right:10px;
+	width: 90px;
+	height: 30px;
+	text-align: right;
+}
+/* To activate Rotate change none to block */
+.ImageLibExEdit_DivRotateButton
+{
+	position: absolute;
+	top: 0px;
+	left: 18px;
+	display: none;
+}
+
+.ImageLibExEdit_DivCropButton
+{
+	position: absolute;
+	top: 21px;
+	left: 18px;
+}
+
+.ImageLibExEdit_DivDeleteButton
+{
+	position: absolute;
+	top: 131px;
+	left: 17px;
+}
+
+.ImageLibExEdit_OperationLinkRotate 
+{ 
+	
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 48px;
+	width: 115px;
+	background-image: url(buttons/Rotate.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageLibExEdit_OperationLinkRotate:hover
+{
+	background-image: url(buttons/Rotate.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+}
+
+.ImageLibExEdit_OperationLinkRotate span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+	position: absolute;
+	left: 50px; 
+	top: 18px;
+}
+
+.ImageLibExEdit_OperationLinkBackToLibrary
+{ 
+	
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 22px;
+	width: 119px;
+	background-image: url(buttons/BackToLibrary.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageLibExEdit_OperationLinkBackToLibrary:hover
+{
+	color: #3cb7fb;
+	background-image: url(buttons/BackToLibrary.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageLibExEdit_OperationLinkBackToLibrary span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 30px; 
+	top: 4px;
+}
+.ImageLibExEdit_OperationLinkCrop 
+{ 
+	
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 48px;
+	width: 115px;
+	background-image: url(buttons/Crop.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageLibExEdit_OperationLinkCrop:hover
+{
+	background-image: url(buttons/Crop.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+
+}
+
+.ImageLibExEdit_OperationLinkCrop span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 50px; 
+	top: 18px;
+}
+
+/* Delete */
+
+.ImageLibExEdit_OperationLinkDelete 
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 48px;
+	width: 115px;
+	background-image: url(buttons/Delete.jpg);
+	background-repeat:no-repeat;
+}
+
+.ImageLibExEdit_OperationLinkDelete:hover
+{
+	background-image: url(buttons/Delete.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+
+}
+
+.ImageLibExEdit_OperationLinkDelete span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+	position: absolute;
+	left: 50px; 
+	top: 18px;
+}
+
+/* Enhanced */
+.ImageLibExEdit_OperationLinkEnhance 
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+	color: #004f78;
+	font-weight: var(--default-font-weight);
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 48px;
+	width: 115px;
+	background-image: url(buttons/Enhance.jpg);
+	background-repeat:no-repeat;
+
+}
+
+.ImageLibExEdit_OperationLinkEnhance:hover
+{
+	background-image: url(buttons/Enhance.jpg);
+	background-repeat:no-repeat;
+	color: #3cb7fb;
+}
+
+.ImageLibExEdit_OperationLinkEnhance span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 50px; 
+	top: 18px;
+}
+
+/****************************************************************/
+/*							ImageExGallery					*/
+/****************************************************************/
+/*.ImageExGallery_HyperLinkAll
+{
+	font-size: 9px;
+	
+	color: Blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.ImageExGallery_HyperLinkPreset
+{
+	font-size: 9px;
+	
+	color: Blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.ImageExGallery_FilterSelected
+{
+	text-decoration: none !important;
+	color: Black !important;
+	font-weight: bold !important;
+}
+
+.ImageExGallery_HyperLinkUploaded
+{
+	font-size: 9px;
+	
+	color: Blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.ImageExGallery_UploadDivLink
+{
+	width: 200px;
+	height: 30px;
+	vertical-align: middle;
+}
+.ImageExGallery_PrevBtnDiv
+{
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	top: 40px;
+	left: 0px;
+	height: 30px;
+	width: 30px;
+	cursor: pointer; 
+	background-image: url(buttons/left.gif);
+	background-repeat:no-repeat;
+
+}
+
+.ImageExGallery_NextBtnDiv
+{
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	top: 40px;
+	left: 695px;
+	height: 30px;
+	width: 30px;
+	cursor: pointer; 
+	background-image: url(buttons/right.gif);
+	background-repeat:no-repeat;
+}
+
+/* Upload * /
+.ImageExGallery_MessageDiv
+{
+	display: none;
+	top: 250px;
+	left: 370px;
+	height: 120px;	
+	width: 200px;
+	position: absolute;
+	color: var(--color-error);
+	background-color:  White;
+	border: 1px #000000 solid;
+}
+
+.ImageExGallery_OperationUploadLink
+{ 
+	display: block; 
+	position: relative; 
+	padding: 0px; 
+	float: left; 
+color: var(--text-color-ultra-dark); 
+	text-decoration: none; 
+	cursor: pointer; 
+	height: 48px;
+	width: 115px;
+	background-image: url(buttons/Upload.jpg);
+}
+
+.ImageExGallery_OperationUploadLink:hover
+{
+		background-image: url(buttons/Upload.jpg);
+		color: #3cb7fb;
+
+}
+
+.ImageExGallery_OperationUploadLink span 
+{ 
+	font-size: var(--text-size-fineprint);
+	
+	font-weight: var(--default-font-weight);
+
+	position: absolute;
+	left: 30px; 
+	top: 2px;
+}
+
+.ImageExGallery_AvailableImages_MainDiv
+{
+	top: 0px;
+	left:0px;
+	height: 533px;	
+	width: 748px;
+	position: absolute;
+	overflow: hidden;
+
+}
+
+.ImageExGallery_AvailableImages_TitleDiv
+{
+	position: absolute;
+	width: 617px;
+	top:  10px;
+	left: 50px;
+}
+
+.ImageExGallery_AvailableImages_MenuDiv
+{
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	width: 200px;
+}
+
+
+.ImageExGallery_AvailableImages_LeftMenuDiv
+{
+	position: absolute;
+	top: 0px;
+	left: 470px;
+	width: 415px;	
+}
+
+.ImageExGallery_MainScrollDiv
+{
+	position: absolute;
+	top: 36px;
+	left: 163px;
+	width: 570px;
+	height: 476px;
+	background-color: var(--color-fill);	
+	border: 1px #eeeeee solid;
+	overflow: hidden;
+}
+*/
+.ImageLibExMainTab_SelectedImage_ImageDiv
+{
+	position: absolute;
+	height: 497px;	
+	width: 515px;
+	top: 15px;
+	left: 15px;
+	vertical-align: middle;
+	overflow: hidden;
+	text-align: center;
+background-color: #ffffff;
+	display: none;
+	vertical-align: middle;
+}
+
+.ImageLibExMainTab_SelectedImage_Image
+{
+	width: 500px;
+	height: 305px;
+	border: 3px #ffffff solid;
+	margin: 3px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* ImageExGallerific */
+
+
+.ImageExGallerific_AvailablePresetImage
+{
+	width: 120px;
+	height: 108px;
+	position: relative;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+background-color: #ffffff;
+	color: #000000 !important;
+}
+
+.ImageExGallerific_AvailableUploadedImage
+{	
+	width: 120px;
+	height: 108px;
+	position: relative;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+background-color: #ffffff;
+
+}
+
+.ImageExGallerific_img_AvailablePresetImage
+{
+	height: 85px;
+	width: 85px;
+	border: solid 2px #ffffff;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	
+}
+.ImageExGallerific_img_AvailableUploadedImage
+{
+	height: 85px;
+	width: 85px;
+	border: solid 2px #ffffff;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.ImageExGallerific_AvailableImagesInnerDiv
+{
+	position: relative;
+	float: left;
+	width: 120px;
+	height: 106px;
+	text-align: center !important;
+	vertical-align: middle !important;
+	overflow: hidden;
+}
+.ImageExGallerific_ImageBoxDiv
+{
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	width: 120px;
+	height: 89px;
+}
+.ImageExGallerific_FiltersBox
+{
+	position: absolute;
+	top: 12px;
+	left: 355px;
+	width: 200px;
+    z-index: 2;
+}
+
+#ImageExGallerific_info
+{
+	z-index: 100;
+}
+.ImageExGallerific_HyperLinkAll
+{
+	font-size: 9px;
+	
+	color: var(--color-highlight); 
+	text-decoration: underline;
+	cursor: pointer;
+}
+.ImageExGallerific_HyperLinkUploaded
+{
+	font-size: 9px;
+	
+	color: var(--color-highlight); 
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.ImageExGallerific_HyperLinkPreset
+{
+	font-size: 9px;
+	
+	color: var(--color-highlight); 
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.ImageExGallerific_FilterSelected
+{
+	text-decoration: none !important;
+	color: Black !important;
+	font-weight: bold !important;
+}
+/*
+.ImageExGallery_HyperLinkUploaded
+{
+	font-size: 9px;
+	
+	color: Blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+*/
+.ImageExGallerific_MainForm
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+div.content {
+	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 580px;	
+	width: 750px;
+}
+div.content a, div.navigation a {
+	text-decoration: none;
+}
+div.content a:focus, div.content a:hover, div.content a:active {
+	text-decoration: underline;
+}
+div.controls {
+	margin-top: 5px;
+	height: 23px;
+}
+div.controls a {
+	padding: 5px;
+}
+div.ss-controls {
+	float: left;
+}
+div.nav-controls {
+	float: right;
+}
+div.slideshow-container 
+{
+	display: none;
+	position: absolute;
+	clear: both;
+	top: 30px;
+	left: 50px;
+	height: 120px; /* This should be set to be at least the height of the largest image in the slideshow */
+	width: 140px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+div.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 550px;
+	height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+div.slideshow {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100px;
+	width: 100px;
+	clear: both;
+	
+}
+div.slideshow span.image-wrapper {
+
+}
+div.slideshow a.advance-link {
+}
+div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+div.slideshow img {
+	vertical-align: middle;
+	border: 1px solid #ccc;
+}
+div.download {
+	float: right;
+}
+div.caption-container {
+	
+}
+span.image-caption {
+	display: block;
+	position: absolute;
+}
+div.caption {
+background-color: #ffffff;
+	padding: 12px;
+	color: #ccc;
+}
+div.caption a {
+color: #ffffff;
+}
+div.image-title {
+	font-weight: var(--default-font-weight);
+	font-size: 1.4em;
+}
+
+div.image-desc {
+	line-height: 1.3em;
+	padding-top: 12px;
+}
+div.navigation {
+	/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 505px;	
+	width: 556px;
+}
+ul.thumbs {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	width: 580px;
+	height: 470px;
+color: var(--text-color-ultra-dark);
+}
+ul.thumbs li {
+	float: left;
+	padding: 0;
+	margin: 10px 10px 0px 0;
+	list-style: none;
+}
+a.thumb {
+	padding: 0px;
+	display: block;
+	border: 0px solid #ccc;
+
+}
+ul.thumbs li.selected a.thumb {
+}
+a.thumb:focus {
+	outline: none;
+}
+ul.thumbs img {
+	border: none;
+	display: block;
+}
+div.pagination {
+	clear: both;
+}
+div.navigation div.top {
+	margin-bottom: 12px;
+	height: 11px;
+}
+
+
+div.navigation div.bottom {
+	margin-top: 12px;
+}
+div.bottom
+{
+	
+	text-decoration: none;
+	font-size: var(--text-size-fineprint);
+	color: #07507b;
+	position: absolute;
+	top: 503px;
+	left: 3px;
+	position: absolute;
+	height: 50px;	
+	width: 556px;
+}
+div.top
+{
+	
+	text-decoration: none;
+	font-size: var(--text-size-fineprint);
+	color: #07507b;
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	position: absolute;
+	height: 25px;	
+	width: 200px;
+}
+div.pagination a, div.pagination span.current, div.pagination span.ellipsis {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 4px 7px 2px 7px;
+	border: 1px solid #ccc;
+}
+div.pagination a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+div.pagination span.current {
+	font-weight: var(--default-font-weight);
+	background-color: #07507b;
+	border-color: #000;
+color: #ffffff;
+}
+div.pagination span.ellipsis {
+	border: none;
+	padding: 5px 0 3px 2px;
+}
+#captionToggle a {
+	float: right;
+	display: none;
+	background-image: url('caption.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	margin-top: 5px;
+	padding: 5px 30px 5px 5px;
+}
+
+
+.ImageExGallerific_SelectedImageNoSelImage_Div
+{
+	position: absolute;
+	height: 450px;	
+	width: 530px;
+	top: 40px;
+	left: 10px;
+	overflow: hidden;
+background-color: #ffffff;
+	border: 2px #efefed solid;
+	text-align: center;
+	vertical-align: middle;
+	display: none;
+	
+	text-decoration: none;
+	font-size: var(--text-size-fineprint);
+}
+
+.ImageExGallerific_pageLink
+{
+	cursor: pointer;
+}
+
+.ImageLibExMain_UploadInfoImage
+{
+	position: absolute;
+	top: 275px;
+	left: 150px;
+	height: 21px;
+	width: 20px;
+	background-image: url(buttons/InfoButton.png);
+	background-repeat:no-repeat;
+	z-index: 3;
+}
+
+.ImageExMainTab_UploadInfoImage
+{
+	position: absolute;
+	top: 383px;
+	left: 250px;
+	height: 21px;
+	width: 20px;
+	background-image: url(buttons/InfoButton.png);
+	background-repeat:no-repeat;
+	z-index: 3;
+}
+.ImageExMainTab_InfoPopup
+{
+	position: absolute;
+	background-color: var(--color-error);
+	top: 383px;
+	left: 280px;
+	width: 300px;     
+	display: none; 
+	z-index: 100; 
+	font-family: var(--font-family);
+	font-size: var(--text-size-fineprint); 
+	white-space: normal !important;
+	border: solid 1px var(--color-line); 
+background-color: #ffffff; 
+	padding: 7px;
+}
+.ImageLibExMain_InfoPopup
+{
+	position: absolute;
+background-color: #ffffff;
+	top: 275px;
+	left: 170px;
+	width: 300px;     
+	display: none; 
+	z-index: 100; 
+	font-family: var(--font-family);
+	font-size: var(--text-size-fineprint); 
+	white-space: normal !important;
+	border: solid 1px var(--color-line); 
+background-color: #ffffff; 
+	padding: 7px;
+}
+
+.UnregisteredNoticeDiv
+{
+	position: absolute;
+background-color: #ffffff;
+	display: block;
+	z-index: 103;
+	top: 0px;
+	height:10px;
+	left: 170px;
+}

@@ -1,0 +1,7 @@
+node_modules
+static/webcomponents/dist
+.next
+package-lock.json
+static/demo/ustore.iife.js*
+.npm_local_cache
+coverage

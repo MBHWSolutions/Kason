@@ -1,0 +1,41 @@
+.dot-carousel-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .dot-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    .dot-indicator {
+      background-color: #D6d6d6;
+      border-radius: 50%;
+      transition: all 0.3s ease-in;
+      position: absolute;
+      width: 2px;
+      height: 2px;
+
+      &.regular-dot {
+        width: 8px;
+        height: 8px;
+
+        &.active {
+          background-color: #000000;
+        }
+      }
+
+      &.smaller-dot {
+        width: 7px;
+        height: 7px;
+      }
+
+      &.smallest-dot {
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+:root{
+	--default-font-weight:normal;
+	--header-padding-desktop: 20px;
+	--header-padding-mobile: 15px;
+	--logo-image-mobile: var(--logo-image);
+
+	/* variables controlling theme (edited in theme editor) */
+	--header-height-desktop: 80px;
+	--header-height-mobile: 50px;
+	--search-height: 59px;
+	--header-background-color: #ffffff;
+	--text-color-header: #000000;
+	--logo-image: '';
+	--homepage-carousel-slide-1-image: '';
+	--homepage-carousel-slide-1-main-text: '';
+	--homepage-carousel-slide-1-sub-text: '';
+	--homepage-carousel-slide-1-button-text: '';
+    --homepage-carousel-slide-1-button-url: '';
+	--submenu-background-color: #ffffff;
+	--text-color-submenu: #000000;
+	--text-color-on-highlight-bg: #ffffff;
+	--carousel-height-desktop: 600px;
+	--carousel-height-mobile: calc(var(--carousel-height-desktop)*0.75);
+	--text-color-carousel:  #000000;
+	--footer-background-color: #000000;
+	--footer-text-color:  #ffffff;
+	--category-image-height: 180px;
+	--image-box-height: 275px;
+
+	/* common variables controlling theme and skin */
+	--image-box-background-color: #f1f1f3;
+	--image-box-border-width: 0px;
+	--image-box-border-color: #d6d6d6;
+	--image-border-width: 1px;
+	--image-border-color: #d6d6d6;
+	--button-primary-background-color: #20a8ce;
+	--button-primary-border-color: var(--button-primary-background-color);
+	--button-primary-text-color:  #ffffff;
+	--button-secondary-background-color:  #ffffff;
+	--button-secondary-border-color: var(--button-primary-background-color);
+	--button-secondary-text-color: var(--button-primary-background-color);
+	--text-color-heading: var(--text-color-ultra-dark);
+	--text-color-ultra-dark: #000000;
+	--text-color-dark: #484848;
+	--text-color-medium: #767676;
+	--text-color-disabled: #cacaca;
+	--color-error: #ff625a;
+	--color-warning: #f5a623;
+	--color-success: #2fc943;
+	--color-line: #d6d6d6;
+	--color-highlight: #20a8ce;
+	--color-fill: #f1f1f3;
+	--font-family: 'Open Sans';
+	--image-box-padding: 20px;
+	--button-border-radius: 25px;
+	--text-size-h1: 60px;
+	--text-size-h2: 30px;
+	--text-size-h3: calc(var(--text-size-h1)*0.4);
+	--text-size-h4: calc(var(--text-size-h2)*0.67);
+	--text-size-label: 16px;
+	--text-size-regular: calc(var(--text-size-label)*0.875);
+	--text-size-fineprint: calc(var(--text-size-label)*0.75);
+
+	/* variables controlling skin */
+	--form-input-border-radius: 5px;
+	--table-scrollbar-color: rgba(114,114,114,0.5);
+
+	--footer-height: 240px;
+
+  	/*Other*/
+  	--maintenance-ribbon-display: block; 
+	--maintenance-text: '';
+}
